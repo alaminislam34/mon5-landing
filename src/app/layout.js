@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar />
         </header>
-        <main>{children}</main>
+        <main className="overflow-hidden ">{children}</main>
       </body>
     </html>
   );

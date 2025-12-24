@@ -21,7 +21,7 @@ function AbsoluteBall() {
         },
         opacity: { duration: 1 },
       }}
-      className="max-w-120 lg:max-w-150 max-h-120 absolute top-0 -right-45 -z-50"
+      className="max-w-120 lg:max-w-150 h-auto absolute top-0 -right-45 z-0"
     >
       <Image
         src={"/images/ball.png"}

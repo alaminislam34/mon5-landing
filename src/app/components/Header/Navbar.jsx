@@ -27,7 +27,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 ${isScroll ? "bg-white" : ""}`}
     >
-      <section className="max-w-380 mx-auto px-4 py-2 flex flex-row items-center justify-between">
+      <section className="max-w-380 mx-auto px-4 py-3 flex flex-row items-center justify-between">
         <div>
           <Image
             src={"/logos/logo.png"}
