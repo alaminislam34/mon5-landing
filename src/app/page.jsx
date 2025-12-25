@@ -2,6 +2,7 @@
 
 import AbsoluteBall from "./components/AbsoluteComponents/AbsoluteBall";
 import Banner from "./components/Home/Banner/Banner";
+import Experience from "./components/Home/Experience/Experience";
 import Scrolling from "./components/Home/ScrollTextSection/Scrolling";
 import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
 
@@ -25,6 +26,9 @@ export default function Home() {
         <div className="relative z-20 ">
           <WhyMon5 />
         </div>
+      </section>
+      <section>
+        <Experience />
       </section>
       <br />
       <br />
