@@ -10,70 +10,41 @@ import Image from "next/image";
 
 const slides = [
   {
-    name: "Sophia R",
-    location: "Boston, USA",
-    text: "HelpMeSpeak makes translation so easy. The app feels smooth and fast.",
+    name: "Strategic Boosts",
+    content:
+      "Unlock strategic boosts to enhance your team—Luxury Tax, 6th Man, Chef Curry, and more. Use them to gain an edge over your opponents!",
+    image: "/images/stratigic.png",
+  },
+  {
+    name: " Real-time NBA Stats",
+    content:
+      "Create a private league, compete in real-time, track your victories, and see who wins!",
+    image: "/images/static.png",
+  },
+  {
+    name: "Daily Lineups",
+    content:
+      "Craft your perfect roster every day. Choose from the best players and maximize your fantasy points with smart picks.",
     image: "/images/ball.png",
   },
   {
-    name: "Rachel K.",
-    location: "Boston, USA",
-    text: "Using this app daily. The learning suggestions are extremely helpful.",
-    image: "/images/ball.png",
+    name: "Challenge  Friends",
+    content:
+      "Create a private league, compete in real-time with your friends, track your victories, and see who wins!",
+    image: "/images/challenge.png",
   },
   {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Alicia M",
-    location: "Boston, USA",
-    text: "Finally an app that makes language learning practical and fun.",
-    image: "/images/ball.png",
+    name: " Global Competition",
+    content:
+      "Compete against players worldwide! Climb the weekly and monthly leaderboards for a chance to win amazing prizes and earn bragging rights.",
+    image: "/images/global.png",
   },
 ];
 
 export default function CardSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [options, setOptions] = useState({ perView: 1 }); // স্ক্রিন সাইজ ট্র্যাক করার জন্য
+  const [options, setOptions] = useState({ perView: 1 });
+  const [loaded, setLoaded] = useState(false); // To ensure slider is ready before rendering dots
 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
@@ -88,6 +59,7 @@ export default function CardSlider() {
     },
     created(s) {
       setOptions(s.options.slides);
+      setLoaded(true);
     },
     optionsChanged(s) {
       setOptions(s.options.slides);
@@ -97,7 +69,6 @@ export default function CardSlider() {
     },
   });
 
-  // এই লজিকটি ডাইনামিকলি চেক করবে কার্ডটি মাঝখানে আছে কি না
   const checkCenter = (idx) => {
     const perView = options?.perView || 1;
     const centerOffset = Math.floor(perView / 2);
@@ -108,20 +79,20 @@ export default function CardSlider() {
   return (
     <section className="py-12 px-4">
       <div className="relative lg:py-12">
+        {/* Slider Container */}
         <div ref={sliderRef} className="keen-slider flex items-center mb-6">
           {slides.map((slide, idx) => {
             const isCenter = checkCenter(idx);
-
             return (
               <div
                 key={idx}
-                className="keen-slider__slide flex justify-center py-10" // Padding added for scaling space
+                className="keen-slider__slide flex justify-center py-10"
               >
                 <div
-                  className={`relative flex flex-col items-center gap-2 p-6 transition-all duration-500 ease-in-out w-full h-130 ring-2 ${
+                  className={`relative flex flex-col items-center gap-2 px-4 py-6 transition-all duration-500 ease-in-out w-full min-h-128 ring-2 ${
                     isCenter
-                      ? "scale-99 opacity-100 z-10 shadow-2xl"
-                      : "scale-85 opacity-40 z-0"
+                      ? "md:scale-99 opacity-100 z-10 shadow-2xl"
+                      : "md:scale-85 opacity-40 z-0"
                   } ring-base/10 rounded-2xl overflow-hidden text-center backdrop-blur-xl space-y-2`}
                 >
                   <div className="w-40 h-20 absolute -top-10 -right-14 blur-2xl bg-primary2 -z-10"></div>
@@ -132,17 +103,19 @@ export default function CardSlider() {
                     src={slide.image}
                     width={500}
                     height={500}
-                    alt={slide.name}
-                    className={`rounded-full border border-white object-cover duration-300 h-35 w-35 mb-8 md:mb-10`}
+                    alt={"Icon image"}
+                    className="rounded-full object-cover duration-300 h-35 w-35 mb-8 md:mb-10"
                   />
-                  <h1 className="text-2xl lg:text-3xl xl:text-4xl">
-                    Daily Lineups
-                  </h1>
-                  <h3 className="text-primary1">Flexible. Dynamic. Fun</h3>
-                  <br />
+                  <div className="space-y-4">
+                    <h1 className="text-3xl xl:text-4xl font-semibold tracking-widest">
+                      {slide.name}
+                    </h1>
+                    <h3 className="text-primary1 text-lg tracking-wider">
+                      Flexible. Dynamic. Fun
+                    </h3>
+                  </div>
                   <p className="text-base md:text-lg font-galdeano">
-                    Craft your perfect roster every day. Choose from the best
-                    players and maximize your fantasy points with smart picks.
+                    {slide.content}
                   </p>
                 </div>
               </div>
@@ -150,21 +123,41 @@ export default function CardSlider() {
           })}
         </div>
 
-        <div className="flex items-center justify-center">
-          <button
-            onClick={() => instanceRef.current?.prev()}
-            className="cursor-pointer"
-          >
-            <MdOutlineKeyboardArrowLeft className="text-4xl text-primary" />
-          </button>
+        {/* Navigation Controls: Arrows + Dots */}
+        {loaded && instanceRef.current && (
+          <div className="flex items-center justify-center gap-6">
+            {/* Left Arrow */}
+            <button
+              onClick={() => instanceRef.current?.prev()}
+              className="cursor-pointer hover:scale-110 transition-transform"
+            >
+              <MdOutlineKeyboardArrowLeft className="text-4xl text-primary1" />
+            </button>
 
-          <button
-            onClick={() => instanceRef.current?.next()}
-            className="cursor-pointer"
-          >
-            <MdOutlineKeyboardArrowRight className="text-4xl text-primary" />
-          </button>
-        </div>
+            {/* Dots Container */}
+            <div className="flex gap-2">
+              {Array.from(Array(slides.length).keys()).map((idx) => (
+                <button
+                  key={idx}
+                  onClick={() => instanceRef.current?.moveToIdx(idx)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    currentSlide === idx
+                      ? "w-8 bg-primary1"
+                      : "w-2.5 bg-gray-500 opacity-50"
+                  }`}
+                />
+              ))}
+            </div>
+
+            {/* Right Arrow */}
+            <button
+              onClick={() => instanceRef.current?.next()}
+              className="cursor-pointer hover:scale-110 transition-transform"
+            >
+              <MdOutlineKeyboardArrowRight className="text-4xl text-primary1" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

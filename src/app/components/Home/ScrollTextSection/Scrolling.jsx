@@ -7,7 +7,7 @@ const items = ["CHALLENGES", "VICTORY", "SCORE", "FANTASY"];
 function Scrolling() {
   return (
     <div className="relative lg:mt-12 xl:mt-24 ">
-      <div className="h-20 z-10 absolute top-12 left-1/2 -translate-y-1/2 -translate-x-1/2 -rotate-3 w-[150%] bg-primary1 opacity-50 flex items-center justify-center">
+      <div className="h-20 z-10 absolute top-12 left-1/2 -translate-y-1/2 -translate-x-1/2 -rotate-3 w-[150%] bg-primary1 opacity-20 flex items-center justify-center">
         <Marquee
           speed={30}
           gradient={false}
