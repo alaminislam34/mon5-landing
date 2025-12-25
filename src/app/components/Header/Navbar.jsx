@@ -74,7 +74,7 @@ function Navbar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`py-2 px-6 rounded-lg ${
+                  className={`py-2 px-6 rounded-lg truncate ${
                     pathName === href ? "bg-primary1 font-medium" : ""
                   }`}
                 >
@@ -94,7 +94,7 @@ function Navbar() {
             />
           </div>
           <div>
-            <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2">
+            <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 truncate">
               Get Download Link
               <BsArrowUpRightSquareFill />
             </button>

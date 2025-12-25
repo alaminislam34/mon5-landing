@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 function Banner() {
   return (
     <section className="relative">
-      <div className="max-w-380 mx-auto md:min-h-screen bg-cover bg-center z-10 relative">
+      <div className="max-w-380 mx-auto min-h-[80vh] md:min-h-[95vh] bg-cover bg-center z-10 relative">
         <section className="flex items-center mt-20 min-h-[50vh] md:min-h-[50vh] lg:min-h-[65vh]">
           <div className="flex items-center justify-start h-full md:pt-6 lg:pt-12 px-4">
             <div className="space-y-8 z-50">
@@ -46,7 +46,7 @@ function Banner() {
             </div>
           </div>
         </section>
-        <div className=" w-full grid grid-cols-2 md:grid-cols-4 gap-4 items-center lg:mt-24">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 items-center md:mt-24">
           <div className="flex flex-col gap-2 items-center text-[#cccccc]">
             <h1 className="text-3xl lg:text-4xl xl:text-6xl font-bold">
               <CountUp end={5} duration={2} />
@@ -79,7 +79,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="absolute right-0 top-0 lg:-top-20 z-0">
+      <div className="absolute right-0 top-14 sm:top-14 md:-top-1 lg:-top-20 z-0">
         <Image
           src={"/images/hand.png"}
           width={1500}
