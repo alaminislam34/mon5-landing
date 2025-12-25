@@ -85,7 +85,7 @@ function Banner() {
           width={1500}
           height={800}
           alt="Hand image"
-          className="opacity-50 lg:opacity-100 w-full lg:max-h-50 xl:max-h-190"
+          className="opacity-50 lg:opacity-100 w-full lg:max-h-160 xl:max-h-190"
           priority
         />
       </div>

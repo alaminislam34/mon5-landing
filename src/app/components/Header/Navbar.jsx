@@ -50,12 +50,12 @@ function Navbar() {
 
   const navBackground =
     hasMounted && isScroll
-      ? "bg-dark shadow-md shadow-white/10"
+      ? "bg-dark shadow-xl shadow-primary1/10"
       : "bg-transparent";
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${navBackground}`}
+      className={`fixed duration-300 top-0 left-0 w-full z-50 transition-colors  ${navBackground}`}
     >
       <section className="max-w-380 mx-auto px-4 py-3 flex flex-row items-center justify-between">
         <div>

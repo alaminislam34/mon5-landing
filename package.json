@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "i18next": "^25.7.3",
+    "keen-slider": "^6.8.6",
     "lucide-react": "^0.562.0",
     "motion": "^12.23.26",
     "next": "16.1.1",
