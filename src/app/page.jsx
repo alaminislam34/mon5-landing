@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
-import AbsoluteBall from "./components/AbsoluteComponents/AbsoluteBall";
-import Banner from "./components/Home/Banner/Banner";
-import Experience from "./components/Home/Experience/Experience";
-import Scrolling from "./components/Home/ScrollTextSection/Scrolling";
-import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AbsoluteBall from "./components/AbsoluteComponents/AbsoluteBall";
+import Banner from "./components/Home/Banner/Banner";
+import Scrolling from "./components/Home/ScrollTextSection/Scrolling";
+import Experience from "./components/Home/Experience/Experience";
 import PrivateLeagues from "./components/Home/Leagues/PrivateLeagues";
 import GlobalLeaguess from "./components/Home/Leagues/GlobalLeagues";
+import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
+import SubscribeForm from "./components/SubscriberFrom/SubscriberFrom";
 
 export default function Home() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function Home() {
         <Banner />
       </section>
       <Scrolling />
-      <section className="relative min-h-150 pt-44 lg:pt-60">
+      <section className="relative min-h-150 pt-12">
         <div
           className="absolute top-0 left-0 h-full w-full object-cover bg-top bg-no-repeat bg-cover opacity-10"
           style={{ backgroundImage: "url('/images/bg-image(why-mon5).png')" }}

@@ -29,7 +29,7 @@ function GlobalLeaguess() {
               height={1000}
               width={1200}
               alt="App image"
-              className="lg:h-210 md:h-180 h-150 w-auto object-cover relative z-10"
+              className="lg:h-210 md:h-180 h-150 w-auto object-cover border border-white scale-110 relative z-10"
             />
           </div>
         </div>

@@ -96,7 +96,7 @@ export default function CardSlider() {
                 <div
                   className={`relative flex flex-col items-center gap-2 px-4 py-6 transition-all duration-500 ease-in-out w-full min-h-128 ring-2 ${
                     isCenter
-                      ? "md:scale-99 opacity-100 z-10 shadow-2xl"
+                      ? "scale-99 opacity-100 z-10 shadow-2xl"
                       : "md:scale-85 opacity-40 z-0"
                   } ring-base/10 rounded-2xl overflow-hidden text-center backdrop-blur-xl space-y-2`}
                 >

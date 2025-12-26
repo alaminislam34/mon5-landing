@@ -32,7 +32,8 @@ function PrivateLeagues() {
               height={1000}
               width={1200}
               alt="App image"
-              className="max-w-40 absolute top-10 md:top-0 md:right-0 right-0 lg:right-28 z-0"
+              className="max-w-40 absolute top-10 md:top-0 md:right-0 right-0 lg:right-28 z-0
+              "
             />
             <div className="absolute top-60 left-0 md:left-12 md:top-60 lg:top-83.5 lg:left-44 ring-2 rounded-2xl ring-primary2/20 z-20 bg-dark/5 backdrop-blur-xs py-2 px-6 flex flex-col items-center gap-1">
               <h1 className="font-bold tracking-tigh md:text-lg text-white">
@@ -81,7 +82,7 @@ function PrivateLeagues() {
               height={1000}
               width={1200}
               alt="App image"
-              className="lg:h-210 md:h-180 h-150 w-auto object-cover relative z-10"
+              className="lg:h-210 md:h-180 h-150 w-auto object-cover scale-110 border border-white relative z-10"
             />
           </div>
         </div>
