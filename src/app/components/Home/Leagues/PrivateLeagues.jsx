@@ -4,7 +4,7 @@ import React from "react";
 
 function PrivateLeagues() {
   return (
-    <section className="min-h-screen">
+    <section className="min-h-125">
       <section className="grid grid-cols-1 md:grid-cols-2 max-w-380 mx-auto w-11/12 items-center">
         <div>
           <div

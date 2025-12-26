@@ -9,6 +9,7 @@ import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import PrivateLeagues from "./components/Home/Leagues/PrivateLeagues";
+import GlobalLeaguess from "./components/Home/Leagues/GlobalLeagues";
 
 export default function Home() {
   useEffect(() => {
@@ -42,6 +43,7 @@ export default function Home() {
       </section>
       <section>
         <PrivateLeagues />
+        <GlobalLeaguess />
       </section>
 
       <br />
