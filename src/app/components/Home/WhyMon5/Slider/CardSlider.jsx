@@ -78,7 +78,12 @@ export default function CardSlider() {
 
   return (
     <section className="py-12 px-4">
-      <div className="relative lg:py-12">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-bottom"
+        className="relative lg:py-12"
+      >
         {/* Slider Container */}
         <div ref={sliderRef} className="keen-slider flex items-center mb-6">
           {slides.map((slide, idx) => {

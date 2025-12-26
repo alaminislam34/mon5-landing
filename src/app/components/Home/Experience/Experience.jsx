@@ -5,7 +5,12 @@ import Image from "next/image";
 function Experience() {
   return (
     <section className="relative min-h-280 h-full  xl:mt-12">
-      <section className="max-w-380 mx-auto w-11/12 lg:mb-24">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-anchor-placement="top-bottom"
+        className="max-w-380 mx-auto w-11/12 lg:mb-24"
+      >
         <div className="max-w-180 lg:max-w-195">
           <SectionTitle
             title={"Experience the Ultimate"}
@@ -20,7 +25,12 @@ function Experience() {
           </p>
         </div>
       </section>
-      <div className="absolute top-0 -right-40">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-bottom"
+        className="absolute top-0 -right-40"
+      >
         <Image
           src={"/images/player.png"}
           height={1200}
@@ -29,12 +39,17 @@ function Experience() {
           className="max-h-150 lg:max-h-220 xl:max-h-300 h-full w-auto opacity-20 lg:opacity-100"
         />
       </div>
-      <section className="max-w-380 mx-auto w-11/12 grid grid-cols-1 lg:grid-cols-2 py-24 items-center">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-bottom"
+        className="max-w-380 mx-auto w-11/12 grid grid-cols-1 lg:grid-cols-2 py-24 items-center"
+      >
         <div className="relative">
           <div className="absolute -top-40 left-0 w-40 h-40 bg-primary1/60 blur-[150px] z-0"></div>
           <div className="absolute top-0 left-60 w-40 h-40 bg-primary1/60 blur-[150px] z-0"></div>
 
-          <div className="absolute -bottom-190 left-15 transform scale-x-[-1] -rotate-45 z-0">
+          <div className="absolute -bottom-190 left-15 flip-rotate z-0">
             <Image
               src={"/images/circle.png"}
               height={600}
@@ -53,7 +68,12 @@ function Experience() {
           />
         </div>
         <div className="space-y-12">
-          <div className="ring-2 ring-primary2/20 flex flex-col items-start bg-linear-to-tl from-gray-900/80 to-[#00000000] backdrop-blur-2xl p-6 md:p-8 rounded-2xl">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor-placement="top-bottom"
+            className="ring-2 ring-primary2/20 flex flex-col items-start bg-linear-to-tl from-gray-900/80 to-[#00000000] backdrop-blur-2xl p-6 md:p-8 rounded-2xl"
+          >
             <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-white mb-3">
               Build Your 5
             </h1>
@@ -65,7 +85,12 @@ function Experience() {
               Budget, stars, strategy… it’s your call
             </p>
           </div>
-          <div className="ring-2 ring-primary2/20 flex flex-col items-start bg-linear-to-tl from-gray-900/80 to-[#00000000] backdrop-blur-2xl p-6 md:p-8 rounded-2xl">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor-placement="top-bottom"
+            className="ring-2 ring-primary2/20 flex flex-col items-start bg-linear-to-tl from-gray-900/80 to-[#00000000] backdrop-blur-2xl p-6 md:p-8 rounded-2xl"
+          >
             <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-white mb-3">
               Build Your 5
             </h1>

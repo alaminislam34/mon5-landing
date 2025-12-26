@@ -35,6 +35,10 @@
   --font-galdeano: 'Galdeano', sans-serif;
 }
 
+.flip-rotate {
+  @apply transform -rotate-45 scale-x-[-1];
+}
+
 button {
   cursor: pointer;
 }
