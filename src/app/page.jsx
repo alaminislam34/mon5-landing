@@ -11,6 +11,7 @@ import PrivateLeagues from "./components/Home/Leagues/PrivateLeagues";
 import GlobalLeaguess from "./components/Home/Leagues/GlobalLeagues";
 import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
 import SubscribeForm from "./components/SubscriberFrom/SubscriberFrom";
+import GetNotified from "./components/Home/GetNotified/GetNotified";
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,9 @@ export default function Home() {
         <Banner />
       </section>
       <Scrolling />
+      <section>
+        <GetNotified />
+      </section>
       <section className="relative min-h-150 pt-12">
         <div
           className="absolute top-0 left-0 h-full w-full object-cover bg-top bg-no-repeat bg-cover opacity-10"

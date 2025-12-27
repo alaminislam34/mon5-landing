@@ -49,7 +49,7 @@ function Experience() {
           <div className="absolute -top-40 left-0 w-40 h-40 bg-primary1/60 blur-[150px] z-0"></div>
           <div className="absolute top-0 left-60 w-40 h-40 bg-primary1/60 blur-[150px] z-0"></div>
 
-          <div className="absolute -bottom-190 left-15 flip-rotate z-0">
+          <div className="absolute top-10 md:top-35 lg:top-65 md:-left-10 md:-rotate-25 left-0 z-0">
             <Image
               src={"/images/circle.png"}
               height={600}
