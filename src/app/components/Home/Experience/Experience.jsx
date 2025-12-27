@@ -27,7 +27,12 @@ function Experience() {
             colorTitle={"NBA Fantasy Game"}
             left={"left"}
           />
-          <div className="max-w-10/12">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            className="max-w-10/12"
+          >
             <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-base">
               New NBA night = New team.
             </p>
@@ -39,7 +44,12 @@ function Experience() {
               </span>
             </p>
           </div>
-          <div className="flex flex-row items-center gap-4 md:text-lg py-4">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            className="flex flex-row items-center gap-4 md:text-lg py-4"
+          >
             <h2 className="py-2 px-6 rounded-xl border border-base/50 shadow-inner text-primary1/90">
               No fixed roster
             </h2>
@@ -48,26 +58,46 @@ function Experience() {
             </h2>
           </div>
           <ul className="mt-6">
-            <li className="flex items-center gap-2 p-2">
+            <li
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="flex items-center gap-2 p-2"
+            >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
                 100% <span className="text-base">Fun</span>
               </p>
             </li>
-            <li className="flex items-center gap-2 p-2">
+            <li
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="flex items-center gap-2 p-2"
+            >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
                 100% <span className="text-base">Freedom</span>
               </p>
             </li>
-            <li className="flex items-center gap-2 p-2">
+            <li
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="flex items-center gap-2 p-2"
+            >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
                 100% <span className="text-base">Strategy</span>
               </p>
             </li>
           </ul>
-          <div className="py-4 flex relative z-50">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            className="py-4 flex relative z-50"
+          >
             <a
               href="#launch"
               className="py-3 px-6 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold flex items-center flex-row gap-2 relative z-50 cursor-pointer"
@@ -80,7 +110,7 @@ function Experience() {
       </section>
 
       <div
-        data-aos="fade-up"
+        data-aos="fade-left"
         data-aos-delay="200"
         data-aos-anchor-placement="top-bottom"
         className="absolute top-0 -right-40 pointer-events-none z-10"
@@ -100,9 +130,14 @@ function Experience() {
         data-aos-anchor-placement="top-bottom"
         className="max-w-380 mx-auto w-11/12 grid grid-cols-1 lg:grid-cols-2 py-24 items-center relative z-20"
       >
-        <div className="relative">
-          <div className="absolute -top-40 left-0 w-40 h-40 bg-primary1/60 -z-10 blur-[80px]"></div>
-          <div className="absolute top-0 left-60 w-40 h-40 bg-primary1/60 -z-10 blur-[80px]"></div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+          className="relative"
+        >
+          <div className="absolute -top-30 -left-30 w-60 h-40 bg-primary1/60 -z-10 blur-[200px]"></div>
+          <div className="absolute top-0 left-60 w-40 h-60 bg-primary1/60 -z-10 blur-[200px]"></div>
 
           <div className="absolute top-10 md:top-35 lg:top-65 md:-left-10 md:-rotate-25 left-0 z-0 pointer-events-none">
             <Image

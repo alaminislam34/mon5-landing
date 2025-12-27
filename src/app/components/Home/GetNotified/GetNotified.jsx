@@ -13,7 +13,12 @@ function GetNotified() {
         />
         <div className="flex items-center relative">
           <div className="md:max-w-3/5 w-full space-y-4 xl:space-y-6 relative z-10">
-            <div className="flex flex-row gap-2 md:gap-4 items-center justify-between md:text-lg xl:text-xl ">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="flex flex-row gap-2 md:gap-4 items-center justify-between md:text-lg xl:text-xl "
+            >
               <input
                 type="email"
                 placeholder="Enter your mail..."
@@ -23,17 +28,32 @@ function GetNotified() {
                 Get Notified
               </button>
             </div>
-            <p className="text-gray-400 text-sm pb-4">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="text-gray-400 text-sm pb-4"
+            >
               We'll send you the link as soon as the app is available.
             </p>
-            <div className="flex">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              className="flex"
+            >
               <p className="py-4 font-galdeano leading-normal tracking-wider px-12 text-primary1 border border-primary1/50 shadow-white/30 backdrop-blur-xl rounded-xl shadow text-lg md:text-xl lg:text-2xl">
                 Early Access players in the first week unlock 2 exclusive
                 jerseys{" "}
               </p>
             </div>
           </div>
-          <div className="md:max-w-2/5 md:relative absolute left-0">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            className="md:max-w-2/5 md:relative absolute left-0"
+          >
             <Image
               src={"/images/throughBall.jpg"}
               height={800}

@@ -14,19 +14,25 @@ function PrivateLeagues() {
             className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full"
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-white mb-3">
-              Build Your 5
+              Private Leagues
             </h1>
             <h4 className="text-lg md:text-xl text-primary1">
-              Your lineup changes every night
+              Challenge your friends
             </h4>
             <p className="text-base font-galdeano md:text-lg lg:text-xl mt-6">
-              Create a new starting five based on the NBA games of the night.
-              Budget, stars, strategy… it’s your call
+              Create your own mini-league with friends. New lineups every night,
+              Playoffs, strategic boosts… The most fun way to play with friends
             </p>
           </div>
         </div>
-        <div className="relative">
-          <div className="relative ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+          className="relative"
+        >
+          <div className="relative lg:left-24 ">
+            <div className="absolute top-10 left-0 w-40 h-40 bg-primary1/60 -z-10 blur-[100px]"></div>
             <Image
               src={"/images/volyball.png"}
               height={1000}

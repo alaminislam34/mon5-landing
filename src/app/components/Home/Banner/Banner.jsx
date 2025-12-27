@@ -71,8 +71,9 @@ function Banner() {
         </section>
       </div>
       <div
-        data-aos="fade-up"
-        data-aos-delay="1500"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="1200"
         data-aos-anchor-placement="top-bottom"
         className="absolute right-0 top-14 sm:top-14 md:-top-1 lg:top-0 lg:scale-110 lg:right-12 z-0"
       >

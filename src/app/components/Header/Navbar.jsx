@@ -49,6 +49,7 @@ function Navbar() {
   return (
     <nav
       data-aos="fade-up"
+      data-aos-delay="100"
       data-aos-duration="1000"
       className={`fixed duration-300 top-0 left-0 w-full z-50 transition-colors ${navBackground}`}
     >
