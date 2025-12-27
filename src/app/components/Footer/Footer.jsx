@@ -11,9 +11,9 @@ function Footer() {
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
         data-aos="fade-up"
       >
-        <div className="max-w-xl">
+        <div className="max-w-4xl w-full">
           <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
-            Be notified when it <br />
+            Be notified when it
             <span className="text-primary1 uppercase tracking-wider">
               launches
             </span>
@@ -66,14 +66,14 @@ function Footer() {
           <ul className="space-y-4 text-gray-400 font-medium">
             <li>
               <a
-                href="#features"
+                href="/#features"
                 className="hover:text-white transition-colors"
               >
                 Features
               </a>
             </li>
             <li>
-              <a href="#faq" className="hover:text-white transition-colors">
+              <a href="/#faq" className="hover:text-white transition-colors">
                 FAQ
               </a>
             </li>

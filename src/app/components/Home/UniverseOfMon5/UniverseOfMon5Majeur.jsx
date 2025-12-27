@@ -83,7 +83,7 @@ function UniverseOfMon5Majeur() {
   );
 
   return (
-    <div className="max-w-380 mx-auto w-11/12 md:py-12 overflow-hidden">
+    <div id="features" className="max-w-380 mx-auto w-11/12 md:py-12 overflow-hidden">
       <SectionTitle title={"Universe of"} colorTitle={"MON5MAJEUR"} left={""} />
 
       <div className="relative z-10 lg:hidden" data-aos="zoom-in">
