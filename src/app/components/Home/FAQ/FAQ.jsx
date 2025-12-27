@@ -33,7 +33,7 @@ function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="flex flex-col md:flex-row gap-12 text-white font-sans max-w-380 mx-auto w-11/12 py-16">
+    <section id="faq" className="flex flex-col md:flex-row gap-12 text-white font-sans max-w-380 mx-auto w-11/12 md:py-16">
       {/* Left Content */}
       <div className="flex-1 space-y-6" data-aos="fade-up">
         <h4 className="text-gray-400 font-medium tracking-widest text-sm uppercase">

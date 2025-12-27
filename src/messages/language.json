@@ -1,7 +1,7 @@
 {
   "en": {
     "Navbar": {
-      "links": ["Home", "About Us", "Contact Us"],
+      "links": ["Home", "Contact Us"],
       "inputPlaceholder": "Enter your mail",
       "buttonText": "Get Download Link"
     },
@@ -43,7 +43,7 @@
   },
   "fr": {
     "Navbar": {
-      "links": ["Accueil", "À propos", "Contactez-nous"],
+      "links": ["Accueil", "Contactez-nous"],
       "inputPlaceholder": "Entrez votre e-mail",
       "buttonText": "Lien de téléchargement"
     },

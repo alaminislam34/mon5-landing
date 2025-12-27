@@ -23,8 +23,7 @@ function Navbar() {
 
   const menuItems = [
     { href: "/", label: navLinks[0] },
-    { href: "/about", label: navLinks[1] },
-    { href: "/contact", label: navLinks[2] },
+    { href: "/contact", label: navLinks[1] },
   ];
 
   useEffect(() => {

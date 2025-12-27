@@ -1,6 +1,7 @@
 import LanguageProvider from "@/Providers/ContextProvider";
 import Navbar from "./components/Header/Navbar";
 import "./globals.css";
+import Footer from "./components/Footer/Footer";
 
 export const metadata = {
   title: "Mon5Majeur",
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
           <header>
             <Navbar />
           </header>
-          <main className="overflow-hidden ">{children}</main>
+          <main className="overflow-hidden">{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </body>
       </LanguageProvider>
     </html>

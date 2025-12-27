@@ -60,7 +60,7 @@ const GetApp = () => {
               data-aos-offset="10"
               data-aos-delay="200"
               data-aos-duration="1200"
-              className="py-4 flex relative z-50 my-4"
+              className="py-4 flex relative z-20 my-4"
             >
               <a
                 href="#launch"

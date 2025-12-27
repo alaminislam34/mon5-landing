@@ -10,10 +10,11 @@ import Experience from "./components/Home/Experience/Experience";
 import PrivateLeagues from "./components/Home/Leagues/PrivateLeagues";
 import GlobalLeaguess from "./components/Home/Leagues/GlobalLeagues";
 import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
-import SubscribeForm from "./components/SubscriberFrom/SubscriberFrom";
 import GetNotified from "./components/Home/GetNotified/GetNotified";
 import GetApp from "./components/Home/GetApp/GetApp";
 import FAQ from "./components/Home/FAQ/FAQ";
+import PlayersGuide from "./components/Home/PlayerGuide/PlayerGuide";
+import UniverseOfMon5Majeur from "./components/Home/UniverseOfMon5/UniverseOfMon5Majeur";
 
 export default function Home() {
   useEffect(() => {
@@ -59,7 +60,12 @@ export default function Home() {
       <section>
         <FAQ />
       </section>
-
+      <section>
+        <PlayersGuide />
+      </section>
+      <section>
+        <UniverseOfMon5Majeur />
+      </section>
       <br />
       <br />
       <br />
