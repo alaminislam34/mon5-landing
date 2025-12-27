@@ -46,8 +46,9 @@ export default function Home() {
       <section>
         <Experience />
       </section>
-      <section>
+      <section className="space-y-12 md:space-y-0" >
         <PrivateLeagues />
+        
         <GlobalLeaguess />
       </section>
 

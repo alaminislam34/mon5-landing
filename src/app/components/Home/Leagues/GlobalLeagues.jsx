@@ -5,9 +5,9 @@ import React from "react";
 function GlobalLeaguess() {
   return (
     <section className="min-h-125">
-      <section className="flex justify-between flex-col md:flex-row gap-6 md:gap-12 lg:gap-20 max-w-380 mx-auto w-11/12 items-center">
+      <section className="flex justify-between flex-col-reverse md:flex-row gap-6 md:gap-12 lg:gap-20 max-w-380 mx-auto w-11/12 items-center">
         <div className="relative flex items-center justify-start">
-          <div className="relative">
+          <div className="relative lg:right-20">
             <Image
               src={"/images/circle.png"}
               height={1000}
@@ -15,7 +15,7 @@ function GlobalLeaguess() {
               alt="App image"
               className="w-200 -rotate-6 absolute -top-40 -right-80 z-0"
             />
-            <div className="absolute top-60 md:top-60 lg:top-60 lg:right-20 ring-2 rounded-2xl ring-base/10 z-20 bg-dark/5 backdrop-blur-xs py-2 px-6 flex flex-col items-start max-w-80">
+            <div className="absolute top-60 md:top-60 lg:top-60 lg:right-20 ring-2 ring-[#2D2D2D] z-20  bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl py-2 px-6 flex flex-col items-start max-w-80">
               <h1 className="font-bold tracking-tigh md:text-lg text-primary1">
                 NBR Global League
               </h1>
@@ -29,7 +29,15 @@ function GlobalLeaguess() {
               height={1000}
               width={1200}
               alt="App image"
-              className="lg:h-210 md:h-180 h-150 w-auto object-cover border border-white scale-110 relative z-10"
+              className="lg:h-210 md:h-180 h-150 w-auto object-cover scale-110 relative z-10"
+            />
+            <Image
+              src={"/images/volyball.png"}
+              height={1000}
+              width={1200}
+              alt="App image"
+              className="max-w-40 absolute bottom-10 md:bottom-0 md:left-0 left-0 lg:left-28 z-0
+                          "
             />
           </div>
         </div>

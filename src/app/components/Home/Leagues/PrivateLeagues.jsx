@@ -35,7 +35,7 @@ function PrivateLeagues() {
               className="max-w-40 absolute top-10 md:top-0 md:right-0 right-0 lg:right-28 z-0
               "
             />
-            <div className="absolute top-60 left-0 md:left-12 md:top-60 lg:top-83.5 lg:left-44 ring-2 rounded-2xl ring-primary2/20 z-20 bg-dark/5 backdrop-blur-xs py-2 px-6 flex flex-col items-center gap-1">
+            <div className="absolute top-60 left-0 md:left-12 md:top-60 lg:top-83.5 lg:left-44 ring-2 bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl ring-[#2D2D2D] z-20 py-2 px-6 flex flex-col items-center gap-1">
               <h1 className="font-bold tracking-tigh md:text-lg text-white">
                 Join the League
               </h1>
@@ -43,7 +43,7 @@ function PrivateLeagues() {
                 <Plus size={18} />
               </span>
             </div>
-            <div className="absolute bottom-2 md:bottom-50 lg:bottom-54 left-6 ring-2 rounded-2xl ring-primary2/20 z-20  bg-dark/5 backdrop-blur-xs py-4 px-6 flex items-end flex-row gap-4">
+            <div className="absolute bottom-2 md:bottom-50 lg:bottom-54 left-6 ring-2 rounded-2xl ring-[#2D2D2D] z-20  bg-linear-to-r from-[#000000] to-[#1B0D05] py-4 px-6 flex items-end flex-row gap-4">
               <div className="flex flex-col gap-2 items-center">
                 <Image
                   src={"/images/diable-equipe.png"}
@@ -82,7 +82,7 @@ function PrivateLeagues() {
               height={1000}
               width={1200}
               alt="App image"
-              className="lg:h-210 md:h-180 h-150 w-auto object-cover scale-110 border border-white relative z-10"
+              className="lg:h-210 md:h-180 h-150 w-auto object-cover scale-110 relative z-10"
             />
           </div>
         </div>
