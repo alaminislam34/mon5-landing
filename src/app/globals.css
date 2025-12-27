@@ -22,6 +22,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'RussoOne';
+  src: url('/fonts/RussoOne-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 @theme {
@@ -31,47 +39,20 @@
   --color-border: #301A0E;
   --color-input-bg: #0D0D0D;
   --color-base: #E4E0E0;
+
+
   --font-aldrich: 'Aldrich', sans-serif;
   --font-galdeano: 'Galdeano', sans-serif;
-
-  /* Custom Animations for the Action Effect */
-  --animate-swoosh: swoosh 4s ease-in-out infinite;
-  --animate-dash-glow: dash-glow 3s linear infinite;
-
-  @keyframes swoosh {
-
-    0%,
-    100% {
-      transform: rotate(-22deg) scale(1.0);
-      opacity: 0.4;
-    }
-
-    50% {
-      transform: rotate(-26deg) scale(1.05);
-      opacity: 0.8;
-    }
-  }
-
-  @keyframes dash-glow {
-    0% {
-      stroke-dashoffset: 100;
-      opacity: 0.3;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      stroke-dashoffset: 0;
-      opacity: 0.3;
-    }
-  }
+  --font-russoOne: 'RussoOne', sans-serif;
 }
 
 /* Utility Classes */
 .flip-rotate {
   @apply transform -rotate-45 scale-x-[-1];
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 button {
@@ -82,14 +63,4 @@ h1,
 h2,
 h3 {
   font-family: 'Orbitron', sans-serif;
-}
-
-/* Optional: Smooth transition for the Image action */
-.action-image-shadow {
-  filter: drop-shadow(0 0 20px rgba(237, 115, 51, 0.2));
-  transition: all 0.5s ease;
-}
-
-.action-image-shadow:hover {
-  filter: drop-shadow(0 0 40px rgba(237, 115, 51, 0.5));
 }

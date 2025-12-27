@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function GetNotified() {
   return (
-    <section className="">
-      <div className="max-w-380 mx-auto w-11/12 py-12 md:py-16">
+    <section id="launch">
+      <div className="max-w-380 mx-auto w-11/12 py-12 md:py-16 ">
         <SectionTitle
           title={"Be notified when it"}
           colorTitle={"launches"}
