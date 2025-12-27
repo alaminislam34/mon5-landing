@@ -1,6 +1,7 @@
 "use client";
 
 import { Instagram, Twitter, Music2 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
@@ -12,7 +13,7 @@ function Footer() {
         data-aos="fade-up"
       >
         <div className="max-w-4xl w-full">
-          <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
             Be notified when it
             <span className="text-primary1 uppercase tracking-wider">
               launches
@@ -23,11 +24,11 @@ function Footer() {
           </p>
         </div>
 
-        <div className="w-full md:w-auto flex flex-col sm:flex-row gap-4">
+        <div className=" flex flex-col sm:flex-row gap-4">
           <input
             type="email"
             placeholder="Enter your mail..."
-            className="bg-[#0f0f0f] border border-white/10 rounded-xl px-6 py-4 w-full md:w-88 focus:outline-none focus:border-primary1 transition-colors font-galdeano"
+            className="bg-[#0f0f0f] border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-primary1 transition-colors font-galdeano"
           />
           <button className="bg-primary1 hover:bg-orange-600 transition-all text-white font-bold px-8 py-4 rounded-xl whitespace-nowrap active:scale-95">
             Get Notified
@@ -39,20 +40,25 @@ function Footer() {
       <hr className="border-white/10 mb-16" />
 
       {/* Main Footer Content */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand Column */}
         <div
           className="col-span-1 md:col-span-1 space-y-6"
           data-aos="fade-right"
         >
           <div className="flex items-center gap-2">
-            {/* Replace with your actual SVG Logo */}
-            <div className="w-10 h-10 bg-primary1 rounded-full flex items-center justify-center">
-              <span className="font-bold text-black text-xs">M5M</span>
+            <div>
+              <Link href={"/"}>
+                <Image
+                  src={"/logos/logo.png"}
+                  height={200}
+                  width={200}
+                  alt="Logo"
+                  priority
+                  className="h-12 w-auto bg-cover bg-center object-cover"
+                />
+              </Link>
             </div>
-            <h3 className="text-2xl font-black italic tracking-tighter uppercase">
-              Mon<span className="text-primary1">5</span>Majeur
-            </h3>
           </div>
           <p className="text-gray-400 font-galdeano leading-relaxed">
             Create your dream team, compete with friends, and track real-time
