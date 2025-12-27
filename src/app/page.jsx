@@ -12,6 +12,8 @@ import GlobalLeaguess from "./components/Home/Leagues/GlobalLeagues";
 import WhyMon5 from "./components/Home/WhyMon5/WhyMon5";
 import SubscribeForm from "./components/SubscriberFrom/SubscriberFrom";
 import GetNotified from "./components/Home/GetNotified/GetNotified";
+import GetApp from "./components/Home/GetApp/GetApp";
+import FAQ from "./components/Home/FAQ/FAQ";
 
 export default function Home() {
   useEffect(() => {
@@ -46,10 +48,16 @@ export default function Home() {
       <section>
         <Experience />
       </section>
-      <section className="space-y-12 md:space-y-0" >
+      <section className="space-y-12 md:space-y-0">
         <PrivateLeagues />
-        
+
         <GlobalLeaguess />
+      </section>
+      <section>
+        <GetApp />
+      </section>
+      <section>
+        <FAQ />
       </section>
 
       <br />
