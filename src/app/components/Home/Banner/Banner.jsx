@@ -13,7 +13,7 @@ function Banner() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section className="relative bg-background">
       <div className="max-w-380 mx-auto min-h-140 md:min-h-150 lg:min-h-180 xl:min-h-200 flex items-center bg-cover bg-center z-10 relative">
         <div className="flex items-center mt-20 h-full w-full">
           <div className="flex items-center justify-start h-full md:pt-6 lg:pt-12 px-4 w-full">

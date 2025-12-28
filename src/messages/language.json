@@ -21,6 +21,17 @@
         "appStore": "Download on the App Store",
         "heroHand": "Hand holding mobile showing game application"
       }
+    },
+    "scrolling": {
+      "aria": {
+        "sectionLabel": "Scrolling Game Features"
+      },
+      "items": {
+        "challenges": "CHALLENGES",
+        "victory": "VICTORY",
+        "score": "SCORE",
+        "fantasy": "FANTASY"
+      }
     }
   },
   "fr": {
@@ -44,6 +55,17 @@
         "googlePlay": "Disponible sur Google Play",
         "appStore": "Télécharger dans l'App Store",
         "heroHand": "Main tenant un téléphone affichant l'application de jeu"
+      }
+    },
+    "scrolling": {
+      "aria": {
+        "sectionLabel": "Défilement des fonctionnalités du jeu"
+      },
+      "items": {
+        "challenges": "DÉFIS",
+        "victory": "VICTOIRE",
+        "score": "SCORE",
+        "fantasy": "FANTASY"
       }
     }
   }
