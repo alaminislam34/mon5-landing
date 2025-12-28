@@ -1,187 +1,219 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { motion } from "motion/react";
+import { useLanguage } from "@/Providers/ContextProvider";
 
 function Privacy() {
+  const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
+  const content = t.Privacy;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="max-w-380 mx-auto w-11/12 py-16 text-white bg-transparent">
+        <div className="opacity-0" />
+      </div>
+    );
+  }
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <div className="max-w-380 mx-auto w-11/12 py-16 space-y-20 text-white bg-transparent">
-      {/* 1) Scope */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          1) Scope
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.scopeTitle}
         </h2>
         <p className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano leading-relaxed text-gray-300">
-          This Privacy Policy applies to: the MON5MAJEUR application; and the
-          website mon5majeur.com (and any associated site), including when a
-          User subscribes to a launch alert / waitlist.
+          {content.scopeText}
         </p>
-      </div>
+      </motion.div>
 
-      {/* 2) Data Controller */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          2) Data Controller
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.controllerTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
+          <p>{content.controllerText}</p>
           <p>
-            MON5MAJEUR, SASU with a share capital of €1,000, registered with the
-            Paris Trade and Companies Register (RCS) under number 993 681 915
-            (SIRET: 99368191500019), with its registered office at 229 rue
-            Saint-Honoré, 75001 Paris, France.
-          </p>
-          <p>
-            📧 Privacy contact:{" "}
+            📧 {content.privacyContact}{" "}
             <span className="text-primary1">contact@mon5majeur.fr</span>
           </p>
           <p>
-            📧 Support:{" "}
+            📧 {content.supportContact}{" "}
             <span className="text-primary1">support@mon5majeur.com</span>
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 3) Data We Collect */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          3) Data We Collect
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.collectTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
-          <p className="text-primary1 font-bold">We may collect:</p>
+          <p className="text-primary1 font-bold">{content.collectIntro}</p>
           <p>
             <span className="text-white font-medium italic">
-              Identity / account:
+              {content.collectIdentityLabel}
             </span>{" "}
-            email, user ID, username, account-related information (Google/Apple
-            if used).
-          </p>
-          <p>
-            <span className="text-white font-medium italic">Game data:</span>{" "}
-            lineups, scores, rankings, leagues, progression, Credits,
-            preferences.
+            {content.collectIdentityText}
           </p>
           <p>
             <span className="text-white font-medium italic">
-              Technical data:
+              {content.collectGameLabel}
             </span>{" "}
-            device, OS, version, logs, crash reports, IP address / connection
-            information.
+            {content.collectGameText}
           </p>
           <p>
             <span className="text-white font-medium italic">
-              In-app purchases:
+              {content.collectTechLabel}
             </span>{" "}
-            identifiers/receipts required for verification/restoration (no
-            banking data).
-          </p>
-          <p>
-            <span className="text-white font-medium italic">Advertising:</span>{" "}
-            advertising identifiers (IDFA/GAID) and ad interactions, depending
-            on your choices.
-          </p>
-          <p>
-            <span className="text-white font-medium italic">Support:</span>{" "}
-            messages and information sent to customer support.
+            {content.collectTechText}
           </p>
           <p>
             <span className="text-white font-medium italic">
-              Website (launch alert):
+              {content.collectPurchaseLabel}
             </span>{" "}
-            email + technical metadata (e.g., IP/logs) required for security and
-            proper operation.
+            {content.collectPurchaseText}
           </p>
-          <p>We do not knowingly collect sensitive data.</p>
+          <p>
+            <span className="text-white font-medium italic">
+              {content.collectAdLabel}
+            </span>{" "}
+            {content.collectAdText}
+          </p>
+          <p>
+            <span className="text-white font-medium italic">
+              {content.collectSupportLabel}
+            </span>{" "}
+            {content.collectSupportText}
+          </p>
+          <p>
+            <span className="text-white font-medium italic">
+              {content.collectWebLabel}
+            </span>{" "}
+            {content.collectWebText}
+          </p>
+          <p>{content.collectSensitive}</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 4) Purposes */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          4) Purposes
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.purposesTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
-          <p className="text-primary1 font-bold">We use your data to:</p>
-          <p>
-            provide and manage the service (account, gameplay, leagues,
-            rankings); ensure security and prevent fraud; improve performance
-            (bugs/crashes); manage in-app purchases; display and measure
-            advertising; send communications (support, security, and launch
-            alerts if you subscribe).
-          </p>
+          <p className="text-primary1 font-bold">{content.purposesIntro}</p>
+          <p>{content.purposesText}</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 5) Legal Bases */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          5) Legal Bases
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.legalTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
           <p className="text-primary1 font-bold text-[16px]">
-            Depending on the processing activity:
+            {content.legalIntro}
           </p>
-          <p>
-            Performance of a contract (Terms): account, service, gameplay;
-            Legitimate interests: security, fraud prevention, technical
-            improvements; Consent: personalized ads and certain
-            identifiers/trackers where required; Legal obligation:
-            accounting/tax obligations where applicable.
-          </p>
+          <p>{content.legalText}</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 6) Advertising & Mediation */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold  tracking-wider text-primary1 text-wrap">
-          6) Advertising & Mediation
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold tracking-wider text-primary1 text-wrap">
+          {content.adTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
-          <p>
-            The app displays ads and uses: Google AdMob, and AppLovin MAX
-            (mediation), which may integrate multiple ad networks. Depending on
-            your choices (and the rules applicable in your region), certain
-            partners may process advertising identifiers and technical signals
-            to serve/measure ads, including personalized ads when you consent.
-          </p>
+          <p>{content.adText}</p>
           <p className="text-primary1 font-bold pt-2">
-            Managing consent / withdrawing consent
+            {content.adConsentTitle}
           </p>
-          <p>
-            You can change your choices via: a consent screen (on first launch
-            or via Settings {">"} Privacy / Privacy options in the app, if
-            available), and/or your device settings (iOS/Android).
-          </p>
+          <p>{content.adConsentText}</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 13) Your Rights */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          13) Your Rights
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.rightsTitle}
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
+          <p>{content.rightsText}</p>
           <p>
-            You have the rights of access, rectification, erasure, objection,
-            restriction, portability, and the right to withdraw consent.
-          </p>
-          <p>
-            📧 To exercise your rights:{" "}
+            📧 {content.rightsExercise}{" "}
             <span className="text-primary1 underline">
               contact@mon5majeur.fr
             </span>{" "}
-            (identity verification may be requested if necessary). You may also
-            lodge a complaint with the CNIL (French data protection authority).
+            {content.rightsVerification}
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* 16) Contact */}
-      <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 pt-8">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
-          16) Contact
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-6 md:gap-12 pt-8"
+      >
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
+          {content.contactTitle}
         </h2>
-        <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-2 text-primary1  font-bold tracking-wider">
+        <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-2 text-primary1 font-bold tracking-wider">
           <p>📧 contact@mon5majeur.fr (privacy)</p>
           <p>📧 support@mon5majeur.com (support)</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
