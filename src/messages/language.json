@@ -187,6 +187,15 @@
       "title": "CONTACT",
       "titleHighlight": "US",
       "subtitle": "We're here to help! Reach out to us with any questions or feedback."
+    },
+    "ContactForm": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your full name",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "Enter your mail",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submitBtn": "Leave us a Message"
     }
   },
   "fr": {
@@ -377,6 +386,15 @@
       "title": "CONTACTEZ-",
       "titleHighlight": "NOUS",
       "subtitle": "Nous sommes là pour vous aider ! Contactez-nous pour toute question ou suggestion."
+    },
+    "ContactForm": {
+      "nameLabel": "Votre Nom",
+      "namePlaceholder": "Entrez votre nom complet",
+      "emailLabel": "Votre Email",
+      "emailPlaceholder": "Entrez votre adresse mail",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Écrivez votre message ici...",
+      "submitBtn": "Laissez-nous un message"
     }
   }
 }
