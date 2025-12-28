@@ -268,6 +268,11 @@
       "rightsExercise": "To exercise your rights:",
       "rightsVerification": "(identity verification may be requested if necessary). You may also lodge a complaint with the CNIL (French data protection authority).",
       "contactTitle": "Contact"
+    },
+    "TermsBanner": {
+      "title": "Terms &",
+      "animatedWord": "Conditions",
+      "effectiveDate": "Effective Date: 26/11/2025"
     }
   },
   "fr": {
@@ -539,6 +544,11 @@
       "rightsExercise": "Pour exercer vos droits :",
       "rightsVerification": "(une vérification d'identité peut être demandée si nécessaire). Vous pouvez également introduire une réclamation auprès de la CNIL.",
       "contactTitle": "Contact"
+    },
+    "TermsBanner": {
+      "title": "Conditions",
+      "animatedWord": "Générales",
+      "effectiveDate": "Date d'entrée en vigueur : 26/11/2025"
     }
   }
 }
