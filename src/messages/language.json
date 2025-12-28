@@ -152,6 +152,36 @@
       ],
       "cta": "Download the PDF",
       "disclaimer": "No spam. Instant download."
+    },
+    "UniverseOfMon5Majeur": {
+      "title": "Universe of",
+      "colorTitle": "MON5MAJEUR",
+      "features": [
+        {
+          "title": "Pre-launch <span class='text-[#E35D14]'>Bonus</span>",
+          "subtitle": "2 exclusive jerseys offered to all pre-registered players"
+        },
+        {
+          "title": "In-game <span class='text-[#E35D14]'>Jerseys</span>",
+          "subtitle": "Customize your team with exclusive jerseys."
+        },
+        {
+          "title": "Team <span class='text-[#E35D14]'>Logo</span>",
+          "subtitle": "Create your GM identity. Your team, your style."
+        },
+        {
+          "title": "Hall of <span class='text-[#E35D14]'>Fame</span>",
+          "subtitle": "Weekly and monthly rankings. Become one of the best"
+        },
+        {
+          "title": "Victory <span class='text-[#E35D14]'>Trophy</span>",
+          "subtitle": "Win your league and unlock your unique trophy"
+        },
+        {
+          "title": "Strategic <span class='text-[#E35D14]'>Bonuses</span>",
+          "subtitle": "+3 points, automatic substitute, budget boost... The right choices make the difference."
+        }
+      ]
     }
   },
   "fr": {
@@ -307,6 +337,36 @@
       ],
       "cta": "Télécharger le PDF",
       "disclaimer": "Pas de spam. Téléchargement instantané."
+    },
+    "UniverseOfMon5Majeur": {
+      "title": "L'Univers de",
+      "colorTitle": "MON5MAJEUR",
+      "features": [
+        {
+          "title": "<span class='text-[#E35D14]'>Bonus</span> de Pré-lancement",
+          "subtitle": "2 maillots exclusifs offerts à tous les joueurs pré-inscrits"
+        },
+        {
+          "title": "<span class='text-[#E35D14]'>Maillots</span> en jeu",
+          "subtitle": "Personnalisez votre équipe avec des maillots exclusifs."
+        },
+        {
+          "title": "<span class='text-[#E35D14]'>Logo</span> d'Équipe",
+          "subtitle": "Créez votre identité de GM. Votre équipe, votre style."
+        },
+        {
+          "title": "Hall of <span class='text-[#E35D14]'>Fame</span>",
+          "subtitle": "Classements hebdomadaires et mensuels. Devenez l'un des meilleurs"
+        },
+        {
+          "title": "<span class='text-[#E35D14]'>Trophée</span> de Victoire",
+          "subtitle": "Gagnez votre ligue et débloquez votre trophée unique"
+        },
+        {
+          "title": "<span class='text-[#E35D14]'>Bonus</span> Stratégiques",
+          "subtitle": "+3 points, remplaçant automatique, boost de budget... Les bons choix font la différence."
+        }
+      ]
     }
   }
 }
