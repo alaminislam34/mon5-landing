@@ -25,7 +25,7 @@ function PlayersGuide() {
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             Ultimate <span className="text-primary1">Player's Guide</span>
           </h2>
-          <p className="font-galdeano text-base text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl">
+          <p className="font-galdeano text-Base text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl">
             A complete PDF packed with strategies, insights, and step-by-step
             guidance to help you make smarter decisions and level up your game.
           </p>
@@ -56,7 +56,7 @@ function PlayersGuide() {
           <a
             href="/files/Mon5Majeur Presentation-2.pdf"
             download
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-linear-to-r from-primary1 to-primary2 text-white font-bold uppercase tracking-wider text-sm md:text-base transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(227,93,20,0.3)] active:scale-95"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-linear-to-r from-primary1 to-primary2 text-white font-bold uppercase tracking-wider text-sm md:text-Base transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(227,93,20,0.3)] active:scale-95"
           >
             Download the PDF
             <Download className="w-5 h-5" strokeWidth={3} />

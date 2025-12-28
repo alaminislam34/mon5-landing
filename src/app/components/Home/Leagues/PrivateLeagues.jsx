@@ -19,7 +19,7 @@ function PrivateLeagues() {
             <h4 className="text-lg md:text-xl text-primary1">
               Challenge your friends
             </h4>
-            <p className="text-base font-galdeano md:text-lg lg:text-xl mt-6">
+            <p className="text-Base font-galdeano md:text-lg lg:text-xl mt-6">
               Create your own mini-league with friends. New lineups every night,
               Playoffs, strategic boosts… The most fun way to play with friends
             </p>

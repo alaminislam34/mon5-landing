@@ -33,10 +33,10 @@ function Experience() {
             data-aos-duration="1200"
             className="max-w-10/12"
           >
-            <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-base">
+            <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-Base">
               New NBA night = New team.
             </p>
-            <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-base pt-2 leading-normal">
+            <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-Base pt-2 leading-normal">
               You build your starting five based on the day's games, within your
               budget{" "}
               <span className="font-bold font-russoOne text-primary1">
@@ -66,7 +66,7 @@ function Experience() {
             >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
-                100% <span className="text-base">Fun</span>
+                100% <span className="text-Base">Fun</span>
               </p>
             </li>
             <li
@@ -77,7 +77,7 @@ function Experience() {
             >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
-                100% <span className="text-base">Freedom</span>
+                100% <span className="text-Base">Freedom</span>
               </p>
             </li>
             <li
@@ -88,7 +88,7 @@ function Experience() {
             >
               <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
               <p className="text-xl text-primary1 font-medium font-aldrich">
-                100% <span className="text-base">Strategy</span>
+                100% <span className="text-Base">Strategy</span>
               </p>
             </li>
           </ul>
@@ -170,7 +170,7 @@ function Experience() {
             <h4 className="text-lg md:text-xl text-primary1">
               Your lineup changes every night
             </h4>
-            <p className="text-base font-galdeano md:text-lg lg:text-xl mt-6">
+            <p className="text-Base font-galdeano md:text-lg lg:text-xl mt-6">
               Create a new starting five based on the NBA games of the night.
               Budget, stars, strategy… it’s your call
             </p>
@@ -185,7 +185,7 @@ function Experience() {
               Scores & Rankings
             </h1>
             <h4 className="text-lg md:text-xl text-primary1">Real NBA stats</h4>
-            <p className="text-base font-galdeano md:text-lg lg:text-xl mt-6">
+            <p className="text-Base font-galdeano md:text-lg lg:text-xl mt-6">
               Your players score in real-time, based on their actual NBA
               performances every night. As the games unfold, your team's fantasy
               score updates instantly, reflecting the points, rebounds, assists,

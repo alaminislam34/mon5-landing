@@ -38,12 +38,17 @@
   --color-primary2: #D85510;
   --color-border: #301A0E;
   --color-input-bg: #0D0D0D;
-  --color-base: #E4E0E0;
+  --color-Base: #E4E0E0;
 
 
   --font-aldrich: 'Aldrich', sans-serif;
   --font-galdeano: 'Galdeano', sans-serif;
   --font-russoOne: 'RussoOne', sans-serif;
+}
+
+body {
+  background-color: #050803;
+  color: white
 }
 
 /* Utility Classes */

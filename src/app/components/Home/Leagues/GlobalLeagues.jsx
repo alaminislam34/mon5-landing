@@ -25,7 +25,7 @@ function GlobalLeaguess() {
               <h1 className="font-bold tracking-tigh md:text-lg text-primary1">
                 NBR Global League
               </h1>
-              <p className="text-base font-galdeano mt-1">
+              <p className="text-Base font-galdeano mt-1">
                 Compete against everyone. Weekly + Monthly prizes
               </p>
             </div>
@@ -60,7 +60,7 @@ function GlobalLeaguess() {
             <h4 className="text-lg md:text-xl text-primary1">
               Compete against the world
             </h4>
-            <p className="text-base font-galdeano md:text-lg lg:text-xl mt-6">
+            <p className="text-Base font-galdeano md:text-lg lg:text-xl mt-6">
               Climb the global leaderboard with weekly and monthly rankings.
               Compete against players worldwide and watch your position rise as
               you score more points each night!

@@ -1,37 +1,39 @@
 "use client";
 
-import { useLanguage } from "@/Providers/ContextProvider";
-import { Menu, X } from "lucide-react";
+import React, { useEffect, useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 import { AiFillMail } from "react-icons/ai";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/Providers/ContextProvider";
 import LanguageSwitcher from "../Language/LanguageSwitcher";
-// ১. Context এবং Switcher ইম্পোর্ট করুন
 
 function Navbar() {
   const [isScroll, setIsScroll] = useState(false);
-  const pathName = usePathname();
   const [showMenu, setShowMenu] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
-
+  const pathName = usePathname();
   const { t } = useLanguage();
 
   const { links: navLinks, inputPlaceholder, buttonText } = t.Navbar;
 
-  const menuItems = [
-    { href: "/", label: navLinks[0] },
-    { href: "/contact", label: navLinks[1] },
-  ];
+  const menuItems = useMemo(
+    () => [
+      { href: "/", label: navLinks[0] },
+      { href: "/contact", label: navLinks[1] },
+    ],
+    [navLinks]
+  );
 
   useEffect(() => {
     setHasMounted(true);
     const handleScroll = () => {
       setIsScroll(window.scrollY > 10);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -47,122 +49,151 @@ function Navbar() {
 
   return (
     <nav
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-duration="1000"
-      className={`fixed duration-300 top-0 left-0 w-full z-50 transition-colors ${navBackground}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${navBackground}`}
     >
       <section className="max-w-380 mx-auto px-4 py-3 flex flex-row items-center justify-between">
-        <div>
-          <Link href={"/"}>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link href="/" aria-label="Home">
             <Image
-              src={"/logos/logo.png"}
-              height={200}
+              src="/logos/logo.png"
+              height={56}
               width={200}
-              alt="Logo"
+              alt="Game Application Logo"
               priority
-              className="h-12 md:h-14 w-auto bg-cover bg-center object-cover"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>
-        </div>
+        </motion.div>
 
-        {/* Desktop Menu */}
         <div className="hidden lg:block">
           <ul className="flex flex-row items-center gap-6">
-            {menuItems.map(({ href, label }) => (
-              <li key={href}>
+            {menuItems.map(({ href, label }, index) => (
+              <motion.li
+                key={href}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
                 <Link
                   href={href}
-                  className={`py-2 px-6 rounded-lg truncate ${
-                    pathName === href ? "bg-primary1 font-medium" : ""
+                  className={`py-2 px-6 rounded-lg truncate transition-colors duration-200 ${
+                    pathName === href
+                      ? "bg-primary1 font-medium"
+                      : "hover:text-primary1"
                   }`}
                 >
                   {label}
                 </Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <motion.div
+          className="hidden lg:flex items-center gap-4"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <LanguageSwitcher />
 
           <div className="relative">
-            <AiFillMail className="absolute top-1/2 -translate-y-1/2 left-3 text-primary1" />
+            <label htmlFor="desktop-email" className="sr-only">
+              Email Subscription
+            </label>
+            <AiFillMail
+              className="absolute top-1/2 -translate-y-1/2 left-3 text-primary1"
+              aria-hidden="true"
+            />
             <input
-              type="text"
+              id="desktop-email"
+              type="email"
               placeholder={inputPlaceholder}
-              className="py-2 pl-8 pr-4 rounded-lg ring-border bg-input-bg text-sm focus:outline-none focus:ring-primary1 ring-1"
+              className="py-2 pl-8 pr-4 rounded-lg ring-border bg-input-bg text-sm focus:outline-none focus:ring-primary1 ring-1 transition-shadow"
             />
           </div>
-          <div>
-            <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 truncate">
-              {buttonText}
-              <BsArrowUpRightSquareFill />
-            </button>
-          </div>
-        </div>
 
-        {/* Mobile Menu Button */}
+          <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 truncate hover:opacity-90 transition-opacity active:scale-95">
+            {buttonText}
+            <BsArrowUpRightSquareFill aria-hidden="true" />
+          </button>
+        </motion.div>
+
         <div className="lg:hidden flex items-center gap-3">
           <LanguageSwitcher />
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className="py-2 px-3 rounded-lg bg-primary2 text-white"
+            aria-expanded={showMenu}
+            aria-label="Toggle navigation menu"
+            className="py-2 px-3 rounded-lg bg-primary2 text-white transition-transform active:scale-90"
           >
-            {showMenu ? <X /> : <Menu />}
+            {showMenu ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Dropdown Mobile Menu */}
-        <div
-          className={`absolute duration-300 z-50 ${
-            showMenu ? " top-16" : "top-24 opacity-0 pointer-events-none"
-          } right-4 md:right-6 border border-primary2/20 bg-primary1/5 backdrop-blur-3xl min-h-100 max-w-80 rounded-xl shadow-xl w-full`}
-        >
-          <div className="p-2 pt-4">
-            <Image
-              src={"/logos/logo.png"}
-              height={200}
-              width={200}
-              alt="Logo"
-              className="h-10 md:h-12 w-auto bg-cover bg-center object-cover"
-            />
-          </div>
-          <div className="border-b border-primary2/20 my-4"></div>
-          <ul className="flex flex-col gap-4 p-4">
-            {menuItems.map(({ href, label }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className={`py-2 px-4 rounded-lg inline-block w-full duration-300 ${
-                    pathName === href
-                      ? "bg-primary2"
-                      : "hover:bg-primary1/50 border-b border-primary1/20"
-                  }`}
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="flex flex-col gap-4 p-4 pb-6">
-            <div className="relative">
-              <AiFillMail className="absolute top-1/2 -translate-y-1/2 left-3 text-primary1" />
-              <input
-                type="text"
-                placeholder={inputPlaceholder}
-                className="py-2 pl-8 pr-4 rounded-lg ring-primary1/50 text-sm focus:outline-none focus:ring-primary2 ring-1 w-full"
-              />
-            </div>
-            <div>
-              <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 w-full">
-                {buttonText}
-                <BsArrowUpRightSquareFill />
-              </button>
-            </div>
-          </div>
-        </div>
+        <AnimatePresence>
+          {showMenu && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="absolute top-16 right-4 md:right-6 border border-primary2/20 bg-primary1/5 backdrop-blur-3xl min-h-100 max-w-80 rounded-xl shadow-xl w-full z-50 overflow-hidden"
+            >
+              <div className="p-2 pt-4">
+                <Image
+                  src="/logos/logo.png"
+                  height={48}
+                  width={150}
+                  alt="Logo"
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+              </div>
+              <div className="border-b border-primary2/20 my-4"></div>
+              <ul className="flex flex-col gap-4 p-4">
+                {menuItems.map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className={`py-2 px-4 rounded-lg inline-block w-full duration-300 transition-colors ${
+                        pathName === href
+                          ? "bg-primary2 text-white"
+                          : "hover:bg-primary1/20 border-b border-primary1/10"
+                      }`}
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col gap-4 p-4 pb-6">
+                <div className="relative">
+                  <label htmlFor="mobile-email" className="sr-only">
+                    Email Subscription Mobile
+                  </label>
+                  <AiFillMail
+                    className="absolute top-1/2 -translate-y-1/2 left-3 text-primary1"
+                    aria-hidden="true"
+                  />
+                  <input
+                    id="mobile-email"
+                    type="email"
+                    placeholder={inputPlaceholder}
+                    className="py-2 pl-8 pr-4 rounded-lg ring-primary1/50 text-sm focus:outline-none focus:ring-primary2 ring-1 w-full bg-white/5"
+                  />
+                </div>
+                <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 w-full justify-center active:scale-95 transition-transform">
+                  {buttonText}
+                  <BsArrowUpRightSquareFill aria-hidden="true" />
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </section>
     </nav>
   );

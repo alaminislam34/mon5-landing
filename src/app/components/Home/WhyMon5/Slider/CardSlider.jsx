@@ -119,7 +119,7 @@ export default function CardSlider() {
                       Flexible. Dynamic. Fun
                     </h3>
                   </div>
-                  <p className="text-base md:text-lg font-galdeano">
+                  <p className="text-Base md:text-lg font-galdeano">
                     {slide.content}
                   </p>
                 </div>

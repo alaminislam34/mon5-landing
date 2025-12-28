@@ -11,7 +11,7 @@ function LegalNotice() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
           Legal <span className="text-[#ea7032]">Notice</span>
         </h1>
-        <p className="text-gray-500 text-sm md:text-base tracking-widest uppercase">
+        <p className="text-gray-500 text-sm md:text-Base tracking-widest uppercase">
           Last updated: {lastUpdated}
         </p>
       </div>

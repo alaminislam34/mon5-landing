@@ -40,7 +40,7 @@ function Banner() {
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-anchor-placement="top-bottom"
-                className="sm:text-lg md:text-xl text-base max-w-4xl md:max-w-2xl"
+                className="sm:text-lg md:text-xl text-Base max-w-4xl md:max-w-2xl"
               >
                 Create your dream team, compete with friends, and track
                 real-time NBA stats. Ready to play?

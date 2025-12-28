@@ -31,7 +31,7 @@ const GetApp = () => {
               colorTitle={"Apple & Google play store after launching"}
               left={"left"}
             />
-            <p className="text-lg md:text-xl lg:text-2xl font-galdeano text-base">
+            <p className="text-lg md:text-xl lg:text-2xl font-galdeano text-Base">
               Everything you need to know about Mon5Majeur and how it works
             </p>
             <div
