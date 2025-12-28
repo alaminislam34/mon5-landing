@@ -30,18 +30,7 @@ function Banner() {
               data-aos-anchor-placement="top-bottom"
               className="text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.2] text-white"
             >
-              PRIVACY{" "}
-              <span className="text-primary1 min-h-[1.2em]">
-                <TypeAnimation
-                  sequence={["POLICY", 1000, "", 1000]}
-                  speed={50}
-                  cursor={true}
-                  repeat={Infinity}
-                  style={{
-                    whiteSpace: "wrap",
-                  }}
-                />
-              </span>
+              CONTACT US
             </h1>
             <p
               data-aos="fade-up"
@@ -54,22 +43,6 @@ function Banner() {
           </div>
         </div>
         <div className="w-80 lg:w-100 lg:h-100 h-80 bg-linear-to-br from-primary1/10 via-primary1/20 to-primary2/50 blur-[100px] absolute lg:blur-[250px] lg:top-30 lg:left-30 left-0 top-0"></div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-duration="1200"
-          data-aos-anchor-placement="top-bottom"
-          className="absolute top-20 md:top-10 -right-15 md:-right-10 z-0"
-        >
-          <Image
-            src={"/images/throughBall.png"}
-            width={1500}
-            height={800}
-            alt="Hand image"
-            className="opacity-60 md:opacity-100 w-full max-w-140 sm:max-w-120 md:max-w-130 lg:max-w-200"
-            priority
-          />
-        </div>
       </div>
     </section>
   );
