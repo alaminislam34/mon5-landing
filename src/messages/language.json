@@ -196,6 +196,12 @@
       "messageLabel": "Message",
       "messagePlaceholder": "Write your message here...",
       "submitBtn": "Leave us a Message"
+    },
+    "ContactPage": {
+      "title": "Other ways to",
+      "titleHighlight": "reach out",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone No"
     }
   },
   "fr": {
@@ -395,6 +401,12 @@
       "messageLabel": "Message",
       "messagePlaceholder": "Écrivez votre message ici...",
       "submitBtn": "Laissez-nous un message"
+    },
+    "ContactPage": {
+      "title": "Autres moyens de nous",
+      "titleHighlight": "contacter",
+      "emailLabel": "E-mail",
+      "phoneLabel": "N° de Téléphone"
     }
   }
 }
