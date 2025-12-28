@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="text-white md:pt-20 pb-10 px-6 md:px-12 max-w-380 mx-auto w-11/12 overflow-hidden">
+    <footer className="text-white md:pt-20 pb-10 max-w-380 mx-auto w-11/12 overflow-hidden">
       {/* Newsletter / Notification Section */}
       <div
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
@@ -14,7 +14,7 @@ function Footer() {
       >
         <div className="max-w-4xl w-full">
           <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
-            Be notified when it
+            Be notified when it {" "}
             <span className="text-primary1 uppercase tracking-wider">
               launches
             </span>

@@ -2,10 +2,10 @@ import React from "react";
 
 function Privacy() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 space-y-20 text-white bg-transparent">
+    <div className="max-w-380 mx-auto w-11/12 py-16 space-y-20 text-white bg-transparent">
       {/* 1) Scope */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           1) Scope
         </h2>
         <p className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano leading-relaxed text-gray-300">
@@ -17,7 +17,7 @@ function Privacy() {
 
       {/* 2) Data Controller */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           2) Data Controller
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -40,7 +40,7 @@ function Privacy() {
 
       {/* 3) Data We Collect */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           3) Data We Collect
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -93,7 +93,7 @@ function Privacy() {
 
       {/* 4) Purposes */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           4) Purposes
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -110,7 +110,7 @@ function Privacy() {
 
       {/* 5) Legal Bases */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           5) Legal Bases
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -129,7 +129,7 @@ function Privacy() {
 
       {/* 6) Advertising & Mediation */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1 text-wrap">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold  tracking-wider text-primary1 text-wrap">
           6) Advertising & Mediation
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -153,7 +153,7 @@ function Privacy() {
 
       {/* 13) Your Rights */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           13) Your Rights
         </h2>
         <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-4 text-gray-300">
@@ -174,10 +174,10 @@ function Privacy() {
 
       {/* 16) Contact */}
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12 pt-8">
-        <h2 className="w-full md:w-1/3 text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest text-primary1">
+        <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold  tracking-wider text-primary1">
           16) Contact
         </h2>
-        <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-2 text-primary1 uppercase font-bold tracking-wider">
+        <div className="w-full md:w-2/3 text-[16px] md:text-lg lg:text-xl font-galdeano space-y-2 text-primary1  font-bold tracking-wider">
           <p>📧 contact@mon5majeur.fr (privacy)</p>
           <p>📧 support@mon5majeur.com (support)</p>
         </div>
