@@ -65,6 +65,29 @@
           "content": "Compete against players worldwide! Climb the weekly and monthly leaderboards for a chance to win amazing prizes and earn bragging rights."
         }
       ]
+    },
+    "Experience": {
+      "title": "Experience the Ultimate",
+      "colorTitle": "NBA Fantasy Game",
+      "subtitle1": "New NBA night = New team.",
+      "subtitle2": "You build your starting five based on the day's games, within your budget",
+      "budget": "(80M or 100M)",
+      "badge1": "No fixed roster",
+      "badge2": "No Drafts",
+      "fun": "Fun",
+      "freedom": "Freedom",
+      "strategy": "Strategy",
+      "cta": "Get Launching Notifications",
+      "card1": {
+        "title": "Build Your 5",
+        "subtitle": "Your lineup changes every night",
+        "content": "Create a new starting five based on the NBA games of the night. Budget, stars, strategy… it’s your call"
+      },
+      "card2": {
+        "title": "Scores & Rankings",
+        "subtitle": "Real NBA stats",
+        "content": "Your players score in real-time, based on their actual NBA performances every night. As the games unfold, your team's fantasy score updates instantly, reflecting the points, rebounds, assists, and other stats of your selected players."
+      }
     }
   },
   "fr": {
@@ -133,6 +156,29 @@
           "content": "Affrontez des joueurs du monde entier ! Grimpez dans les classements hebdomadaires et mensuels pour tenter de gagner des prix incroyables."
         }
       ]
+    },
+    "Experience": {
+      "title": "Découvrez l'Ultime",
+      "colorTitle": "Jeu NBA Fantasy",
+      "subtitle1": "Nouvelle nuit NBA = Nouvelle équipe.",
+      "subtitle2": "Créez votre cinq de départ selon les matchs du jour, en respectant votre budget",
+      "budget": "(80M ou 100M)",
+      "badge1": "Pas d'effectif fixe",
+      "badge2": "Pas de Drafts",
+      "fun": "Plaisir",
+      "freedom": "Liberté",
+      "strategy": "Stratégie",
+      "cta": "Recevoir les Notifications de Lancement",
+      "card1": {
+        "title": "Créez Votre 5",
+        "subtitle": "Votre composition change chaque nuit",
+        "content": "Créez un nouveau cinq de départ basé sur les matchs NBA de la nuit. Budget, stars, stratégie… c'est vous qui décidez."
+      },
+      "card2": {
+        "title": "Scores & Classements",
+        "subtitle": "Stats NBA réelles",
+        "content": "Vos joueurs marquent en temps réel, selon leurs performances NBA réelles chaque nuit. À mesure que les matchs avancent, le score fantasy de votre équipe se met à jour instantanément."
+      }
     }
   }
 }
