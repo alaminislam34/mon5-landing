@@ -128,8 +128,14 @@ function Experience() {
           <div className="absolute top-0 left-60 w-40 h-60 bg-primary1/60 -z-10 blur-[200px]" />
 
           <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            animate={{
+              y: [-5, 5, -5],
+            }}
+            transition={{
+              duration: 3, // Eta smooth floating er jonno 3 second rakha hoyeche
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
             className="absolute top-10 md:top-35 lg:top-65 md:-left-10 md:-rotate-25 left-0 z-0 pointer-events-none"
           >
             <Image
@@ -141,7 +147,6 @@ function Experience() {
               className="max-w-200 h-auto"
             />
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
