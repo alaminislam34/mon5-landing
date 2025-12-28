@@ -1,43 +1,53 @@
-import React, { useEffect } from "react";
-import { Download, CheckCircle2 } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+"use client";
 
-const GUIDE_FEATURES = [
-  "Proven strategies explained simply",
-  "Real examples & best practices",
-  "Beginner to advanced friendly",
-];
+import React, { useEffect, useState } from "react";
+import { Download, CheckCircle2 } from "lucide-react";
+import { motion } from "motion/react";
+import { useLanguage } from "@/Providers/ContextProvider";
 
 function PlayersGuide() {
+  const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
+  const content = t.PlayersGuide;
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    setMounted(true);
   }, []);
+
+  if (!mounted) {
+    return (
+      <section className="text-white font-sans max-w-380 mx-auto w-11/12 py-16">
+        <div className="max-w-3xl space-y-8 opacity-0" />
+      </section>
+    );
+  }
 
   return (
     <section className="text-white font-sans max-w-380 mx-auto w-11/12 py-16">
       <div className="max-w-3xl space-y-8">
-        {/* Header Section */}
-        <div data-aos="fade-up">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Ultimate <span className="text-primary1">Player's Guide</span>
+            {content.title}{" "}
+            <span className="text-primary1">{content.colorTitle}</span>
           </h2>
           <p className="font-galdeano text-Base text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl">
-            A complete PDF packed with strategies, insights, and step-by-step
-            guidance to help you make smarter decisions and level up your game.
+            {content.description}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Features List */}
         <ul className="space-y-4 py-4">
-          {GUIDE_FEATURES.map((feature, index) => (
-            <li
+          {content.features.map((feature, index) => (
+            <motion.li
               key={index}
-              data-aos="fade-left"
-              data-aos-delay={index * 150}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
               className="flex items-center gap-3 text-lg md:text-xl font-medium"
             >
               <div className="text-primary1 shrink-0">
@@ -47,24 +57,29 @@ function PlayersGuide() {
                 />
               </div>
               <span className="tracking-wide">{feature}</span>
-            </li>
+            </motion.li>
           ))}
         </ul>
 
-        {/* CTA Section */}
-        <div data-aos="zoom-in" data-aos-delay="500" className="space-y-4">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="space-y-4"
+        >
           <a
             href="/files/Mon5Majeur Presentation-2.pdf"
             download
             className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-linear-to-r from-primary1 to-primary2 text-white font-bold uppercase tracking-wider text-sm md:text-Base transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(227,93,20,0.3)] active:scale-95"
           >
-            Download the PDF
+            {content.cta}
             <Download className="w-5 h-5" strokeWidth={3} />
           </a>
           <p className="text-gray-500 text-sm md:text-lg font-galdeano ml-1">
-            No spam. Instant download.
+            {content.disclaimer}
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

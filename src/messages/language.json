@@ -140,6 +140,18 @@
           "answer": "Sign up for the launch alert and create your account during the first week after release: the 2 in-game jerseys will be unlocked and available to claim for free in the shop."
         }
       ]
+    },
+    "PlayersGuide": {
+      "title": "Ultimate",
+      "colorTitle": "Player's Guide",
+      "description": "A complete PDF packed with strategies, insights, and step-by-step guidance to help you make smarter decisions and level up your game.",
+      "features": [
+        "Proven strategies explained simply",
+        "Real examples & best practices",
+        "Beginner to advanced friendly"
+      ],
+      "cta": "Download the PDF",
+      "disclaimer": "No spam. Instant download."
     }
   },
   "fr": {
@@ -283,6 +295,18 @@
           "answer": "Inscrivez-vous à l'alerte de lancement et créez votre compte durant la première semaine après la sortie : les 2 maillots en jeu seront débloqués et disponibles gratuitement dans la boutique."
         }
       ]
+    },
+    "PlayersGuide": {
+      "title": "Le Guide Ultime",
+      "colorTitle": "du Joueur",
+      "description": "Un PDF complet rempli de stratégies, d'astuces et de conseils étape par étape pour vous aider à prendre de meilleures décisions et progresser.",
+      "features": [
+        "Stratégies prouvées expliquées simplement",
+        "Exemples réels et bonnes pratiques",
+        "Adapté aux débutants comme aux experts"
+      ],
+      "cta": "Télécharger le PDF",
+      "disclaimer": "Pas de spam. Téléchargement instantané."
     }
   }
 }
