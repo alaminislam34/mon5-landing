@@ -32,6 +32,14 @@
         "score": "SCORE",
         "fantasy": "FANTASY"
       }
+    },
+    "GetNotified": {
+      "sectionTitle": "Be notified when it",
+      "sectionTitleAccent": "launches",
+      "inputPlaceholder": "Enter your mail...",
+      "buttonText": "Get Notified",
+      "description": "We'll send you the link as soon as the app is available.",
+      "promoText": "Early Access players in the first week unlock 2 exclusive jerseys"
     }
   },
   "fr": {
@@ -67,6 +75,14 @@
         "score": "SCORE",
         "fantasy": "FANTASY"
       }
+    },
+    "GetNotified": {
+      "sectionTitle": "Soyez notifié lors du",
+      "sectionTitleAccent": "lancement",
+      "inputPlaceholder": "Entrez votre email...",
+      "buttonText": "M'avertir",
+      "description": "Nous vous enverrons le lien dès que l'application sera disponible.",
+      "promoText": "Les joueurs en accès anticipé de la première semaine débloquent 2 maillots exclusifs"
     }
   }
 }
