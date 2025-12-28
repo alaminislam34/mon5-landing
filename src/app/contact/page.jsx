@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import ContactForm from "./components/ContactFrom";
 import ContactPage from "./components/ContactPage";
 import LegalNotice from "./components/LegalNotice";
+import SocialSection from "./components/SocialSection";
 
 function ContactUs() {
   return (
@@ -14,6 +15,7 @@ function ContactUs() {
       <ContactForm />
       <ContactPage />
       <LegalNotice />
+      <SocialSection />
     </div>
   );
 }

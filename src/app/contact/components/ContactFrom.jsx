@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <section className="bg-transparent py-12 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-380 w-11/12 mx-auto">
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Top Row: Name and Email */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
