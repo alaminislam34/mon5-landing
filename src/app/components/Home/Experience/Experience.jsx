@@ -25,7 +25,7 @@ function Experience() {
   }
 
   return (
-    <section className="relative min-h-280 h-full xl:mt-12 overflow-hidden">
+    <section className="relative min-h-280 h-full xl:mt-12">
       <section className="max-w-380 mx-auto w-11/12 lg:mb-24 relative z-30">
         <div className="max-w-180 lg:max-w-195">
           <SectionTitle

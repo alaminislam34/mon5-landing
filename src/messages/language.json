@@ -88,6 +88,14 @@
         "subtitle": "Real NBA stats",
         "content": "Your players score in real-time, based on their actual NBA performances every night. As the games unfold, your team's fantasy score updates instantly, reflecting the points, rebounds, assists, and other stats of your selected players."
       }
+    },
+    "PrivateLeagues": {
+      "title": "Private Leagues",
+      "subtitle": "Challenge your friends",
+      "description": "Create your own mini-league with friends. New lineups every night, Playoffs, strategic boosts… The most fun way to play with friends",
+      "joinLeague": "Join the League",
+      "teamName": "Hoops FC",
+      "versus": "Vs"
     }
   },
   "fr": {
@@ -179,6 +187,14 @@
         "subtitle": "Stats NBA réelles",
         "content": "Vos joueurs marquent en temps réel, selon leurs performances NBA réelles chaque nuit. À mesure que les matchs avancent, le score fantasy de votre équipe se met à jour instantanément."
       }
+    },
+    "PrivateLeagues": {
+      "title": "Ligues Privées",
+      "subtitle": "Défiez vos amis",
+      "description": "Créez votre propre mini-ligue entre amis. Nouvelles compositions chaque soir, Playoffs, boosts stratégiques… La façon la plus fun de jouer entre amis",
+      "joinLeague": "Rejoindre la Ligue",
+      "teamName": "Hoops FC",
+      "versus": "Vs"
     }
   }
 }
