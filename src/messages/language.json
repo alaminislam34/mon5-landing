@@ -96,6 +96,13 @@
       "joinLeague": "Join the League",
       "teamName": "Hoops FC",
       "versus": "Vs"
+    },
+    "GlobalLeagues": {
+      "title": "Global League",
+      "subtitle": "Compete against the world",
+      "description": "Climb the global leaderboard with weekly and monthly rankings. Compete against players worldwide and watch your position rise as you score more points each night!",
+      "badgeTitle": "NBR Global League",
+      "badgeDescription": "Compete against everyone. Weekly + Monthly prizes"
     }
   },
   "fr": {
@@ -195,6 +202,13 @@
       "joinLeague": "Rejoindre la Ligue",
       "teamName": "Hoops FC",
       "versus": "Vs"
+    },
+    "GlobalLeagues": {
+      "title": "Ligue Mondiale",
+      "subtitle": "Affrontez le monde entier",
+      "description": "Grimpez dans le classement mondial avec des classements hebdomadaires et mensuels. Affrontez des joueurs du monde entier et voyez votre position progresser à mesure que vous marquez des points chaque nuit !",
+      "badgeTitle": "Ligue Mondiale NBR",
+      "badgeDescription": "Affrontez tout le monde. Prix hebdomadaires + mensuels"
     }
   }
 }
