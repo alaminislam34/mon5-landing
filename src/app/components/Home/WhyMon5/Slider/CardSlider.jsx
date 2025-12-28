@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import {
@@ -7,44 +7,27 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 import Image from "next/image";
+import { motion } from "motion/react";
+import { useLanguage } from "@/Providers/ContextProvider";
 
-const slides = [
-  {
-    name: "Strategic Boosts",
-    content:
-      "Unlock strategic boosts to enhance your team—Luxury Tax, 6th Man, Chef Curry, and more. Use them to gain an edge over your opponents!",
-    image: "/images/stratigic.png",
-  },
-  {
-    name: " Real-time NBA Stats",
-    content:
-      "Create a private league, compete in real-time, track your victories, and see who wins!",
-    image: "/images/static.png",
-  },
-  {
-    name: "Daily Lineups",
-    content:
-      "Craft your perfect roster every day. Choose from the best players and maximize your fantasy points with smart picks.",
-    image: "/images/ball.png",
-  },
-  {
-    name: "Challenge  Friends",
-    content:
-      "Create a private league, compete in real-time with your friends, track your victories, and see who wins!",
-    image: "/images/challenge.png",
-  },
-  {
-    name: " Global Competition",
-    content:
-      "Compete against players worldwide! Climb the weekly and monthly leaderboards for a chance to win amazing prizes and earn bragging rights.",
-    image: "/images/global.png",
-  },
+const slideImages = [
+  "/images/stratigic.png",
+  "/images/static.png",
+  "/images/ball.png",
+  "/images/challenge.png",
+  "/images/global.png",
 ];
 
 export default function CardSlider() {
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [options, setOptions] = useState({ perView: 1 });
-  const [loaded, setLoaded] = useState(false); // To ensure slider is ready before rendering dots
+  const [loaded, setLoaded] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
@@ -53,7 +36,7 @@ export default function CardSlider() {
       "(min-width: 768px)": {
         slides: { perView: 3, spacing: 2 },
       },
-      "(min-width: 1024px)": {
+      "(min-width: 1440px)": {
         slides: { perView: 5, spacing: 2 },
       },
     },
@@ -70,23 +53,27 @@ export default function CardSlider() {
   });
 
   const checkCenter = (idx) => {
+    if (!isMounted) return false;
     const perView = options?.perView || 1;
     const centerOffset = Math.floor(perView / 2);
-    const relativeIndex = (idx - currentSlide + slides.length) % slides.length;
+    const totalSlides = slideImages.length;
+    const relativeIndex = (idx - currentSlide + totalSlides) % totalSlides;
     return relativeIndex === centerOffset;
   };
 
+  if (!isMounted) return null;
+
   return (
     <section className="py-12 px-4">
-      <div
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-anchor-placement="top-bottom"
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
         className="relative lg:py-12"
       >
-        {/* Slider Container */}
         <div ref={sliderRef} className="keen-slider flex items-center mb-6">
-          {slides.map((slide, idx) => {
+          {t.CardSlider.slides.map((slide, idx) => {
             const isCenter = checkCenter(idx);
             return (
               <div
@@ -94,9 +81,9 @@ export default function CardSlider() {
                 className="keen-slider__slide flex justify-center py-10"
               >
                 <div
-                  className={`relative flex flex-col items-center gap-2 px-4 py-6 transition-all duration-500 ease-in-out w-full min-h-128 ring-2 ${
+                  className={`relative flex flex-col items-center gap-2 px-4 py-6 transition-all duration-500 ease-in-out max-w-90 sm:max-w-100 md:w-full min-h-128 lg:min-150 ring text-wrap ${
                     isCenter
-                      ? "scale-99 opacity-100 z-10 shadow-2xl"
+                      ? "scale-98 opacity-100 z-10 shadow-2xl"
                       : "md:scale-85 opacity-40 z-0"
                   } ring-base/10 rounded-2xl overflow-hidden text-center backdrop-blur-xl space-y-2`}
                 >
@@ -105,10 +92,10 @@ export default function CardSlider() {
                   <div className="w-10 h-40 absolute -bottom-20 border bg-primary2/50 blur-2xl -z-10"></div>
 
                   <Image
-                    src={slide.image}
+                    src={slideImages[idx]}
                     width={500}
                     height={500}
-                    alt={"Icon image"}
+                    alt="Icon image"
                     className="rounded-full object-cover duration-300 h-35 w-35 mb-8 md:mb-10"
                   />
                   <div className="space-y-4">
@@ -116,7 +103,7 @@ export default function CardSlider() {
                       {slide.name}
                     </h1>
                     <h3 className="text-primary1 text-lg tracking-wider">
-                      Flexible. Dynamic. Fun
+                      {t.CardSlider.subtitle}
                     </h3>
                   </div>
                   <p className="text-Base md:text-lg font-galdeano">
@@ -128,22 +115,23 @@ export default function CardSlider() {
           })}
         </div>
 
-        {/* Navigation Controls: Arrows + Dots */}
         {loaded && instanceRef.current && (
           <div className="flex items-center justify-center gap-6">
-            {/* Left Arrow */}
             <button
+              aria-label="Previous slide"
               onClick={() => instanceRef.current?.prev()}
               className="cursor-pointer hover:scale-110 transition-transform"
             >
               <MdOutlineKeyboardArrowLeft className="text-4xl text-primary1" />
             </button>
 
-            {/* Dots Container */}
-            <div className="flex gap-2">
-              {Array.from(Array(slides.length).keys()).map((idx) => (
+            <div className="flex gap-2" role="tablist">
+              {Array.from(Array(slideImages.length).keys()).map((idx) => (
                 <button
                   key={idx}
+                  role="tab"
+                  aria-selected={currentSlide === idx}
+                  aria-label={`Go to slide ${idx + 1}`}
                   onClick={() => instanceRef.current?.moveToIdx(idx)}
                   className={`h-2.5 rounded-full transition-all duration-300 ${
                     currentSlide === idx
@@ -154,8 +142,8 @@ export default function CardSlider() {
               ))}
             </div>
 
-            {/* Right Arrow */}
             <button
+              aria-label="Next slide"
               onClick={() => instanceRef.current?.next()}
               className="cursor-pointer hover:scale-110 transition-transform"
             >
@@ -163,7 +151,7 @@ export default function CardSlider() {
             </button>
           </div>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 }

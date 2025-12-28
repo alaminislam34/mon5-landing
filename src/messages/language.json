@@ -40,6 +40,31 @@
       "buttonText": "Get Notified",
       "description": "We'll send you the link as soon as the app is available.",
       "promoText": "Early Access players in the first week unlock 2 exclusive jerseys"
+    },
+    "CardSlider": {
+      "subtitle": "Flexible. Dynamic. Fun",
+      "slides": [
+        {
+          "name": "Strategic Boosts",
+          "content": "Unlock strategic boosts to enhance your team—Luxury Tax, 6th Man, Chef Curry, and more. Use them to gain an edge over your opponents!"
+        },
+        {
+          "name": "Real-time NBA Stats",
+          "content": "Create a private league, compete in real-time, track your victories, and see who wins!"
+        },
+        {
+          "name": "Daily Lineups",
+          "content": "Craft your perfect roster every day. Choose from the best players and maximize your fantasy points with smart picks."
+        },
+        {
+          "name": "Challenge Friends",
+          "content": "Create a private league, compete in real-time with your friends, track your victories, and see who wins!"
+        },
+        {
+          "name": "Global Competition",
+          "content": "Compete against players worldwide! Climb the weekly and monthly leaderboards for a chance to win amazing prizes and earn bragging rights."
+        }
+      ]
     }
   },
   "fr": {
@@ -83,6 +108,31 @@
       "buttonText": "M'avertir",
       "description": "Nous vous enverrons le lien dès que l'application sera disponible.",
       "promoText": "Les joueurs en accès anticipé de la première semaine débloquent 2 maillots exclusifs"
+    },
+    "CardSlider": {
+      "subtitle": "Flexible. Dynamique. Amusant",
+      "slides": [
+        {
+          "name": "Boosts Stratégiques",
+          "content": "Débloquez des boosts stratégiques pour améliorer votre équipe : Luxury Tax, 6th Man, Chef Curry, et plus encore. Utilisez-les pour gagner un avantage sur vos adversaires !"
+        },
+        {
+          "name": "Stats NBA en Temps Réel",
+          "content": "Créez une ligue privée, participez en temps réel, suivez vos victoires et voyez qui gagne !"
+        },
+        {
+          "name": "Compositions Quotidiennes",
+          "content": "Créez votre effectif parfait chaque jour. Choisissez parmi les meilleurs joueurs et maximisez vos points fantasy avec des choix judicieux."
+        },
+        {
+          "name": "Défiez vos Amis",
+          "content": "Créez une ligue privée, affrontez vos amis en temps réel, suivez vos victoires et voyez qui gagne !"
+        },
+        {
+          "name": "Compétition Mondiale",
+          "content": "Affrontez des joueurs du monde entier ! Grimpez dans les classements hebdomadaires et mensuels pour tenter de gagner des prix incroyables."
+        }
+      ]
     }
   }
 }
