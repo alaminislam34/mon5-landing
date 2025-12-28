@@ -202,6 +202,23 @@
       "titleHighlight": "reach out",
       "emailLabel": "Email",
       "phoneLabel": "Phone No"
+    },
+    "LegalNotice": {
+      "title": "Legal",
+      "titleHighlight": "Notice",
+      "lastUpdated": "Last updated: 26/12/2025",
+      "publisherTitle": "Website Publisher",
+      "companyType": "Single-shareholder simplified joint-stock company",
+      "shareCapitalLabel": "Share Capital",
+      "registeredOfficeLabel": "Registered Office",
+      "officeAddress": "229 rue Saint-Honoré, 75001 Paris, France",
+      "rcsLabel": "RCS (Paris)",
+      "siretLabel": "SIRET",
+      "directorLabel": "President / Publishing Director",
+      "contactLabel": "Contact",
+      "hostingTitle": "Hosting Provider",
+      "hostingAddressLabel": "Address",
+      "hostingAddress": "2 rue Kellermann, 59100 Roubaix, France"
     }
   },
   "fr": {
@@ -407,6 +424,23 @@
       "titleHighlight": "contacter",
       "emailLabel": "E-mail",
       "phoneLabel": "N° de Téléphone"
+    },
+    "LegalNotice": {
+      "title": "Mentions",
+      "titleHighlight": "Légales",
+      "lastUpdated": "Dernière mise à jour : 26/12/2025",
+      "publisherTitle": "Éditeur du site",
+      "companyType": "Société par actions simplifiée unipersonnelle (SASU)",
+      "shareCapitalLabel": "Capital Social",
+      "registeredOfficeLabel": "Siège Social",
+      "officeAddress": "229 rue Saint-Honoré, 75001 Paris, France",
+      "rcsLabel": "RCS (Paris)",
+      "siretLabel": "SIRET",
+      "directorLabel": "Président / Directeur de la publication",
+      "contactLabel": "Contact",
+      "hostingTitle": "Hébergeur",
+      "hostingAddressLabel": "Adresse",
+      "hostingAddress": "2 rue Kellermann, 59100 Roubaix, France"
     }
   }
 }
