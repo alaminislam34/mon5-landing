@@ -4,15 +4,18 @@ import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import { PiStarFourFill } from "react-icons/pi";
 import { motion } from "framer-motion";
-
-const items = ["CHALLENGES", "VICTORY", "SCORE", "FANTASY"];
+import { useLanguage } from "@/Providers/ContextProvider";
 
 function Scrolling() {
   const [hasMounted, setHasMounted] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     setHasMounted(true);
   }, []);
+
+  // Convert translation items object to array for mapping
+  const scrollingItems = Object.values(t.scrolling.items);
 
   if (!hasMounted) {
     return (
@@ -33,7 +36,7 @@ function Scrolling() {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="relative min-h-30 z-20 mt-12 md:mt-16 lg:mt-20 font-aldrich"
-      aria-label="Scrolling Game Features"
+      aria-label={t.scrolling.aria.sectionLabel}
     >
       <div className="h-20 z-10 absolute top-12 left-1/2 -translate-y-1/2 -translate-x-1/2 -rotate-6 w-[150%] bg-primary1 opacity-20 flex items-center justify-center pointer-events-none">
         <Marquee
@@ -42,7 +45,7 @@ function Scrolling() {
           autoFill={true}
           className="w-full flex items-center"
         >
-          {items.map((text, index) => (
+          {scrollingItems.map((text, index) => (
             <div
               key={`track-1-${index}`}
               className="flex flex-row items-center"
@@ -67,7 +70,7 @@ function Scrolling() {
           direction="right"
           className="w-full flex items-center"
         >
-          {items.map((text, index) => (
+          {scrollingItems.map((text, index) => (
             <div
               key={`track-2-${index}`}
               className="flex flex-row items-center"

@@ -4,9 +4,11 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
+import { useLanguage } from "@/Providers/ContextProvider";
 
 function Banner() {
   const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     setMounted(true);
@@ -24,11 +26,12 @@ function Banner() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.2] text-foreground"
               >
-                Build your 5. <br /> Dominate The{" "}
+                {t.banner.title.part1} <br /> {t.banner.title.part2}{" "}
                 <span className="text-primary1 inline-block min-h-[1.2em]">
                   {mounted && (
                     <TypeAnimation
-                      sequence={["NBA Nights.", 2000, "", 1000]}
+                      key={t.banner.title.animated} // Re-run animation on language change
+                      sequence={[t.banner.title.animated, 2000, "", 1000]}
                       speed={50}
                       cursor={true}
                       repeat={Infinity}
@@ -47,8 +50,7 @@ function Banner() {
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 className="sm:text-lg md:text-xl text-Base max-w-4xl md:max-w-2xl"
               >
-                Create your dream team, compete with friends, and track
-                real-time NBA stats. Ready to play?
+                {t.banner.description}
               </motion.p>
 
               <motion.div
@@ -60,26 +62,26 @@ function Banner() {
                 <a
                   href="#"
                   className="transition-transform active:scale-95"
-                  aria-label="Download on Google Play"
+                  aria-label={t.banner.ariaLabels.googlePlay}
                 >
                   <Image
                     src="/images/google-play.png"
                     height={64}
                     width={180}
-                    alt="Get it on Google Play"
+                    alt={t.banner.altText.googlePlay}
                     className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto object-contain"
                   />
                 </a>
                 <a
                   href="#"
                   className="transition-transform active:scale-95"
-                  aria-label="Download on the App Store"
+                  aria-label={t.banner.ariaLabels.appStore}
                 >
                   <Image
                     src="/images/app-store.png"
                     height={64}
                     width={180}
-                    alt="Download on the App Store"
+                    alt={t.banner.altText.appStore}
                     className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto object-contain"
                   />
                 </a>
@@ -99,7 +101,7 @@ function Banner() {
           src="/images/hand.png"
           width={1500}
           height={800}
-          alt="Hand holding mobile showing game application"
+          alt={t.banner.altText.heroHand}
           className="opacity-50 lg:opacity-100 w-full lg:max-h-160 xl:max-h-190 object-contain"
           priority
         />
