@@ -103,6 +103,12 @@
       "description": "Climb the global leaderboard with weekly and monthly rankings. Compete against players worldwide and watch your position rise as you score more points each night!",
       "badgeTitle": "NBR Global League",
       "badgeDescription": "Compete against everyone. Weekly + Monthly prizes"
+    },
+    "GetApp": {
+      "title": "Get This app on",
+      "colorTitle": "Apple & Google play store after launching",
+      "description": "Everything you need to know about Mon5Majeur and how it works",
+      "cta": "Get Launching Notifications"
     }
   },
   "fr": {
@@ -209,6 +215,12 @@
       "description": "Grimpez dans le classement mondial avec des classements hebdomadaires et mensuels. Affrontez des joueurs du monde entier et voyez votre position progresser à mesure que vous marquez des points chaque nuit !",
       "badgeTitle": "Ligue Mondiale NBR",
       "badgeDescription": "Affrontez tout le monde. Prix hebdomadaires + mensuels"
+    }, 
+    "GetApp": {
+      "title": "Téléchargez l'app sur",
+      "colorTitle": "Apple & Google Play Store dès le lancement",
+      "description": "Tout ce que vous devez savoir sur Mon5Majeur et son fonctionnement",
+      "cta": "Recevoir les Notifications de Lancement"
     }
   }
 }
