@@ -73,10 +73,10 @@ function UniverseOfMon5Majeur() {
       <div className="relative animate-float mt-2">
         <Image
           src={data.image}
-          height={400}
-          width={400}
+          height={600}
+          width={600}
           alt="Feature Image"
-          className="w-48 h-48 lg:w-72 lg:h-72 object-contain"
+          className="w-48 h-48 lg:w-90 lg:h-90 object-contain"
         />
       </div>
     </div>
@@ -139,7 +139,7 @@ function UniverseOfMon5Majeur() {
                 height={500}
                 width={500}
                 alt="Central Ball"
-                className="w-80 h-auto object-contain relative z-10 mx-auto"
+                className="w-80 lg:w-100 h-auto object-contain relative z-10 mx-auto"
               />
               <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 bg-black/60 backdrop-blur-xl py-3 border-y border-white/10 z-20">
                 <Image

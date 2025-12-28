@@ -54,14 +54,16 @@ function Navbar() {
     >
       <section className="max-w-380 mx-auto px-4 py-3 flex flex-row items-center justify-between">
         <div>
-          <Image
-            src={"/logos/logo.png"}
-            height={200}
-            width={200}
-            alt="Logo"
-            priority
-            className="h-12 md:h-14 w-auto bg-cover bg-center object-cover"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/logos/logo.png"}
+              height={200}
+              width={200}
+              alt="Logo"
+              priority
+              className="h-12 md:h-14 w-auto bg-cover bg-center object-cover"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
