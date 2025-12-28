@@ -219,6 +219,10 @@
       "hostingTitle": "Hosting Provider",
       "hostingAddressLabel": "Address",
       "hostingAddress": "2 rue Kellermann, 59100 Roubaix, France"
+    },
+    "SocialSection": {
+      "title": "Follow Us on",
+      "titleHighlight": "Social Media"
     }
   },
   "fr": {
@@ -441,6 +445,10 @@
       "hostingTitle": "Hébergeur",
       "hostingAddressLabel": "Adresse",
       "hostingAddress": "2 rue Kellermann, 59100 Roubaix, France"
+    },
+    "SocialSection": {
+      "title": "Suivez-nous sur les",
+      "titleHighlight": "Réseaux Sociaux"
     }
   }
 }
