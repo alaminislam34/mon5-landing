@@ -109,6 +109,37 @@
       "colorTitle": "Apple & Google play store after launching",
       "description": "Everything you need to know about Mon5Majeur and how it works",
       "cta": "Get Launching Notifications"
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "titlePart1": "Get all your",
+      "titlePart2": "questions",
+      "titlePart3": "answered",
+      "titlePart4": "here",
+      "description": "Everything you need to know about Mon5Majeur and how it works",
+      "cta": "Get Launching Notifications",
+      "questions": [
+        {
+          "question": "What is Mon5Majeur?",
+          "answer": "An NBA fantasy game made to play with friends: you build your starting five every night, follow live scores, and climb the rankings."
+        },
+        {
+          "question": "Is the app free?",
+          "answer": "Yes. The app is free, with optional premium features."
+        },
+        {
+          "question": "Can I play with my friends?",
+          "answer": "Yes. You can create Private Leagues (mini seasons + playoffs) and join them via invitation."
+        },
+        {
+          "question": "Where do the scores come from?",
+          "answer": "From real NBA performances, updated every night (and in real time during games)."
+        },
+        {
+          "question": "How do I get the 2 exclusive jerseys?",
+          "answer": "Sign up for the launch alert and create your account during the first week after release: the 2 in-game jerseys will be unlocked and available to claim for free in the shop."
+        }
+      ]
     }
   },
   "fr": {
@@ -215,12 +246,43 @@
       "description": "Grimpez dans le classement mondial avec des classements hebdomadaires et mensuels. Affrontez des joueurs du monde entier et voyez votre position progresser à mesure que vous marquez des points chaque nuit !",
       "badgeTitle": "Ligue Mondiale NBR",
       "badgeDescription": "Affrontez tout le monde. Prix hebdomadaires + mensuels"
-    }, 
+    },
     "GetApp": {
       "title": "Téléchargez l'app sur",
       "colorTitle": "Apple & Google Play Store dès le lancement",
       "description": "Tout ce que vous devez savoir sur Mon5Majeur et son fonctionnement",
       "cta": "Recevoir les Notifications de Lancement"
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "titlePart1": "Toutes les",
+      "titlePart2": "réponses",
+      "titlePart3": "à vos questions",
+      "titlePart4": "ici",
+      "description": "Tout ce que vous devez savoir sur Mon5Majeur et son fonctionnement",
+      "cta": "Recevoir les Notifications de Lancement",
+      "questions": [
+        {
+          "question": "Qu'est-ce que Mon5Majeur ?",
+          "answer": "Un jeu de fantasy NBA conçu pour jouer entre amis : composez votre cinq de départ chaque soir, suivez les scores en direct et grimpez dans les classements."
+        },
+        {
+          "question": "L'application est-elle gratuite ?",
+          "answer": "Oui. L'application est gratuite, avec des fonctionnalités premium optionnelles."
+        },
+        {
+          "question": "Puis-je jouer avec mes amis ?",
+          "answer": "Oui. Vous pouvez créer des Ligues Privées (mini-saisons + playoffs) et les rejoindre via une invitation."
+        },
+        {
+          "question": "D'où proviennent les scores ?",
+          "answer": "Des performances réelles de la NBA, mises à jour chaque nuit (et en temps réel pendant les matchs)."
+        },
+        {
+          "question": "Comment obtenir les 2 maillots exclusifs ?",
+          "answer": "Inscrivez-vous à l'alerte de lancement et créez votre compte durant la première semaine après la sortie : les 2 maillots en jeu seront débloqués et disponibles gratuitement dans la boutique."
+        }
+      ]
     }
   }
 }
