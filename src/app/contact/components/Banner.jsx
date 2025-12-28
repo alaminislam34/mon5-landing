@@ -1,49 +1,75 @@
-import { TypeAnimation } from "react-type-animation";
-import Image from "next/image";
+"use client";
 
-function Banner() {
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion } from "motion/react";
+import { useLanguage } from "@/Providers/ContextProvider";
+
+function ContactBanner() {
+  const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
+  const content = t.ContactBanner;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <section className="relative overflow-hidden">
+        <div className="max-w-380 mx-auto min-h-80 md:min-h-100 lg:min-h-110 xl:min-h-120 flex items-center bg-cover bg-center relative z-10">
+          <div className="flex items-center justify-center flex-col gap-4 w-full opacity-0" />
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative overflow-hidden">
       <div className="max-w-380 mx-auto min-h-80 md:min-h-100 lg:min-h-110 xl:min-h-120 flex items-center bg-cover bg-center relative z-10">
-        <div
-          data-aos="fade-left"
-          data-aos-delay="100"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 0.6, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute top-10 md:top-20 -left-40 md:left-20 lg:left-80 lg:top-40 z-0"
         >
           <Image
-            src={"/images/animation.png"}
+            src="/images/animation.png"
             width={1500}
             height={800}
-            alt="Hand image"
-            className="opacity-60 md:opacity-100 w-full max-w-120 lg:max-w-150"
+            alt=""
+            className="md:opacity-100 w-full max-w-120 lg:max-w-150"
             priority
           />
-        </div>
+        </motion.div>
 
-        <div className="flex items-center justify-center flex-col gap-4 w-full">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-bottom"
+        <div className="flex items-center justify-center flex-col gap-4 w-full text-center px-4">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.2] text-white"
           >
-            CONTACT <span className="text-primary1">US</span>
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-anchor-placement="top-bottom"
-            className="sm:text-lg md:text-xl text-white"
+            {content.title}{" "}
+            <span className="text-primary1">{content.titleHighlight}</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="sm:text-lg md:text-xl text-white max-w-2xl"
           >
-            We're here to help! Reach out to us with any questions or feedback.
-          </p>
+            {content.subtitle}
+          </motion.p>
         </div>
-        <div className="w-80 lg:w-100 lg:h-100 h-80 bg-linear-to-br from-primary1/10 via-primary1/20 to-primary2/50 blur-[100px] absolute lg:blur-[250px] lg:top-30 lg:left-30 left-0 top-0"></div>
+
+        <div className="w-80 lg:w-100 lg:h-100 h-80 bg-linear-to-br from-primary1/10 via-primary1/20 to-primary2/50 blur-[100px] absolute lg:blur-[250px] lg:top-30 lg:left-30 left-0 top-0" />
       </div>
     </section>
   );
 }
 
-export default Banner;
+export default ContactBanner;

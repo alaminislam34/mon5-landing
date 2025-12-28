@@ -182,6 +182,11 @@
           "subtitle": "+3 points, automatic substitute, budget boost... The right choices make the difference."
         }
       ]
+    },
+    "ContactBanner": {
+      "title": "CONTACT",
+      "titleHighlight": "US",
+      "subtitle": "We're here to help! Reach out to us with any questions or feedback."
     }
   },
   "fr": {
@@ -367,6 +372,11 @@
           "subtitle": "+3 points, remplaçant automatique, boost de budget... Les bons choix font la différence."
         }
       ]
+    },
+    "ContactBanner": {
+      "title": "CONTACTEZ-",
+      "titleHighlight": "NOUS",
+      "subtitle": "Nous sommes là pour vous aider ! Contactez-nous pour toute question ou suggestion."
     }
   }
 }
