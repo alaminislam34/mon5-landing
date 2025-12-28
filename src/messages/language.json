@@ -5,40 +5,22 @@
       "inputPlaceholder": "Enter your mail",
       "buttonText": "Get Download Link"
     },
-    "Banner": {
-      "title": "Build your 5. Dominate The NBA Nights.",
-      "subTitle": "Lineups every night, live stats, private leagues. Fast, fun, competitive."
-    },
-    "ScrollingText": ["CHALLENGES", "VICTORY", "SCORE", "FANTASY"],
-    "WhyMon5Majeur": {
-      "title": "Why Mon5majeur?",
-      "card": [
-        {
-          "title": "Strategic Boosts",
-          "subTitle": "Flexible. Dynamic. Fun",
-          "description": "Unlock strategic boosts to enhance your team—Luxury Tax, 6th Man, Chef Curry, and more. Use them to gain an edge over your opponents!"
-        },
-        {
-          "title": "Real-time NBA Stats",
-          "subTitle": "Flexible. Dynamic. Fun",
-          "description": "Create a private league, compete in real-time, track your victories, and see who wins!"
-        },
-        {
-          "title": "Daily Lineups",
-          "subTitle": "Flexible. Dynamic. Fun",
-          "description": "Craft your perfect roster every day. Choose from the best players and maximize your fantasy points with smart picks."
-        },
-        {
-          "title": "Challenge Friends",
-          "subTitle": "Flexible. Dynamic. Fun",
-          "description": "Create a private league, compete in real-time with your friends, track your victories, and see who wins!"
-        },
-        {
-          "title": "Global Competition",
-          "subTitle": "Flexible. Dynamic. Fun",
-          "description": "Compete against players worldwide! Climb the weekly and monthly leaderboards for a chance to win amazing prizes and earn bragging rights."
-        }
-      ]
+    "banner": {
+      "title": {
+        "part1": "Build your 5.",
+        "part2": "Dominate The",
+        "animated": "NBA Nights."
+      },
+      "description": "Create your dream team, compete with friends, and track real-time NBA stats. Ready to play?",
+      "ariaLabels": {
+        "googlePlay": "Download on Google Play",
+        "appStore": "Download on the App Store"
+      },
+      "altText": {
+        "googlePlay": "Get it on Google Play",
+        "appStore": "Download on the App Store",
+        "heroHand": "Hand holding mobile showing game application"
+      }
     }
   },
   "fr": {
@@ -47,40 +29,22 @@
       "inputPlaceholder": "Entrez votre e-mail",
       "buttonText": "Lien de téléchargement"
     },
-    "Banner": {
-      "title": "Créez votre 5. Dominez les nuits NBA.",
-      "subTitle": "Compositions chaque soir, stats en direct, ligues privées. Rapide, fun, compétitif."
-    },
-    "ScrollingText": ["DÉFIS", "VICTOIRE", "SCORE", "FANTASY"],
-    "WhyMon5Majeur": {
-      "title": "Pourquoi Mon5majeur ?",
-      "card": [
-        {
-          "title": "Boosts Stratégiques",
-          "subTitle": "Flexible. Dynamique. Fun",
-          "description": "Débloquez des boosts stratégiques pour améliorer votre équipe — Luxury Tax, 6th Man, Chef Curry, et plus. Utilisez-les pour prendre l'avantage sur vos adversaires !"
-        },
-        {
-          "title": "Stats NBA en temps réel",
-          "subTitle": "Flexible. Dynamique. Fun",
-          "description": "Créez une ligue privée, participez en temps réel, suivez vos victoires et voyez qui gagne !"
-        },
-        {
-          "title": "Compositions Quotidiennes",
-          "subTitle": "Flexible. Dynamique. Fun",
-          "description": "Composez votre effectif parfait chaque jour. Choisissez parmi les meilleurs joueurs et maximisez vos points fantasy avec des choix judicieux."
-        },
-        {
-          "title": "Défiez vos Amis",
-          "subTitle": "Flexible. Dynamique. Fun",
-          "description": "Créez une ligue privée, affrontez vos amis en temps réel, suivez vos victoires et voyez qui l'emporte !"
-        },
-        {
-          "title": "Compétition Mondiale",
-          "subTitle": "Flexible. Dynamique. Fun",
-          "description": "Affrontez des joueurs du monde entier ! Grimpez dans les classements hebdomadaires et mensuels pour tenter de gagner des prix incroyables."
-        }
-      ]
+    "banner": {
+      "title": {
+        "part1": "Créez votre 5 majeur.",
+        "part2": "Dominez les",
+        "animated": "Nuits NBA."
+      },
+      "description": "Créez votre équipe de rêve, affrontez vos amis et suivez les statistiques de la NBA en temps réel. Prêt à jouer ?",
+      "ariaLabels": {
+        "googlePlay": "Télécharger sur Google Play",
+        "appStore": "Télécharger sur l'App Store"
+      },
+      "altText": {
+        "googlePlay": "Disponible sur Google Play",
+        "appStore": "Télécharger dans l'App Store",
+        "heroHand": "Main tenant un téléphone affichant l'application de jeu"
+      }
     }
   }
 }
