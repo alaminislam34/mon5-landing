@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Instagram, Twitter, Music2 } from "lucide-react";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -29,7 +31,7 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         transition={{ duration: 0.6 }}
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
       >
@@ -63,7 +65,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
           className="col-span-1 md:col-span-1 space-y-6"
         >
@@ -89,7 +91,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-6"
         >
@@ -114,7 +116,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="space-y-6"
         >
@@ -152,7 +154,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="space-y-6"
         >
@@ -162,21 +164,24 @@ function Footer() {
           <div className="flex gap-4">
             <a
               href="#"
-              className="p-3 bg-white/5 rounded-xl hover:bg-primary1 transition-all group"
+              className="py-1 px-1.5 flex items-center justify-center transition-all group bg-linear-to-tr from-yellow-500 to-pink-600 rounded-md hover:shadow-lg shadow-white/50 duration-300"
             >
-              <Instagram className="w-6 h-6 group-hover:text-white" />
+              <Instagram
+                size={24}
+                className="text-4xl"
+              />
             </a>
             <a
               href="#"
-              className="p-3 bg-white/5 rounded-xl hover:bg-primary1 transition-all group"
+              className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group"
             >
-              <Twitter className="w-6 h-6 group-hover:text-white" />
+              <FaXTwitter className="text-xl group-hover:text-white" />
             </a>
             <a
               href="#"
-              className="p-3 bg-white/5 rounded-xl hover:bg-primary1 transition-all group"
+              className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group"
             >
-              <Music2 className="w-6 h-6 group-hover:text-white" />
+              <Music2 size={20} className=" group-hover:text-white" />
             </a>
           </div>
         </motion.div>
@@ -185,7 +190,7 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         transition={{ duration: 0.8 }}
         className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm font-galdeano"
       >

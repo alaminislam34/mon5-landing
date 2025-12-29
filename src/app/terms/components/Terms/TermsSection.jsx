@@ -29,23 +29,10 @@ function Terms() {
   return (
     <div className="max-w-380 mx-auto w-11/12 py-16 space-y-20 text-white bg-transparent">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="border-b border-white/10 pb-8"
-      >
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-primary1">
-          {content.mainTitle}
-        </h1>
-        <p className="mt-4 text-gray-400 font-galdeano tracking-wider">
-          {content.lastUpdated}
-        </p>
-      </motion.div>
-
-      <motion.div
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -75,7 +62,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -93,7 +80,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -109,7 +96,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1 text-wrap">
@@ -128,7 +115,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -144,7 +131,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -162,7 +149,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -178,7 +165,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1 text-wrap">
@@ -194,7 +181,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 pt-8"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">

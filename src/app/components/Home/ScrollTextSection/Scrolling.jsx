@@ -82,7 +82,7 @@ function Scrolling() {
                 className="text-4xl text-white mx-10"
                 aria-hidden="true"
               />
-            </div>
+            </div> 
           ))}
         </Marquee>
       </div>

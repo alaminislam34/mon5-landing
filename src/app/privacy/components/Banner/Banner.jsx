@@ -27,7 +27,7 @@ function Banner() {
 
   return (
     <section className="relative">
-      <div className="max-w-380 mx-auto min-h-120 md:min-h-130 lg:min-h-180 xl:min-h-200 flex items-center bg-cover bg-center relative z-10">
+      <div className="max-w-380 mx-auto min-h-120 md:min-h-130 lg:min-h-150 xl:min-h-150 flex items-center bg-cover bg-center relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 0.6, x: 0 }}
