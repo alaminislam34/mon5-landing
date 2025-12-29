@@ -29,7 +29,7 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         transition={{ duration: 0.6 }}
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
       >
@@ -63,7 +63,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.6 }}
           className="col-span-1 md:col-span-1 space-y-6"
         >
@@ -89,7 +89,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-6"
         >
@@ -114,7 +114,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="space-y-6"
         >
@@ -152,7 +152,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="space-y-6"
         >
@@ -185,7 +185,7 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         transition={{ duration: 0.8 }}
         className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm font-galdeano"
       >

@@ -35,7 +35,7 @@ function FAQ() {
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         transition={{ duration: 0.8 }}
         className="flex-1 space-y-6"
       >
@@ -66,7 +66,7 @@ function FAQ() {
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="flex-1 space-y-4"
       >

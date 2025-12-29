@@ -31,7 +31,7 @@ function Banner() {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 0.6, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 1, ease: "easeOut" }}
           className="absolute top-10 md:top-20 -left-40 md:left-20 lg:left-80 lg:top-40 z-0"
         >
@@ -50,7 +50,7 @@ function Banner() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.2] text-white"
             >
@@ -71,7 +71,7 @@ function Banner() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="sm:text-lg md:text-xl max-w-4xl md:max-w-2xl text-white"
             >
@@ -85,7 +85,7 @@ function Banner() {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 0.6, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.1 }}
           className="absolute top-20 md:top-10 -right-15 md:-right-10 z-0"
         >

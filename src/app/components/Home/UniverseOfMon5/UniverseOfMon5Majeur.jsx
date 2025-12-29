@@ -38,7 +38,7 @@ function UniverseOfMon5Majeur() {
     <motion.div
       initial={{ opacity: 0, x: side === "left" ? -30 : 30 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false}}
       transition={{ duration: 0.6, delay: delay / 1000 }}
       className="flex flex-col items-center group w-full"
     >
@@ -78,7 +78,7 @@ function UniverseOfMon5Majeur() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="relative z-10 lg:hidden"
       >
         <div className="absolute inset-0 bg-[#E35D14]/10 rounded-full blur-[100px] animate-pulse" />
@@ -127,7 +127,7 @@ function UniverseOfMon5Majeur() {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false}}
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >

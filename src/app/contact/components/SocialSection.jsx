@@ -29,7 +29,7 @@ function SocialSection() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.6 }}
           className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white"
         >
@@ -44,7 +44,7 @@ function SocialSection() {
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false}}
             transition={{ duration: 0.4, delay: 0.1 }}
             whileHover={{ scale: 1.1 }}
             className="text-primary1"
@@ -58,7 +58,7 @@ function SocialSection() {
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false}}
             transition={{ duration: 0.4, delay: 0.2 }}
             whileHover={{ scale: 1.1 }}
             className="bg-black shadow rounded"
@@ -72,7 +72,7 @@ function SocialSection() {
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false}}
             transition={{ duration: 0.4, delay: 0.3 }}
             whileHover={{ scale: 1.1 }}
           >

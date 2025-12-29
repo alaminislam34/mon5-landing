@@ -45,7 +45,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -75,7 +75,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -93,7 +93,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -109,7 +109,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1 text-wrap">
@@ -128,7 +128,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -144,7 +144,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -162,7 +162,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">
@@ -178,7 +178,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 border-b border-white/10 pb-12"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1 text-wrap">
@@ -194,7 +194,7 @@ function Terms() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false}}
         className="flex flex-col md:flex-row items-start gap-6 md:gap-12 pt-8"
       >
         <h2 className="w-full md:w-1/3 text-xl md:text-2xl font-semibold tracking-wider text-primary1">

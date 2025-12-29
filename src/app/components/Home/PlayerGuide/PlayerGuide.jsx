@@ -28,7 +28,7 @@ function PlayersGuide() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
@@ -46,7 +46,7 @@ function PlayersGuide() {
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="flex items-center gap-3 text-lg md:text-xl font-medium"
             >
@@ -64,7 +64,7 @@ function PlayersGuide() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.5, delay: 0.5 }}
           className="space-y-4"
         >

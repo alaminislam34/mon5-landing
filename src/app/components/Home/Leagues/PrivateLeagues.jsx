@@ -29,7 +29,7 @@ function PrivateLeagues() {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false}}
           transition={{ duration: 0.8 }}
         >
           <div className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full">
@@ -52,7 +52,7 @@ function PrivateLeagues() {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="absolute top-10 md:top-0 md:right-0 right-0 lg:right-28 z-0"
             >
@@ -68,7 +68,7 @@ function PrivateLeagues() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="absolute top-60 left-0 md:left-12 md:top-60 lg:top-83.5 lg:left-44 ring-2 bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl ring-[#2D2D2D] z-20 py-2 px-6 flex flex-col items-center gap-1"
             >
@@ -83,7 +83,7 @@ function PrivateLeagues() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 0.5, delay: 0.7 }}
               className="absolute bottom-2 md:bottom-50 lg:bottom-54 left-6 ring-2 rounded-2xl ring-[#2D2D2D] z-20 bg-linear-to-r from-[#000000] to-[#1B0D05] py-4 px-6 flex items-end flex-row gap-4"
             >
@@ -121,7 +121,7 @@ function PrivateLeagues() {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false}}
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <Image
