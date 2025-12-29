@@ -57,13 +57,13 @@ function SocialSection() {
           </a>
           <a
             href="#"
-            className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group"
+            className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
           >
             <FaXTwitter className="text-2xl group-hover:text-white" />
           </a>
           <a
             href="#"
-            className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group"
+            className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
           >
             <Music2 size={24} className=" group-hover:text-white" />
           </a>

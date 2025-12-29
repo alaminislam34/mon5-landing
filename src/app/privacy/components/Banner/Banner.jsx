@@ -40,7 +40,7 @@ function Banner() {
             width={1500}
             height={800}
             alt=""
-            className="md:opacity-100 w-full max-w-120 lg:max-w-150"
+            className="md:opacity-100 w-full max-w-120 lg:max-w-140"
             priority
           />
         </motion.div>
@@ -94,7 +94,7 @@ function Banner() {
             width={1500}
             height={800}
             alt=""
-            className="md:opacity-100 w-full max-w-140 sm:max-w-120 md:max-w-130 lg:max-w-200"
+            className="md:opacity-100 w-full max-w-140 sm:max-w-120 md:max-w-130 lg:max-w-160"
             priority
           />
         </motion.div>
