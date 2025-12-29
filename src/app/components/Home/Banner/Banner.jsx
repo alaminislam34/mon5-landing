@@ -26,7 +26,7 @@ function Banner() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.2] text-foreground"
               >
-                {t.banner.title.part1} <br /> {t.banner.title.part2}{" "}
+                {t.banner.title.part1} <br /> {t.banner.title.part2} <br />
                 <span className="text-primary1 inline-block min-h-[1.2em]">
                   {mounted && (
                     <TypeAnimation

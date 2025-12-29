@@ -55,6 +55,9 @@ export default function Home() {
         <GlobalLeaguess />
       </section>
       <section>
+        <UniverseOfMon5Majeur />
+      </section>
+      <section>
         <GetApp />
       </section>
       <section>
@@ -63,9 +66,7 @@ export default function Home() {
       <section>
         <PlayersGuide />
       </section>
-      <section>
-        <UniverseOfMon5Majeur />
-      </section>
+
       <br />
       <br />
       <br />
