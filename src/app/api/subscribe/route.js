@@ -21,16 +21,17 @@ export async function POST(req) {
         },
         body: JSON.stringify({
           email,
-          status: "active",
+          status: "active", // You can change this to 'unconfirmed' for double opt-in
         }),
       }
     );
 
+    const data = await response.json();
+
     if (!response.ok) {
-      const error = await response.json();
       return NextResponse.json(
-        { message: "MailerLite error", error },
-        { status: 500 }
+        { message: "MailerLite error", error: data },
+        { status: response.status }
       );
     }
 
@@ -39,7 +40,7 @@ export async function POST(req) {
     });
   } catch (error) {
     return NextResponse.json(
-      { message: "Server error", error },
+      { message: "Server error", error: error.message },
       { status: 500 }
     );
   }
