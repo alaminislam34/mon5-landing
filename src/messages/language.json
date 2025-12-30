@@ -35,6 +35,7 @@
     },
     "GetNotified": {
       "sectionTitle": "Be notified when it",
+      "registeredTitle": "Already Pre-Registered",
       "sectionTitleAccent": "launches",
       "inputPlaceholder": "Enter your mail...",
       "buttonText": "Get Notified",
@@ -364,6 +365,7 @@
     },
     "GetNotified": {
       "sectionTitle": "Soyez notifié lors du",
+      "registeredTitle": "Déjà préinscrit",
       "sectionTitleAccent": "lancement",
       "inputPlaceholder": "Entrez votre email...",
       "buttonText": "M'avertir",
