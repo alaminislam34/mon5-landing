@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { AiFillMail } from "react-icons/ai";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "@/Providers/ContextProvider";
 import LanguageSwitcher from "../Language/LanguageSwitcher";
 

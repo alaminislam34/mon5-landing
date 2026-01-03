@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import { PiStarFourFill } from "react-icons/pi";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useLanguage } from "@/Providers/ContextProvider";
 
 function Scrolling() {
