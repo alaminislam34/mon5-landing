@@ -70,7 +70,7 @@ function PrivateLeagues() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false}}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute top-60 left-0 md:left-12 md:top-60 lg:top-83.5 lg:left-44 ring-2 bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl ring-[#2D2D2D] z-20 py-2 px-6 flex flex-col items-center gap-1"
+              className="absolute top-58 left-0 md:top-70 lg:top-82 lg:left-39 ring-2 bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl ring-[#2D2D2D] z-20 py-2 px-5 sm:px-6 flex flex-col items-center gap-1"
             >
               <h1 className="font-bold tracking-tigh md:text-lg text-white">
                 {content.joinLeague}
@@ -85,7 +85,7 @@ function PrivateLeagues() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false}}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="absolute bottom-2 md:bottom-50 lg:bottom-54 left-6 ring-2 rounded-2xl ring-[#2D2D2D] z-20 bg-linear-to-r from-[#000000] to-[#1B0D05] py-4 px-6 flex items-end flex-row gap-4"
+              className="absolute bottom-2 md:bottom-50 lg:bottom-50 left-6 ring-2 rounded-2xl ring-[#2D2D2D] z-20 bg-linear-to-r from-[#000000] to-[#1B0D05] py-4 px-6 flex items-end flex-row gap-4"
             >
               <div className="flex flex-col gap-2 items-center">
                 <Image
