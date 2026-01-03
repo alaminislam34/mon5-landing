@@ -51,7 +51,7 @@ function Banner() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.3 }}
               className="text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.2] text-white"
             >
               {content.title}{" "}

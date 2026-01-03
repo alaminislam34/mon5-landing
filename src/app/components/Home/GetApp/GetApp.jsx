@@ -42,7 +42,7 @@ const GetApp = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
             className="flex items-center justify-center"
           >
             <Image

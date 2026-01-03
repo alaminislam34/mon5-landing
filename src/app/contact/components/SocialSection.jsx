@@ -34,8 +34,8 @@ function SocialSection() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
           className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white"
         >
           {content.title}{" "}
@@ -45,8 +45,8 @@ function SocialSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
           className="flex gap-4 mt-6 md:mt-8"
         >
           <a

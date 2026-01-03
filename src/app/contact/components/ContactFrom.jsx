@@ -46,7 +46,7 @@ const ContactForm = () => {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.3 }}
               className="space-y-2"
             >
               <label
@@ -71,7 +71,7 @@ const ContactForm = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.3 }}
               className="space-y-2"
             >
               <label

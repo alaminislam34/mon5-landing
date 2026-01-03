@@ -37,7 +37,7 @@ function Experience() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
             className="max-w-10/12"
           >
             <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-Base">
@@ -151,7 +151,7 @@ function Experience() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
           >
             <Image
               src="/images/mobile.png"

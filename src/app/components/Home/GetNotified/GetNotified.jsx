@@ -76,7 +76,7 @@ function GetNotified() {
                 animate={controls}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex flex-row gap-2 md:gap-4 items-center justify-between md:text-lg xl:text-xl"
                 onSubmit={handleSubmit}
@@ -106,7 +106,7 @@ function GetNotified() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                 className="text-gray-400 text-sm pb-4"
               >
@@ -115,7 +115,7 @@ function GetNotified() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="flex"
               >
@@ -127,7 +127,7 @@ function GetNotified() {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
               className="md:max-w-2/5 md:relative absolute left-0"
             >

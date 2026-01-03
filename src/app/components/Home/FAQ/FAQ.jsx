@@ -36,7 +36,7 @@ function FAQ() {
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.3 }}
         className="flex-1 space-y-6"
       >
         <h4 className="text-gray-400 font-medium tracking-widest text-sm uppercase">

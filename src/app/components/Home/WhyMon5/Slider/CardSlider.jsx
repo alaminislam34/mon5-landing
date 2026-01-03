@@ -69,7 +69,7 @@ export default function CardSlider() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.3 }}
         className="relative lg:py-12"
       >
         <div ref={sliderRef} className="keen-slider flex items-center mb-6">

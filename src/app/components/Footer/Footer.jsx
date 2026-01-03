@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Instagram, Twitter, Music2 } from "lucide-react";
-import { FaInstagramSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,8 +30,8 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
       >
         <div className="max-w-4xl w-full">
@@ -65,8 +64,8 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
           className="col-span-1 md:col-span-1 space-y-6"
         >
           <div className="flex items-center gap-2">
@@ -91,7 +90,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-6"
         >
@@ -116,7 +115,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="space-y-6"
         >
@@ -154,7 +153,7 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="space-y-6"
         >
@@ -190,8 +189,8 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
         className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm font-galdeano"
       >
         {content.copyright}

@@ -128,7 +128,7 @@ function UniverseOfMon5Majeur() {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
             className="relative z-10"
           >
             <div className="absolute inset-0 bg-[#E35D14]/20 rounded-full blur-[100px] animate-pulse" />

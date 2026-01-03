@@ -30,7 +30,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className="text-3xl md:text-4xl font-bold tracking-wider uppercase"
           >
             {content.title}{" "}

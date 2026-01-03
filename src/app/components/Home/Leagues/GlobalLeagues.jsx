@@ -64,7 +64,7 @@ function GlobalLeagues() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.3 }}
             >
               <Image
                 src="/images/mobile1.png"
@@ -99,7 +99,7 @@ function GlobalLeagues() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
             className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full"
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-white mb-3">
