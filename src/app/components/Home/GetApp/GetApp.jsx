@@ -50,7 +50,7 @@ const GetApp = () => {
               height={800}
               width={1200}
               alt="Mon5Majeur App Preview"
-              className="md:max-w-90 lg:max-w-100"
+              className="max-w-60 md:max-w-80 lg:max-w-100"
             />
           </motion.div>
 

@@ -11,6 +11,10 @@
         "part2": "Dominate The",
         "animated": "NBA Nights."
       },
+      "downloadLinks": {
+        "googlePlay": "Download on the",
+        "appStore": "Download on the"
+      },
       "description": "Create your dream team, compete with friends, and track real-time NBA stats. Ready to play?",
       "ariaLabels": {
         "googlePlay": "Download on Google Play",
@@ -43,6 +47,8 @@
       "promoText": "Early Access players in the first week unlock 2 exclusive jerseys"
     },
     "CardSlider": {
+      "title": "Why",
+      "colorTitle": "Mon5majeur ?",
       "subtitle": "Flexible. Dynamic. Fun",
       "slides": [
         {
@@ -341,6 +347,10 @@
         "part2": "Dominez les",
         "animated": "Nuits NBA."
       },
+      "downloadLinks": {
+        "googlePlay": "Télécharger sur le",
+        "appStore": "Télécharger sur le"
+      },
       "description": "Créez votre équipe de rêve, affrontez vos amis et suivez les statistiques de la NBA en temps réel. Prêt à jouer ?",
       "ariaLabels": {
         "googlePlay": "Télécharger sur Google Play",
@@ -373,6 +383,8 @@
       "promoText": "Les joueurs en accès anticipé de la première semaine débloquent 2 maillots exclusifs"
     },
     "CardSlider": {
+      "title": "Pourquoi",
+      "colorTitle": "Mon5majeur ?",
       "subtitle": "Flexible. Dynamique. Amusant",
       "slides": [
         {

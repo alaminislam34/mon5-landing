@@ -8,13 +8,31 @@ function GetNotified() {
   const [mounted, setMounted] = useState(false);
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const controls = useAnimation(); // For error shake effect
+  // New state to hold the actual subscriber count
+  const [subscriberCount, setSubscriberCount] = useState("5k+");
+  const controls = useAnimation();
 
   const { t } = useLanguage();
   const content = t.GetNotified;
 
   useEffect(() => {
     setMounted(true);
+
+    // Fetch total subscribers on mount
+    const fetchSubscribers = async () => {
+      try {
+        const response = await fetch("/api/subscribers");
+        if (response.ok) {
+          const data = await response.json();
+          // Fallback to 5k+ if data is missing
+          setSubscriberCount(data.totalSubscribers || "5k+");
+        }
+      } catch (error) {
+        console.error("Error fetching subscribers:", error);
+      }
+    };
+
+    fetchSubscribers();
   }, []);
 
   const handleSubmit = async (e) => {
@@ -42,6 +60,7 @@ function GetNotified() {
       setLoading(false);
     }
   };
+
   if (!mounted) {
     return (
       <section id="launch" aria-hidden="true">
@@ -65,7 +84,7 @@ function GetNotified() {
               </h1>
               <div>
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary1 mt-4">
-                  5k+
+                  {subscriberCount}
                 </h1>
                 <p className="md:text-lg lg:text-xl text-Base py-2">
                   {content.registeredTitle}

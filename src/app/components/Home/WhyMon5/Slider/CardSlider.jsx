@@ -99,10 +99,10 @@ export default function CardSlider() {
                     className="rounded-full object-cover duration-300 h-35 w-35 mb-8 md:mb-10"
                   />
                   <div className="space-y-4">
-                    <h1 className="text-3xl xl:text-4xl font-semibold tracking-widest">
+                    <h1 className="text-2xl xl:text-3xl font-semibold tracking-widest">
                       {slide.name}
                     </h1>
-                    <h3 className="text-primary1 text-lg tracking-wider">
+                    <h3 className="text-primary1 text-lg xl:text-xl tracking-wider">
                       {t.CardSlider.subtitle}
                     </h3>
                   </div>

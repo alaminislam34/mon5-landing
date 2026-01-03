@@ -50,19 +50,22 @@ function SocialSection() {
           className="flex gap-4 mt-6 md:mt-8"
         >
           <a
-            href="#"
+            href="https://www.instagram.com/mon5majeur/"
+            target="_blank"
             className="py-1 px-1.5 flex items-center justify-center transition-all group bg-linear-to-tr from-yellow-500 to-pink-600 rounded-md hover:shadow-lg shadow-white/50 duration-300"
           >
             <Instagram size={28} className="text-4xl" />
           </a>
           <a
-            href="#"
+            href="https://x.com/mon5majeur"
+            target="_blank"
             className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
           >
             <FaXTwitter className="text-2xl group-hover:text-white" />
           </a>
           <a
-            href="#"
+            href="https://www.tiktok.com/@mon5majeur"
+            target="_blank"
             className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
           >
             <Music2 size={24} className=" group-hover:text-white" />

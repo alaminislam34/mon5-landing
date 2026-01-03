@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
 import { useLanguage } from "@/Providers/ContextProvider";
+import Link from "next/link";
 
 function Banner() {
   const [mounted, setMounted] = useState(false);
@@ -59,32 +60,48 @@ function Banner() {
                 transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 className="flex flex-row items-center gap-4 sm:gap-6"
               >
-                <a
-                  href="#"
-                  className="transition-transform active:scale-95"
-                  aria-label={t.banner.ariaLabels.googlePlay}
-                >
-                  <Image
-                    src="/images/google-play.png"
-                    height={64}
-                    width={180}
-                    alt={t.banner.altText.googlePlay}
-                    className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="#"
-                  className="transition-transform active:scale-95"
-                  aria-label={t.banner.ariaLabels.appStore}
-                >
-                  <Image
-                    src="/images/app-store.png"
-                    height={64}
-                    width={180}
-                    alt={t.banner.altText.appStore}
-                    className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto object-contain"
-                  />
-                </a>
+                <Link href={"#"}>
+                  <div className="rounded-xl flex flex-row items-center gap-2 border-gray-500/50 backdrop-blur-md py-3 px-4 justify-between border">
+                    <div>
+                      <Image
+                        src={"/logos/play.png"}
+                        height={50}
+                        width={50}
+                        alt="Play store"
+                        className="w-7 md:w-8 h-auto"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="text-xs truncate text-gray-400">
+                        {t.banner.downloadLinks.googlePlay}
+                      </p>
+                      <p className="text-lg truncate md:text-xl font-semibold leading-none">
+                        Play Store
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+                <Link href={"#"}>
+                  <div className="rounded-xl flex flex-row items-center gap-2 border-gray-500/50 backdrop-blur-md py-3 px-4 justify-between border">
+                    <div>
+                      <Image
+                        src={"/logos/apple-black-logo.png"}
+                        height={50}
+                        width={50}
+                        alt="Play store"
+                        className="w-7 md:w-8 h-auto"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="text-xs truncate text-gray-400">
+                        {t.banner.downloadLinks.appStore}
+                      </p>
+                      <p className="text-lg truncate md:text-xl font-semibold leading-none">
+                        App Store
+                      </p>
+                    </div>
+                  </div>
+                </Link>
               </motion.div>
             </div>
           </div>
