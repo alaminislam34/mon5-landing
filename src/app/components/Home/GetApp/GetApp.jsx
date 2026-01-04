@@ -97,7 +97,7 @@ const GetApp = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
               className="py-4 flex relative z-20 my-4"
             >
               <a

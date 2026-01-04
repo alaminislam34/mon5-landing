@@ -34,10 +34,10 @@ function Experience() {
             left="left"
           />
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="max-w-10/12"
           >
             <p className="text-lg md:text-2xl lg:text-3xl font-galdeano text-Base">
@@ -52,10 +52,10 @@ function Experience() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="flex flex-row items-center gap-4 md:text-lg py-4"
           >
             <h2 className="py-2 px-6 rounded-xl border border-base/50 shadow-inner text-primary1/90">
@@ -77,7 +77,7 @@ function Experience() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
-                transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+                transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
                 className="flex items-center gap-2 p-2"
               >
                 <span className="w-5 h-5 ring ring-base/80 bg-white/10 inline-block border-4 border-white/20 rounded-sm"></span>
@@ -89,10 +89,10 @@ function Experience() {
           </ul>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="py-4 flex relative z-50"
           >
             <a

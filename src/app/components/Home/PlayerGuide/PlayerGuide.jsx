@@ -47,7 +47,7 @@ function PlayersGuide() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false}}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              transition={{ duration: 0.4, delay: index * 0.15 }}
               className="flex items-center gap-3 text-lg md:text-xl font-medium"
             >
               <div className="text-primary1 shrink-0">
@@ -65,7 +65,7 @@ function PlayersGuide() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false}}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           className="space-y-4"
         >
           <a
