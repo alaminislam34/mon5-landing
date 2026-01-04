@@ -10,8 +10,22 @@ export default function LanguageProvider({ children }) {
 
   useEffect(() => {
     const savedLocale = localStorage.getItem("app_lang");
+
     if (savedLocale) {
       setLocale(savedLocale);
+    } else {
+      const host = window.location.hostname;
+
+      // ✅ For production domain ending with .fr
+      if (host.endsWith(".fr")) {
+        setLocale("fr");
+      }
+      // ✅ For your Vercel preview domain
+      else if (host === "mon5-volyball.vercel.app") {
+        setLocale("fr"); // temporary override for testing
+      } else {
+        setLocale("en");
+      }
     }
   }, []);
 
