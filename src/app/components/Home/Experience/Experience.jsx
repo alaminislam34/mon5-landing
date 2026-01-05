@@ -36,7 +36,7 @@ function Experience() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 }}
             className="max-w-10/12"
           >
@@ -54,7 +54,7 @@ function Experience() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 }}
             className="flex flex-row items-center gap-4 md:text-lg py-4"
           >
@@ -76,7 +76,7 @@ function Experience() {
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
                 className="flex items-center gap-2 p-2"
               >
@@ -91,7 +91,7 @@ function Experience() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
             className="py-4 flex relative z-50"
           >
@@ -109,7 +109,7 @@ function Experience() {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute top-0 -right-40 pointer-events-none z-10"
       >
@@ -150,7 +150,7 @@ function Experience() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.3 }}
           >
             <Image
@@ -169,8 +169,8 @@ function Experience() {
               key={idx}
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 0.8, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.2 }}
               className="ring-2 ring-primary2/20 flex flex-col items-start bg-linear-to-tl from-gray-900/80 to-[#00000000] backdrop-blur-2xl p-6 md:p-8 rounded-2xl"
             >
               <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-white mb-3">

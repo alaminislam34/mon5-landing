@@ -41,7 +41,7 @@ const GetApp = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false}}
+            viewport={{ once: true}}
             transition={{ duration: 0.3 }}
             className="flex items-center justify-center"
           >
@@ -63,8 +63,8 @@ const GetApp = () => {
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true}}
+              transition={{ duration: 0.4, delay: 0.2 }}
               className="text-lg md:text-xl lg:text-2xl font-galdeano text-Base"
             >
               {content.description}
@@ -73,8 +73,8 @@ const GetApp = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true}}
+              transition={{ duration: 0.4, delay: 0.4 }}
               className="flex flex-row items-center gap-4 sm:gap-6 my-4"
             >
               <Image
@@ -96,7 +96,7 @@ const GetApp = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false}}
+              viewport={{ once: true}}
               transition={{ duration: 0.4, delay: 0.6 }}
               className="py-4 flex relative z-20 my-4"
             >
@@ -114,7 +114,7 @@ const GetApp = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: true}}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute bottom-0 md:top-0 -right-40 md:-right-20 -z-110"
         >

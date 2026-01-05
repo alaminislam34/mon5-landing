@@ -13,7 +13,7 @@ function AbsoluteBall() {
         y: ["-52%", "-48%", "-52%"],
       }}
       transition={{
-        x: { duration: 1, ease: "easeOut" },
+        x: { duration: 0.5, ease: "easeOut" },
         y: {
           duration: 9,
           repeat: Infinity,

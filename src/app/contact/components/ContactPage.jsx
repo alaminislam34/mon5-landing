@@ -29,7 +29,7 @@ const ContactPage = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false}}
+            viewport={{ once: true}}
             transition={{ duration: 0.3 }}
             className="text-3xl md:text-4xl font-bold tracking-wider uppercase"
           >
@@ -41,8 +41,8 @@ const ContactPage = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true}}
+              transition={{ duration: 0.4, delay: 0.2 }}
               className="flex items-center gap-5 bg-[#0a0a0a]/40 border border-white/10 rounded-2xl p-8 hover:border-[#ea7032]/30 transition-colors group"
             >
               <div className="p-3 border border-[#ea7032] rounded-lg text-[#ea7032] group-hover:bg-[#ea7032] group-hover:text-white transition-all">
@@ -64,8 +64,8 @@ const ContactPage = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true}}
+              transition={{ duration: 0.4, delay: 0.4 }}
               className="flex items-center gap-5 bg-[#0a0a0a]/40 border border-white/10 rounded-2xl p-8 hover:border-[#ea7032]/30 transition-colors group"
             >
               <div className="p-3 border border-[#ea7032] rounded-lg text-[#ea7032] group-hover:bg-[#ea7032] group-hover:text-white transition-all">

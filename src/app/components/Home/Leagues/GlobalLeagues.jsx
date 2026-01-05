@@ -26,13 +26,13 @@ function GlobalLeagues() {
     <section className="min-h-125">
       <section className="flex justify-between flex-col-reverse md:flex-row gap-6 md:gap-12 lg:gap-20 max-w-380 mx-auto w-11/12 items-center">
         <div className="relative flex items-center justify-start">
-          <div className="relative lg:right-20">
+          <div className="relative">
             <div className="absolute top-10 left-0 w-40 h-40 bg-primary1/60 -z-10 blur-[100px]" />
 
             <motion.div
               initial={{ opacity: 0, rotate: 0 }}
               whileInView={{ opacity: 1, rotate: -6 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="absolute -top-70 -right-90 z-0"
             >
@@ -48,7 +48,7 @@ function GlobalLeagues() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ duration: 0.3 }}
             >
               <Image
@@ -67,7 +67,7 @@ function GlobalLeagues() {
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.3 }}
             className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full"
           >

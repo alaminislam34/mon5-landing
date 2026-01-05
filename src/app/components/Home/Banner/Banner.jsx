@@ -24,7 +24,7 @@ function Banner() {
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.2] text-foreground"
               >
                 {t.banner.title.part1} <br /> {t.banner.title.part2} <br />
@@ -48,7 +48,7 @@ function Banner() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
                 className="sm:text-lg md:text-xl text-Base max-w-4xl md:max-w-2xl"
               >
                 {t.banner.description}
@@ -57,7 +57,7 @@ function Banner() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: 0.4, ease: "easeOut" }}
                 className="flex flex-row items-center gap-4 sm:gap-6"
               >
                 <Link href={"#"}>
@@ -111,7 +111,7 @@ function Banner() {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: mounted ? 1 : 0, x: 0 }}
-        transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         className="absolute right-0 top-14 sm:top-14 md:-top-1 lg:top-0 lg:scale-110 lg:right-12 z-0 pointer-events-none select-none"
       >
         <Image

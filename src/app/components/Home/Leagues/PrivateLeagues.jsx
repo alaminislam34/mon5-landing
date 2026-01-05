@@ -29,7 +29,7 @@ function PrivateLeagues() {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.3 }}
         >
           <div className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full">
@@ -52,8 +52,8 @@ function PrivateLeagues() {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <Image
                 src="/images/privateLeage.png"

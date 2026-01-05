@@ -45,7 +45,7 @@ const ContactForm = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false}}
+              viewport={{ once: true}}
               transition={{ duration: 0.3 }}
               className="space-y-2"
             >
@@ -70,7 +70,7 @@ const ContactForm = () => {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false}}
+              viewport={{ once: true}}
               transition={{ duration: 0.3 }}
               className="space-y-2"
             >
@@ -96,7 +96,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false}}
+            viewport={{ once: true}}
             transition={{ duration: 0.4, delay: 0.2 }}
             className="space-y-2"
           >
@@ -121,7 +121,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false}}
+            viewport={{ once: true}}
             transition={{ duration: 0.4, delay: 0.4 }}
             className="flex justify-end"
           >

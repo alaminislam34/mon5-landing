@@ -5,7 +5,7 @@ function SectionTitle({ title, colorTitle, left }) {
     <motion.div
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       transition={{ duration: 0.4, delay: 0.1 }}
       className={`my-10 flex items-center relative z-20 justify-${
         left === "left" ? "start" : "center"

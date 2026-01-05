@@ -38,8 +38,8 @@ function UniverseOfMon5Majeur() {
     <motion.div
       initial={{ opacity: 0, x: side === "left" ? -30 : 30 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false}}
-      transition={{ duration: 0.6, delay: delay / 1000 }}
+      viewport={{ once: true}}
+      transition={{ duration: 0.4, delay: delay / 1000 }}
       className="flex flex-col items-center group w-full"
     >
       <div className="py-2 px-4 md:px-6 lg:px-8 text-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-lg transition-all group-hover:border-[#E35D14]/50 w-fit min-h-0 flex flex-col justify-center">
@@ -78,7 +78,7 @@ function UniverseOfMon5Majeur() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false}}
+        viewport={{ once: true}}
         className="relative z-10 lg:hidden"
       >
         <div className="absolute inset-0 bg-[#E35D14]/10 rounded-full blur-[100px] animate-pulse" />
@@ -127,7 +127,7 @@ function UniverseOfMon5Majeur() {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false}}
+            viewport={{ once: true}}
             transition={{ duration: 0.3 }}
             className="relative z-10"
           >

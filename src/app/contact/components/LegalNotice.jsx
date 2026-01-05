@@ -45,7 +45,7 @@ function LegalNotice() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           className="space-y-10"
         >
           <div>
@@ -116,7 +116,7 @@ function LegalNotice() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
           className="flex flex-col justify-between"
         >
           <div className="space-y-10">

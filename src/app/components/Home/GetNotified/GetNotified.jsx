@@ -96,7 +96,7 @@ function GetNotified() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
                 className="flex flex-row gap-2 md:gap-4 items-center justify-between md:text-lg xl:text-xl"
                 onSubmit={handleSubmit}
               >
@@ -126,7 +126,7 @@ function GetNotified() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
                 className="text-gray-400 text-sm pb-4"
               >
                 {content.description}
@@ -135,7 +135,7 @@ function GetNotified() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.4, delay: 0.2 }}
                 className="flex"
               >
                 <p className="py-4 font-galdeano leading-normal tracking-wider px-12 text-primary1 border border-primary1/50 shadow-white/30 backdrop-blur-xl rounded-xl shadow text-lg md:text-xl lg:text-2xl">

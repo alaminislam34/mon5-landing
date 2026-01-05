@@ -34,7 +34,7 @@ function Scrolling() {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className="relative min-h-30 z-20 mt-12 md:mt-16 lg:mt-20 font-aldrich"
       aria-label={t.scrolling.aria.sectionLabel}
     >
