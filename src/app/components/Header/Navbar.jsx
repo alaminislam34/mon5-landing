@@ -10,11 +10,13 @@ import { BsArrowUpRightSquareFill } from "react-icons/bs";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "@/Providers/ContextProvider";
 import LanguageSwitcher from "../Language/LanguageSwitcher";
+import toast from "react-hot-toast";
 
 function Navbar() {
   const [isScroll, setIsScroll] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
+  const [email, setEmail] = useState("");
   const pathName = usePathname();
   const { t } = useLanguage();
 
@@ -47,6 +49,33 @@ function Navbar() {
       ? "bg-dark shadow-xl shadow-primary1/10"
       : "bg-transparent";
 
+  const handleSendAppLink = async () => {
+    if (!email) {
+      toast.error("Please input your email first!");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/send-link", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success("Download link sent to your email!");
+      } else {
+        toast.error(data.error || "Something went wrong!");
+      }
+    } catch (error) {
+      toast.error("Failed to connect to the server.");
+      console.error(error);
+    }
+  };
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${navBackground}`}
@@ -112,12 +141,17 @@ function Navbar() {
             <input
               id="desktop-email"
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder={inputPlaceholder}
               className="py-2 pl-8 pr-4 rounded-lg ring-border bg-input-bg text-sm focus:outline-none focus:ring-primary1 ring-1 transition-shadow"
             />
           </div>
 
-          <button className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 truncate hover:opacity-90 transition-opacity active:scale-95">
+          <button
+            onClick={handleSendAppLink}
+            className="py-2 px-4 rounded-lg bg-linear-to-r from-primary1 to-primary2 text-white font-semibold text-sm flex items-center flex-row gap-2 truncate hover:opacity-90 transition-opacity active:scale-95"
+          >
             {buttonText}
             <BsArrowUpRightSquareFill aria-hidden="true" />
           </button>
