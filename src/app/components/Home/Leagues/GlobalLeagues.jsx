@@ -32,9 +32,9 @@ function GlobalLeagues() {
             <motion.div
               initial={{ opacity: 0, rotate: 0 }}
               whileInView={{ opacity: 1, rotate: -6 }}
-              viewport={{ once: false}}
+              viewport={{ once: false }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className="absolute -top-40 -right-80 z-0"
+              className="absolute -top-70 -right-90 z-0"
             >
               <Image
                 src="/images/circle.png"
@@ -46,49 +46,18 @@ function GlobalLeagues() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, x: 20 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="absolute top-60 md:top-60 lg:top-60 lg:right-20 ring-2 ring-[#2D2D2D] z-20 bg-linear-to-r from-[#000000] to-[#1B0D05] rounded-2xl py-2 px-6 flex flex-col items-start max-w-80"
-            >
-              <h1 className="font-bold tracking-tigh md:text-lg text-primary1">
-                {content.badgeTitle}
-              </h1>
-              <p className="text-Base font-galdeano mt-1">
-                {content.badgeDescription}
-              </p>
-            </motion.div>
-
-            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false}}
+              viewport={{ once: false }}
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/images/mobile1.png"
+                src="/images/globalLeage.png"
                 height={1000}
                 width={1200}
                 alt="Global League Mobile Interface"
-                className="lg:h-210 md:h-180 h-150 w-auto object-cover scale-110 relative z-10"
+                className="lg:max-h-220 w-auto relative z-10"
                 priority
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false}}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="absolute bottom-10 md:bottom-0 md:left-0 left-0 lg:left-28 z-0"
-            >
-              <Image
-                src="/images/volyball.png"
-                height={1000}
-                width={1200}
-                alt=""
-                className="max-w-40"
               />
             </motion.div>
           </div>
@@ -98,7 +67,7 @@ function GlobalLeagues() {
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false}}
+            viewport={{ once: false }}
             transition={{ duration: 0.3 }}
             className="ring-2 ring-primary2/20 flex flex-col items-start bg-dark/5 backdrop-blur-xs p-6 md:p-8 rounded-2xl lg:max-w-5/6 w-full"
           >
