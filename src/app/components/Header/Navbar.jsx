@@ -68,6 +68,7 @@ function Navbar() {
 
       if (res.ok) {
         toast.success("Download link sent to your email!");
+        setEmail("");
       } else {
         toast.error(data.error || "Something went wrong!");
       }
