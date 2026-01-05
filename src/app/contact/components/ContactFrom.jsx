@@ -4,9 +4,12 @@ import React, { useState, useEffect } from "react";
 import { Send } from "lucide-react";
 import { motion } from "motion/react";
 import { useLanguage } from "@/Providers/ContextProvider";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
   const [mounted, setMounted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { t } = useLanguage();
   const content = t.ContactForm;
 
@@ -20,9 +23,50 @@ const ContactForm = () => {
     setMounted(true);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
+
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error("All fields are required.");
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+        }),
+      });
+
+      // Handle non-2xx responses
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData?.message || "Something went wrong");
+      }
+
+      toast.success("Message sent successfully.");
+
+      // Reset form after success
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Contact form error:", error);
+      toast.error(error.message || "Failed to send message.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -45,7 +89,7 @@ const ContactForm = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true}}
+              viewport={{ once: true }}
               transition={{ duration: 0.3 }}
               className="space-y-2"
             >
@@ -70,7 +114,7 @@ const ContactForm = () => {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true}}
+              viewport={{ once: true }}
               transition={{ duration: 0.3 }}
               className="space-y-2"
             >
@@ -96,7 +140,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
             className="space-y-2"
           >
@@ -121,7 +165,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.4 }}
             className="flex justify-end"
           >
@@ -129,7 +173,7 @@ const ContactForm = () => {
               type="submit"
               className="group bg-[#ea7032] hover:bg-[#d65f22] text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-orange-950/20"
             >
-              {content.submitBtn}
+              {isLoading ? "Sending......." : content.submitBtn}
               <Send
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"
@@ -139,6 +183,7 @@ const ContactForm = () => {
           </motion.div>
         </form>
       </div>
+      <Toaster position="top-center" />
     </section>
   );
 };
