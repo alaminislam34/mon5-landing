@@ -31,7 +31,7 @@ function LegalNotice() {
         transition={{ duration: 0.3 }}
         className="text-center mb-20"
       >
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
           {content.title}{" "}
           <span className="text-[#ea7032]">{content.titleHighlight}</span>
         </h1>

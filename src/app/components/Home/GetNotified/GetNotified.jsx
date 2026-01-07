@@ -77,7 +77,7 @@ function GetNotified() {
           <div className="flex items-center relative">
             <div className="md:max-w-3/5 w-full space-y-4 xl:space-y-6 relative z-10">
               <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-medium font-aldrich leading-normal pb-6">
-                {content.sectionTitle}
+                {content.sectionTitle}{" "}
                 <span className="text-primary1">
                   {content.sectionTitleAccent}
                 </span>
