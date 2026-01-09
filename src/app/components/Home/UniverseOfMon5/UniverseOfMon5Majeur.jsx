@@ -33,42 +33,43 @@ function UniverseOfMon5Majeur() {
     "/images/victory-trophy.jpg",
     "/images/stratigic-bonuses.jpg",
   ];
-
   const BonusCard = ({ index, delay, side = "left" }) => (
     <motion.div
       initial={{ opacity: 0, x: side === "left" ? -30 : 30 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true}}
+      viewport={{ once: true }}
       transition={{ duration: 0.4, delay: delay / 1000 }}
-      className="flex flex-col items-center group w-full"
+      className="flex flex-col items-center group w-full px-2" // Added padding to prevent edge touching
     >
-      <div className="py-2 px-4 md:px-6 lg:px-8 text-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-lg transition-all group-hover:border-[#E35D14]/50 w-fit min-h-0 flex flex-col justify-center">
-        <h1
-          className="text-sm lg:text-lg mb-1 font-medium whitespace-nowrap text-white"
+      {/* Text Content Container */}
+      <div className="py-3 px-4 md:px-6 text-center rounded-xl border border-white/50 bg-white/5 backdrop-blur-lg transition-all group-hover:border-[#E35D14]/50 w-full max-w-70 md:max-w-xs lg:max-w-sm flex flex-col justify-center">
+        <h3
+          className="text-sm lg:text-lg mb-1 font-medium text-white leading-snug"
+          // Removed whitespace-nowrap to prevent screen overflow on mobile
           dangerouslySetInnerHTML={createMarkup(content.features[index].title)}
         />
-        <p className="text-[10px] lg:text-xs text-[#B5B5B5] font-galdeano max-w-50 mx-auto leading-tight">
+        <p className="text-[10px] lg:text-xs text-[#B5B5B5] font-galdeano leading-tight opacity-90">
           {content.features[index].subtitle}
         </p>
       </div>
 
-      <div className="relative animate-float mt-2">
+      {/* Image Container */}
+      <div className="relative animate-float mt-4 w-full flex justify-center">
         <Image
           src={featureImages[index]}
-          height={600}
-          width={600}
-          alt=""
-          className="w-48 h-48 md:w-70 lg:w-95 md:h-70 lg:h-95 object-contain"
+          // Optimized dimensions for the actual rendered size
+          height={400}
+          width={400}
+          alt={content.features[index].title || "Feature Image"}
+          priority={index < 2} // Priority load for first few items
+          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </div>
     </motion.div>
   );
 
   return (
-    <div
-      id="features"
-      className="max-w-380 mx-auto w-11/12 md:py-12"
-    >
+    <div id="features" className="max-w-380 mx-auto w-11/12 md:py-12">
       <SectionTitle
         title={content.title}
         colorTitle={content.colorTitle}
@@ -78,7 +79,7 @@ function UniverseOfMon5Majeur() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true}}
+        viewport={{ once: true }}
         className="relative z-10 lg:hidden"
       >
         <div className="absolute inset-0 bg-[#E35D14]/10 rounded-full blur-[100px] animate-pulse" />
@@ -127,7 +128,7 @@ function UniverseOfMon5Majeur() {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
             transition={{ duration: 0.3 }}
             className="relative z-10"
           >
