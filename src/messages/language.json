@@ -11,6 +11,10 @@
         "part2": "Dominate The",
         "animated": "NBA Nights."
       },
+      "downloadLinks": {
+        "googlePlay": "Get it on",
+        "appStore": "Download on the"
+      },
       "description": "Create your dream team, compete with friends, and track real-time NBA stats. Ready to play?",
       "ariaLabels": {
         "googlePlay": "Download on Google Play",
@@ -43,6 +47,8 @@
       "promoText": "Early Access players in the first week unlock 2 exclusive jerseys"
     },
     "CardSlider": {
+      "title": "Why",
+      "colorTitle": "Mon5majeur ?",
       "subtitle": "Flexible. Dynamic. Fun",
       "slides": [
         {
@@ -230,86 +236,200 @@
       "animatedWord": "POLICY",
       "effectiveDate": "Effective Date: 26/11/2025"
     },
-    "Privacy": {
-      "scopeTitle": "Scope",
-      "scopeText": "This Privacy Policy applies to: the MON5MAJEUR application; and the website mon5majeur.com (and any associated site), including when a User subscribes to a launch alert / waitlist.",
-      "controllerTitle": "Data Controller",
-      "controllerText": "MON5MAJEUR, SASU with a share capital of €1,000, registered with the Paris Trade and Companies Register (RCS) under number 993 681 915 (SIRET: 99368191500019), with its registered office at 229 rue Saint-Honoré, 75001 Paris, France.",
-      "privacyContact": "Privacy contact:",
-      "supportContact": "Support:",
-      "collectTitle": "Data We Collect",
-      "collectIntro": "We may collect:",
-      "collectIdentityLabel": "Identity / account:",
-      "collectIdentityText": "email, user ID, username, account-related information (Google/Apple if used).",
-      "collectGameLabel": "Game data:",
-      "collectGameText": "lineups, scores, rankings, leagues, progression, Credits, preferences.",
-      "collectTechLabel": "Technical data:",
-      "collectTechText": "device, OS, version, logs, crash reports, IP address / connection information.",
-      "collectPurchaseLabel": "In-app purchases:",
-      "collectPurchaseText": "identifiers/receipts required for verification/restoration (no banking data).",
-      "collectAdLabel": "Advertising:",
-      "collectAdText": "advertising identifiers (IDFA/GAID) and ad interactions, depending on your choices.",
-      "collectSupportLabel": "Support:",
-      "collectSupportText": "messages and information sent to customer support.",
-      "collectWebLabel": "Website (launch alert):",
-      "collectWebText": "email + technical metadata (e.g., IP/logs) required for security and proper operation.",
-      "collectSensitive": "We do not knowingly collect sensitive data.",
-      "purposesTitle": "Purposes",
-      "purposesIntro": "We use your data to:",
-      "purposesText": "provide and manage the service (account, gameplay, leagues, rankings); ensure security and prevent fraud; improve performance (bugs/crashes); manage in-app purchases; display and measure advertising; send communications (support, security, and launch alerts if you subscribe).",
-      "legalTitle": "Legal Bases",
-      "legalIntro": "Depending on the processing activity:",
-      "legalText": "Performance of a contract (Terms): account, service, gameplay; Legitimate interests: security, fraud prevention, technical improvements; Consent: personalized ads and certain identifiers/trackers where required; Legal obligation: accounting/tax obligations where applicable.",
-      "adTitle": "Advertising & Mediation",
-      "adText": "The app displays ads and uses: Google AdMob, and AppLovin MAX (mediation), which may integrate multiple ad networks. Depending on your choices (and the rules applicable in your region), certain partners may process advertising identifiers and technical signals to serve/measure ads, including personalized ads when you consent.",
-      "adConsentTitle": "Managing consent / withdrawing consent",
-      "adConsentText": "You can change your choices via: a consent screen (on first launch or via Settings > Privacy / Privacy options in the app, if available), and/or your device settings (iOS/Android).",
-      "rightsTitle": "Your Rights",
-      "rightsText": "You have the rights of access, rectification, erasure, objection, restriction, portability, and the right to withdraw consent.",
-      "rightsExercise": "To exercise your rights:",
-      "rightsVerification": "(identity verification may be requested if necessary). You may also lodge a complaint with the CNIL (French data protection authority).",
-      "contactTitle": "Contact"
+
+    "PrivacyPolicy": {
+      "scope": {
+        "title": "Scope",
+        "content": "This Privacy Policy applies to: \nthe MON5MAJEUR application; and the website mon5majeur.com (and any associated site), including when a User subscribes to a launch alert / waitlist."
+      },
+      "data_controller": {
+        "title": "Data Controller",
+        "content": "MON5MAJEUR, SASU with a share capital of €1,000, registered with the Paris Trade and Companies Register (RCS) under number 993 681 915 (SIRET: 99368191500019), with its registered office at 229 rue Saint-Honoré, 75001 Paris, France.",
+        "privacy_contact_label": "Privacy contact:",
+        "privacy_contact_email": "contact@mon5majeur.fr",
+        "support_label": "Support:",
+        "support_email": "support@mon5majeur.com"
+      },
+      "data_collection": {
+        "title": "Data We Collect",
+        "intro": "We may collect:",
+        "identity_account": "Identity / account: email, user ID, username, account-related information (Google/Apple if used).",
+        "game_data": "Game data: lineups, scores, rankings, leagues, progression, Credits, preferences.",
+        "technical_data": "Technical data: device, OS, version, logs, crash reports, IP address / connection information.",
+        "in_app_purchases": "In-app purchases: identifiers/receipts required for verification/restoration (no banking data).",
+        "advertising": "Advertising: advertising identifiers (IDFA/GAID) and ad interactions, depending on your choices.",
+        "support": "Support: messages and information sent to customer support.",
+        "website": "Website (launch alert): email + technical metadata (e.g., IP/logs) required for security and proper operation.",
+        "sensitive_data_footer": "We do not knowingly collect sensitive data."
+      },
+      "purposes": {
+        "title": "Purposes",
+        "content": "We use your data to: provide and manage the service (account, gameplay, leagues, rankings); ensure security and prevent fraud; improve performance (bugs/crashes); manage in-app purchases; display and measure advertising; send communications (support, security, and launch alerts if you subscribe)."
+      },
+      "legal_bases": {
+        "title": "Legal Bases",
+        "intro": "Depending on the processing activity:",
+        "contract": "Performance of a contract (Terms): account, service, gameplay;",
+        "legitimate_interest": "Legitimate interests: security, fraud prevention, technical improvements;",
+        "consent": "Consent: personalized ads and certain identifiers/trackers where required;",
+        "legal_obligation": "Legal obligation: accounting/tax obligations where applicable."
+      },
+      "advertising_mediation": {
+        "title": "Advertising & Mediation",
+        "content": "The app displays ads and uses: Google AdMob, and AppLovin MAX (mediation), which may integrate multiple ad networks. Depending on your choices (and the rules applicable in your region), certain partners may process advertising identifiers and technical signals to serve/measure ads, including personalized ads when you consent.",
+        "management_title": "Managing consent / withdrawing consent",
+        "management_content": "You can change your choices via: a consent screen (on first launch or via Settings > Privacy / Privacy options in the app, if available), and/or your device settings (iOS/Android)."
+      },
+      "recipients": {
+        "title": "Recipients / Processors",
+        "intro": "Your data may be processed by:",
+        "list": [
+          "Apple / Google (in-app purchases, platform services);",
+          "Google AdMob, AppLovin MAX, and ad networks enabled through mediation (depending on consent);",
+          "Amazon Web Services (AWS) (servers, storage, databases);",
+          "Where applicable, technical service providers (monitoring, crash reports, analytics);",
+          "Public authorities, where legally required."
+        ],
+        "footer": "We never sell your data."
+      },
+      "ad_partners": {
+        "title": "List of Advertising Partners",
+        "content": "The list of ad networks may change depending on country/campaigns/availability. We provide an up-to-date list in the App (Settings > Privacy / Privacy options), and/or on a dedicated page: mon5majeur.com/ad-partners."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "active_account": "Active account: as long as necessary to provide the service.",
+        "deletion": "Account deletion: deletion/anonymization within 30 days (except legal obligations/disputes).",
+        "logs": "Logs: limited, proportionate retention (security/diagnostics).",
+        "launch_alert": "Launch alert (website): email kept until launch + a reasonable period after notification, or until you unsubscribe."
+      },
+      "cookies": {
+        "title": "Cookies / Trackers (Website)",
+        "content": "The website may use trackers for: operation (strictly necessary), audience measurement, potentially advertising (if implemented on the website). Where required, a consent banner allows you to manage your choices."
+      },
+      "security": {
+        "title": "Security",
+        "content": "Reasonable measures are implemented, including: encrypted communications (HTTPS/TLS), access controls, backups, and monitoring."
+      },
+      "transfers": {
+        "title": "Security Transfers Outside the EU",
+        "content": "Depending on the architecture and services used (AWS + advertising), processing may occur outside the EU/EEA. Where this happens, we implement appropriate safeguards (e.g., Standard Contractual Clauses) and suitable protective measures."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "You have the rights of access, rectification, erasure, objection, restriction, portability, and the right to withdraw consent.",
+        "exercise": "To exercise your rights: contact@mon5majeur.fr (identity verification may be requested if necessary).",
+        "complaint": "You may also lodge a complaint with the CNIL (French data protection authority)."
+      },
+      "minors": {
+        "title": "Minors",
+        "content": "The app is accessible from age 13. For users under 15, certain consent-based processing (e.g., personalized advertising) may require parental consent."
+      },
+      "changes": {
+        "title": "Changes",
+        "content": "This Policy may be updated. In case of major changes, we will inform you via the app and/or email when relevant."
+      },
+      "contact": {
+        "title": "CONTACT",
+        "list": [
+          " 📧 contact@mon5majeur.fr (privacy)",
+          "📧 support@mon5majeur.com (support)"
+        ]
+      }
     },
     "TermsBanner": {
       "title": "Terms &",
       "animatedWord": "Conditions",
       "effectiveDate": "Effective Date: 26/11/2025"
     },
-    "Terms": {
-      "mainTitle": "General Terms of Use (CGU)",
-      "lastUpdated": "Last updated: 26/12/2025",
-      "publisherTitle": "Application Publisher",
-      "publisherText": "The MON5MAJEUR application is edited by MON5MAJEUR, a SASU with a capital of €1,000, registered at the RCS of Paris (993 681 915).",
-      "officeLabel": "📍 Office:",
-      "officeValue": "229 rue Saint-Honoré, 75001 Paris, France.",
-      "directorLabel": "👤 President & Publication Director:",
-      "directorValue": "Robin Martinella.",
-      "contactLabel": "📧 Contact:",
-      "hostingLabel": "🌐 Hosting (Site):",
-      "hostingValue": "OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
-      "purposeTitle": "Purpose & Description",
-      "purposeText": "By accessing the Application, the User accepts these terms without reserve. MON5MAJEUR is a Fantasy Basketball application allowing users to create virtual teams, join leagues, and view statistics.",
-      "nbaDisclaimer": "MON5MAJEUR is not affiliated with the NBA. No protected NBA logos or visuals are used.",
-      "accessTitle": "Access Conditions",
-      "accessText1": "Accessible from age 13. Minors require parental authorization. For those under 15, parental consent is required for data treatments like personalized ads.",
-      "accessText2": "The app is available on App Store and Google Play; users are responsible for their own internet connection costs.",
-      "accountTitle": "Accounts & Security",
-      "accountText1": "Users must provide accurate information and protect their credentials. Accounts inactive for 24 months may be deleted after notification.",
-      "accountText2": "Account deletion can be requested via the app or at",
-      "creditsTitle": "Credits & Ads",
-      "creditsText": "Credits are virtual currency only, non-transferable and non-convertible to cash. Remaining credits are lost if the account is deleted.",
-      "adsText": "The app may contain ads or rewarded videos. Ads may be personalized based on user settings.",
-      "conductTitle": "Prohibited Conduct",
-      "conductForbidden": "Strictly forbidden:",
-      "conductText": "Bots, hacks, scripts, bug exploitation, or any action aimed at distorting the game. Usernames and league names must remain respectful. Sanctions include warnings, suspension, or account deletion.",
-      "contestsTitle": "Contests & Prizes",
-      "contestsText1": "Prizes are non-exchangeable and non-convertible. Physical prizes (jerseys) are limited to residents of Metropolitan France, Belgium, Luxembourg, and Monaco.",
-      "contestsText2": "Jersey selection (model, team, season) is at the Publisher's discretion. Apple and Google are not sponsors or organizers of these contests.",
-      "legalTitle": "Legal & Liability",
-      "legalText1": "All app elements (code, design, text) belong to the Publisher. Reproduction is prohibited.",
-      "legalText2": "The Application is provided \"as is\". The Publisher is not liable for network outages, indirect losses, or Force Majeure.",
-      "governingTitle": "Governing Law",
-      "governingText": "These terms are governed by French law. Any disputes will be handled by the courts within the jurisdiction of the headquarters."
+
+    "TermsAndConditions": {
+      "1stTitle": "APPLICATION PUBLISHER",
+      "1stContent": "The MON5MAJEUR application (hereinafter the Application) is published and operated by: MON5MAJEUR, SASU with a capital of €1,000, registered with the Paris RCS under the number 993 681 915 (SIRET: 99368191500019), with its registered office located at 229 rue Saint-Honoré, 75001 Paris, France. \nPresident: Robin Martinella.\nPublication Director: Robin Martinella. \nContact: support@mon5majeur.com",
+      "2ndTitle": "HOSTING",
+      "2ndContent": "The website is hosted by OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
+      "3rdTitle": "PURPOSE OF THE TCU",
+      "3rd": "These TCU define the terms of access and use of MON5MAJEUR. \nBy accessing the Application, the User agrees to these TCU without reservation.",
+      "4thTitle": "DESCRIPTION OF THE APPLICATION",
+      "4thContent": "MON5MAJEUR is a Fantasy Basketball application that allows Users to: \nCreate virtual teams based on the real performance of NBA players. \n-Participate in public leagues. \n-Participate in private leagues. \n-View rankings, scores, and statistics. \n-Earn and use virtual currency (Credits).  \n-Access free and paid content via in-app purchases, bonuses, and rewarded advertisements. Independence: MON5MAJEUR is not affiliated with the NBA. No NBA-protected logos or visuals are used.",
+      "5thTitle": "CONDITIONS OF ACCESS",
+      "5th_1st_subtitle": "Availability, download, and compatibility",
+      "5th_1st_content": "The Application is (or will be) available for free on the App Store (iOS) and Google Play (Android) upon its launch.\nThe User must have a compatible device and an Internet connection (costs at their expense).",
+      "5th_2nd_subtitle": " Minimum age",
+      "5th_2nd_content": "The Application is accessible from 13 years old. Minors use the service with the permission and under the responsibility of their parents or guardians. \nFor Users under 15, when processing is based on consent (e.g., personalized advertising), parental consent may be required.",
+      "5th_3rd_subtitle": " In-app purchases",
+      "5th_3rd_content": "Purchases are optional and processed exclusively via the App Store and Google Play. The holder of the payment method is responsible for transactions.",
+      "5th_4th_subtitle": " Parental controls",
+      "5th_4th_content": "Parents are encouraged to use the parental control tools available on these platforms. ",
+      "6thTitle": "ACCOUNT CREATION AND MANAGEMENT",
+      "6th_1st_subtitle": "Registration:",
+      "6th_1st_content": " Creation via email or Google/Apple account.",
+      "6th_2nd_subtitle": "Accuracy:",
+      "6th_2nd_content": " The User providers accurate and up-to-date information.",
+      "6th_3rd_subtitle": "Security:",
+      "6th_3rd_content": " The User protects their login credentials; if suspicious, they contact support.",
+      "6th_4th_subtitle": "Inactivity:",
+      "6th_4th_content": " An inactive account for 24 months may be deleted after notification.",
+      "6th_5th_subtitle": "Deletion:",
+      "6th_5th_content": " Account deletion upon request via the Application or support@mon5majeur.com.",
+      "7thTitle": "VIRTUAL CREDITS AND PURCHASES",
+      "7th_1st_subtitle": "Nature:",
+      "7th_1st_content": " Credits are a virtual currency specific to the game, non-transferable and non-convertible to cash.",
+      "7th_2nd_subtitle": "Payments:",
+      "7th_2nd_content": " Processed via Apple/Google; no banking data is stored by MON5MAJEUR.",
+      "7th_3rd_subtitle": "Refunds:",
+      "7th_3rd_content": " Subject to the rules of the App Store and Google Play.Account deletion: Remaining Credits are lost without compensation.",
+      "7th_4th_subtitle": "Changes:",
+      "7th_4th_content": " The Publisher may modify the functioning/price of Credits in a clear and fair manner.",
+      "8thTitle": " ADVERTISING AND SPONSORED CONTENT",
+      "8thContent": "The Application may contain advertisements, sponsored videos, and partner content. \nSome rewards may require watching an advertisement (optional). \nAdvertisements may be personalized based on the User’s choices and device settings.",
+      "9thTitle": "USAGE RULES AND CODE OF CONDUCT",
+      "9th_1st_subtitle": "Prohibitions:",
+      "9th_1st_content": " Bots, hacks, scripts, exploiting bugs, bypassing the system, or any action aimed at distorting the game.",
+      "9th_2nd_subtitle": "Usernames/leagues:",
+      "9th_2nd_content": " Content must be respectful and comply with laws. The Publisher May delete/modify any inappropriate content.",
+      "9th_3rd_subtitle": "Reporting:",
+      "9th_3rd_content": " Abuse/bugs to support@mon5majeur.com.",
+      "9th_4th_subtitle": "Sanctions:",
+      "9th_4th_content": " Warning, restriction, suspension, or account deletion.",
+      "10thTitle": "CONTESTS",
+      "10thContent": "MON5MAJEUR  may organize free contests (no purchase necessary) allowing users to win rewards (e.g., jerseys, merchandise, Credits).",
+      "10th_1st_subtitle": "Independence of Apple/Google:",
+      "10th_1st_content": " Apple App Store and Google Play do not participate in the organization/funding/validation of the contests.",
+      "10th_2nd_subtitle": "Terms:",
+      "10th_2nd_content": "  Each contest specifies in the Application: dates, conditions, number of winners, selection method, and prize delivery details.",
+      "10th_3rd_subtitle": "Prizes:",
+      "10th_3rd_content": "  Prizes are non-exchangeable, non-refundable, and non-convertible to cash. In case of unavailability, a replacement prize of equivalent or higher value may be offered.",
+      "10th_4th_subtitle": "Geographic eligibility (physical prizes):",
+      "10th_4th_content": "Physical prizes are reserved for residents of: Metropolitan France, Belgium, Luxembourg, Monaco. Otherwise, the prize will be awarded to the next eligible participant.",
+      "10th_5th_subtitle": "Details on prizes (jerseys):",
+      "10th_5th_content": "“Jersey” prizes may come from current or past collections (previous seasons, throwback, previous editions). A jersey may correspond to a past season.",
+      "10th_6th_subtitle": "Prize selection:",
+      "10th_6th_content": "Unless expressly stated, the choice of model (player, team, season, color, edition) is at the discretion of the Publisher. The winner cannot request a specific model. The Publisher may offer a choice from a limited selection.",
+      "10th_7th_subtitle": "Sizes:",
+      "10th_7th_content": "S, M, L, XL, XXL depending on availability; alternative/equivalent prize if unavailable.",
+      "10th_8th_subtitle": "Replacement:",
+      "10th_8th_content": "Within stock limits; replacement with an equivalent or superior prize possible.",
+      "10th_9th_subtitle": "Fraud:",
+      "10th_9th_content": "Cheating/bug exploitation: disqualification and possible sanctions.",
+      "11thTitle": "ACCOUNT SUSPENSION OR DELETION",
+      "11thContent": "The Publisher may suspend/delete an account in case of fraud, cheating, hacking, failure to comply with TCU, or inappropriate content.",
+      "11th_1st_subtitle": "Permanent deletion:",
+      "11th_1st_content": "Data, Credits, and associated content may be lost. Appeal possible via support.",
+      "12thTitle": "MAINTENANCE AND AVAILABILITY",
+      "12thContent": "The Application may be temporarily interrupted (maintenance, incidents). The Publisher may modify/remove features for technical, legal, or security reasons.",
+      "13thTitle": "INTELLECTUAL PROPERTY AND THIRD-PARTY DATA",
+      "13thContent": "All elements (code, design, texts, sounds) belong to the Publisher. Personal, non-transferable usage license; any reproduction/commercial exploitation is prohibited. \nSome data may come from third-party APIs: the Publisher does not guarantee the accuracy/continuous availability.",
+      "14thTitle": " LIMITATION OF LIABILITY",
+      "14thContent": "The application is provided “as is.” \nThe Publisher cannot be held responsible for network/third-party failures, indirect losses, damages related to misuse.",
+      "15thTitle": " FORCE MAJEURE",
+      "15thContent": "No liability in case of unpredictable/irresistible events.",
+      "16thTitle": " PERSONAL DATA",
+      "16thContent": "The processing of personal data is detailed in the Privacy Policy available in the Application and on the website.",
+      "17thTitle": " APPLICABLE LAW AND DISPUTES",
+      "17thContent": "TCU governed by French law. Disputes: competent courts in the jurisdiction of the registered office.",
+      "17th_1st_subtitle": "Contact:",
+      "17th_1st_content": "support@mon5majeur.com"
     },
     "Footer": {
       "notifiedTitle": "Be notified when it",
@@ -340,6 +460,10 @@
         "part1": "Créez votre 5 majeur.",
         "part2": "Dominez les",
         "animated": "Nuits NBA."
+      },
+      "downloadLinks": {
+        "googlePlay": "Obtenez-le sur",
+        "appStore": "Télécharger sur le"
       },
       "description": "Créez votre équipe de rêve, affrontez vos amis et suivez les statistiques de la NBA en temps réel. Prêt à jouer ?",
       "ariaLabels": {
@@ -373,6 +497,8 @@
       "promoText": "Les joueurs en accès anticipé de la première semaine débloquent 2 maillots exclusifs"
     },
     "CardSlider": {
+      "title": "Pourquoi",
+      "colorTitle": "Mon5majeur ?",
       "subtitle": "Flexible. Dynamique. Amusant",
       "slides": [
         {
@@ -423,7 +549,7 @@
     "PrivateLeagues": {
       "title": "Ligues Privées",
       "subtitle": "Défiez vos amis",
-      "description": "Créez votre propre mini-ligue entre amis. Nouvelles compositions chaque soir, Playoffs, boosts stratégiques… La façon la plus fun de jouer entre amis",
+      "description": "Créez votre propre mini-league entre amis. Nouvelles compositions chaque soir, Playoffs, boosts stratégiques… La façon la plus fun de jouer entre amis",
       "joinLeague": "Rejoindre la Ligue",
       "teamName": "Hoops FC",
       "versus": "Vs"
@@ -467,8 +593,8 @@
           "answer": "Des performances réelles de la NBA, mises à jour chaque nuit (et en temps réel pendant les matchs)."
         },
         {
-          "question": "Comment obtenir les 2 maillots exclusifs ?",
-          "answer": "Inscrivez-vous à l'alerte de lancement et créez votre compte durant la première semaine après la sortie : les 2 maillots en jeu seront débloqués et disponibles gratuitement dans la boutique."
+          "question": "How do I get the 2 exclusive jerseys?",
+          "answer": "Sign up for the launch alert and create your account during the first week after release: the 2 in-game jerseys will be unlocked and available to claim for free in the shop."
         }
       ]
     },
@@ -560,86 +686,199 @@
       "animatedWord": "CONFIDENTIALITÉ",
       "effectiveDate": "Date d'entrée en vigueur : 26/11/2025"
     },
-    "Privacy": {
-      "scopeTitle": "Champ d'application",
-      "scopeText": "Cette Politique de Confidentialité s'applique à : l'application MON5MAJEUR ; et le site web mon5majeur.com (ainsi que tout site associé), y compris lorsqu'un Utilisateur s'inscrit à une alerte de lancement / liste d'attente.",
-      "controllerTitle": "Responsable du Traitement",
-      "controllerText": "MON5MAJEUR, SASU au capital social de 1 000 €, immatriculée au Registre du Commerce et des Sociétés (RCS) de Paris sous le numéro 993 681 915 (SIRET : 99368191500019), ayant son siège social au 229 rue Saint-Honoré, 75001 Paris, France.",
-      "privacyContact": "Contact confidentialité :",
-      "supportContact": "Support :",
-      "collectTitle": "Données Collectées",
-      "collectIntro": "Nous pouvons collecter :",
-      "collectIdentityLabel": "Identité / compte :",
-      "collectIdentityText": "e-mail, identifiant utilisateur, nom d'utilisateur, informations liées au compte (Google/Apple si utilisés).",
-      "collectGameLabel": "Données de jeu :",
-      "collectGameText": "compositions, scores, classements, ligues, progression, Crédits, préférences.",
-      "collectTechLabel": "Données techniques :",
-      "collectTechText": "appareil, OS, version, logs, rapports de crash, adresse IP / informations de connexion.",
-      "collectPurchaseLabel": "Achats intégrés :",
-      "collectPurchaseText": "identifiants/reçus requis pour la vérification/restauration (aucune donnée bancaire).",
-      "collectAdLabel": "Publicité :",
-      "collectAdText": "identifiants publicitaires (IDFA/GAID) et interactions publicitaires, selon vos choix.",
-      "collectSupportLabel": "Support :",
-      "collectSupportText": "messages et informations envoyés au service client.",
-      "collectWebLabel": "Site web (alerte de lancement) :",
-      "collectWebText": "e-mail + métadonnées techniques (ex: IP/logs) requises pour la sécurité et le bon fonctionnement.",
-      "collectSensitive": "Nous ne collectons pas sciemment de données sensibles.",
-      "purposesTitle": "Finalités",
-      "purposesIntro": "Nous utilisons vos données pour :",
-      "purposesText": "fournir et gérer le service (compte, gameplay, ligues, classements) ; assurer la sécurité et prévenir la fraude ; améliorer les performances (bugs/crashs) ; gérer les achats intégrés ; afficher et mesurer la publicité ; envoyer des communications (support, sécurité et alertes de lancement si vous y souscrivez).",
-      "legalTitle": "Bases Légales",
-      "legalIntro": "Selon l'activité de traitement :",
-      "legalText": "Exécution d'un contrat (Conditions) : compte, service, gameplay ; Intérêts légitimes : sécurité, prévention de la fraude, améliorations techniques ; Consentement : publicités personnalisées et certains identifiants/traceurs si requis ; Obligation légale : obligations comptables/fiscales le cas échéant.",
-      "adTitle": "Publicité & Médiation",
-      "adText": "L'application affiche des publicités et utilise : Google AdMob et AppLovin MAX (médiation), qui peuvent intégrer plusieurs réseaux publicitaires. Selon vos choix (et les règles applicables dans votre région), certains partenaires peuvent traiter des identifiants publicitaires et des signaux techniques pour diffuser/mesurer les publicités, y compris des publicités personnalisées lorsque vous y consentez.",
-      "adConsentTitle": "Gérer le consentement / retrait du consentement",
-      "adConsentText": "Vous pouvez modifier vos choix via : un écran de consentement (au premier lancement ou via Paramètres > Confidentialité / Options de confidentialité dans l'application, si disponible), et/ou les paramètres de votre appareil (iOS/Android).",
-      "rightsTitle": "Vos Droits",
-      "rightsText": "Vous disposez des droits d'accès, de rectification, d'effacement, d'opposition, de limitation, de portabilité et du droit de retirer votre consentement.",
-      "rightsExercise": "Pour exercer vos droits :",
-      "rightsVerification": "(une vérification d'identité peut être demandée si nécessaire). Vous pouvez également introduire une réclamation auprès de la CNIL.",
-      "contactTitle": "Contact"
+
+    "PrivacyPolicy": {
+      "scope": {
+        "title": "Portée",
+        "content": "Cette Politique de Confidentialité s'applique à : l'application MON5MAJEUR ; et le site web mon5majeur.com (et tout site associé), y compris lorsqu'un Utilisateur s'inscrit à une alerte de lancement / liste d'attente."
+      },
+      "data_controller": {
+        "title": "Responsable du Traitement",
+        "content": "MON5MAJEUR, SASU au capital social de 1 000 €, immatriculée au Registre du Commerce et des Sociétés (RCS) de Paris sous le numéro 993 681 915 (SIRET : 99368191500019), ayant son siège social au 229 rue Saint-Honoré, 75001 Paris, France.",
+        "privacy_contact_label": "Contact confidentialité :",
+        "privacy_contact_email": "contact@mon5majeur.fr",
+        "support_label": "Support :",
+        "support_email": "support@mon5majeur.com"
+      },
+      "data_collection": {
+        "title": "Données que nous collectons",
+        "intro": "Nous pouvons collecter :",
+        "identity_account": "Identité / compte : e-mail, identifiant utilisateur, nom d'utilisateur, informations liées au compte (Google/Apple si utilisés).",
+        "game_data": "Données de jeu : compositions, scores, classements, ligues, progression, Crédits, préférences.",
+        "technical_data": "Données techniques : appareil, OS, version, logs, rapports de crash, adresse IP / informations de connexion.",
+        "in_app_purchases": "Achats intégrés : identifiants/reçus requis pour la vérification/restauration (aucune donnée bancaire).",
+        "advertising": "Publicité : identifiants publicitaires (IDFA/GAID) et interactions publicitaires, selon vos choix.",
+        "support": "Support : messages et informations envoyés au support client.",
+        "website": "Site web (alerte de lancement) : e-mail + métadonnées techniques (ex: IP/logs) nécessaires à la sécurité et au bon fonctionnement.",
+        "sensitive_data_footer": "Nous ne collectons pas sciemment de données sensibles."
+      },
+      "purposes": {
+        "title": "Finalités",
+        "content": "Nous utilisons vos données pour : fournir et gérer le service (compte, gameplay, ligues, classements) ; assurer la sécurité et prévenir la fraude ; améliorer les performances (bugs/crashs) ; gérer les achats intégrés ; afficher et mesurer la publicité ; envoyer des communications (support, sécurité et alertes de lancement si vous vous inscrivez)."
+      },
+      "legal_bases": {
+        "title": "Bases Légales",
+        "intro": "Selon l'activité de traitement :",
+        "contract": "Exécution d'un contrat (CGU) : compte, service, gameplay ;",
+        "legitimate_interest": "Intérêts légitimes : sécurité, prévention de la fraude, améliorations techniques ;",
+        "consent": "Consentement : publicités personnalisées et certains identifiants/traceurs si requis ;",
+        "legal_obligation": "Obligation légale : obligations comptables/fiscales le cas échéant."
+      },
+      "advertising_mediation": {
+        "title": "Publicité et Médiation",
+        "content": "L'application affiche des publicités et utilise : Google AdMob, et AppLovin MAX (médiation), qui peut intégrer plusieurs réseaux publicitaires. Selon vos choix (et les règles applicables dans votre région), certains partenaires peuvent traiter des identifiants publicitaires et des signaux techniques pour diffuser/mesurer les publicités, y compris des publicités personnalisées lorsque vous y consentez.",
+        "management_title": "Gestion du consentement / retrait du consentement",
+        "management_content": "Vous pouvez modifier vos choix via : un écran de consentement (au premier lancement ou via Paramètres > Confidentialité / Options de confidentialité dans l'application, si disponible), et/ou les paramètres de votre appareil (iOS/Android)."
+      },
+      "recipients": {
+        "title": "Destinataires / Sous-traitants",
+        "intro": "Vos données peuvent être traitées par :",
+        "list": [
+          "Apple / Google (achats intégrés, services de plateforme) ;",
+          "Google AdMob, AppLovin MAX et les réseaux publicitaires activés via la médiation (selon le consentement) ;",
+          "Amazon Web Services (AWS) (serveurs, stockage, bases de données) ;",
+          "Le cas échéant, les prestataires techniques (suivi, rapports de crash, analytique) ;",
+          "Les autorités publiques, lorsque la loi l'exige."
+        ],
+        "footer": "Nous ne vendons jamais vos données."
+      },
+      "ad_partners": {
+        "title": "Liste des partenaires publicitaires",
+        "content": "La liste des réseaux publicitaires peut changer selon le pays/les campagnes/la disponibilité. Nous fournissons une liste à jour dans l'Application (Paramètres > Confidentialité) et/ou sur une page dédiée : mon5majeur.com/ad-partners."
+      },
+      "retention": {
+        "title": "Conservation des données",
+        "active_account": "Compte actif : aussi longtemps que nécessaire pour fournir le service.",
+        "deletion": "Suppression du compte : suppression/anonymisation sous 30 jours (sauf obligations légales/litiges).",
+        "logs": "Logs : conservation limitée et proportionnée (sécurité/diagnostic).",
+        "launch_alert": "Alerte de lancement (site web) : e-mail conservé jusqu'au lancement + une période raisonnable après notification, ou jusqu'à votre désinscription."
+      },
+      "cookies": {
+        "title": "Cookies / Traceurs (Site Web)",
+        "content": "Le site web peut utiliser des traceurs pour : le fonctionnement (strictement nécessaire), la mesure d'audience, potentiellement la publicité (si implémentée). Le cas échéant, une bannière de consentement vous permet de gérer vos choix."
+      },
+      "security": {
+        "title": "Sécurité",
+        "content": "Des mesures raisonnables sont mises en œuvre, notamment : communications cryptées (HTTPS/TLS), contrôles d'accès, sauvegardes et surveillance."
+      },
+      "transfers": {
+        "title": "Transferts de sécurité hors UE",
+        "content": "Selon l'architecture et les services utilisés (AWS + publicité), le traitement peut avoir lieu hors UE/EEE. Dans ce cas, nous mettons en œuvre les garanties appropriées (ex: Clauses Contractuelles Types) et des mesures de protection adaptées."
+      },
+      "rights": {
+        "title": "Vos Droits",
+        "content": "Vous disposez des droits d'accès, de rectification, d'effacement, d'opposition, de limitation, de portabilité et du droit de retirer votre consentement.",
+        "exercise": "Pour exercer vos droits : contact@mon5majeur.fr (une vérification d'identité peut être demandée si nécessaire).",
+        "complaint": "Vous pouvez également introduire une réclamation auprès de la CNIL (autorité française de protection des données)."
+      },
+      "minors": {
+        "title": "Mineurs",
+        "content": "L'application est accessible à partir de 13 ans. Pour les utilisateurs de moins de 15 ans, certains traitements basés sur le consentement (ex: publicité personnalisée) peuvent nécessiter le consentement parental."
+      },
+      "changes": {
+        "title": "Modifications",
+        "content": "Cette Politique peut être mise à jour. En cas de modifications majeures, nous vous en informerons via l'application et/ou par e-mail le cas échéant."
+      },
+      "contact": {
+        "title": "Contactez",
+        "list": [
+          "📧 contact@mon5majeur.fr (confidentialité)",
+          "📧 support@mon5majeur.com (support technique)"
+        ]
+      }
     },
     "TermsBanner": {
       "title": "Conditions",
       "animatedWord": "Générales",
       "effectiveDate": "Date d'entrée en vigueur : 26/11/2025"
     },
-    "Terms": {
-      "mainTitle": "Conditions Générales d'Utilisation (CGU)",
-      "lastUpdated": "Dernière mise à jour : 26/12/2025",
-      "publisherTitle": "Éditeur de l'Application",
-      "publisherText": "L'application MON5MAJEUR est éditée par MON5MAJEUR, SASU au capital de 1 000 €, immatriculée au RCS de Paris (993 681 915).",
-      "officeLabel": "📍 Siège social :",
-      "officeValue": "229 rue Saint-Honoré, 75001 Paris, France.",
-      "directorLabel": "👤 Président & Directeur de publication :",
-      "directorValue": "Robin Martinella.",
-      "contactLabel": "📧 Contact :",
-      "hostingLabel": "🌐 Hébergement (Site) :",
-      "hostingValue": "OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
-      "purposeTitle": "Objet & Description",
-      "purposeText": "En accédant à l'Application, l'Utilisateur accepte ces conditions sans réserve. MON5MAJEUR est une application de Fantasy Basketball permettant aux utilisateurs de créer des équipes virtuelles, de rejoindre des ligues et de consulter des statistiques.",
-      "nbaDisclaimer": "MON5MAJEUR n'est pas affilié à la NBA. Aucun logo ou visuel protégé de la NBA n'est utilisé.",
-      "accessTitle": "Conditions d'Accès",
-      "accessText1": "Accessible dès 13 ans. Les mineurs doivent obtenir une autorisation parentale. Pour les moins de 15 ans, le consentement parental est requis pour les traitements de données tels que les publicités personnalisées.",
-      "accessText2": "L'application est disponible sur l'App Store et Google Play ; les frais de connexion internet sont à la charge de l'utilisateur.",
-      "accountTitle": "Comptes & Sécurité",
-      "accountText1": "Les utilisateurs doivent fournir des informations exactes et protéger leurs identifiants. Les comptes inactifs pendant 24 mois peuvent être supprimés après notification.",
-      "accountText2": "La suppression du compte peut être demandée via l'application ou à l'adresse",
-      "creditsTitle": "Crédits & Publicités",
-      "creditsText": "Les crédits sont une monnaie virtuelle uniquement, non transférables et non convertibles en espèces. Les crédits restants sont perdus en cas de suppression du compte.",
-      "adsText": "L'application peut contenir des publicités ou des vidéos récompensées. Les publicités peuvent être personnalisées selon les réglages de l'utilisateur.",
-      "conductTitle": "Comportements Interdits",
-      "conductForbidden": "Strictement interdit :",
-      "conductText": "Bots, hacks, scripts, exploitation de bugs ou toute action visant à fausser le jeu. Les pseudonymes et noms de ligues doivent rester respectueux. Les sanctions incluent l'avertissement, la suspension ou la suppression du compte.",
-      "contestsTitle": "Concours & Lots",
-      "contestsText1": "Les lots sont non échangeables et non convertibles. Les lots physiques (maillots) sont limités aux résidents de France Métropolitaine, Belgique, Luxembourg et Monaco.",
-      "contestsText2": "Le choix du maillot (modèle, équipe, saison) est à la discrétion de l'Éditeur. Apple et Google ne sont ni sponsors ni organisateurs de ces concours.",
-      "legalTitle": "Cadre Légal & Responsabilité",
-      "legalText1": "Tous les éléments de l'application (code, design, texte) appartiennent à l'Éditeur. Toute reproduction est interdite.",
-      "legalText2": "L'Application est fournie « en l'état ». L'Éditeur n'est pas responsable des pannes de réseau, des pertes indirectes ou des cas de Force Majeure.",
-      "governingTitle": "Loi Applicable",
-      "governingText": "Ces conditions sont régies par le droit français. Tout litige sera traité par les tribunaux du ressort du siège social."
+    "TermsAndConditions": {
+      "1stTitle": "ÉDITEUR DE L'APPLICATION",
+      "1stContent": "L'application MON5MAJEUR (ci-après l'Application) est publiée et exploitée par : MON5MAJEUR, SASU au capital de 1 000 €, immatriculée au RCS de Paris sous le numéro 993 681 915 (SIRET : 99368191500019), dont le siège social est situé au 229 rue Saint-Honoré, 75001 Paris, France. \nPrésident : Robin Martinella.\nDirecteur de la publication : Robin Martinella. \nContact : support@mon5majeur.com",
+      "2ndTitle": "HÉBERGEMENT",
+      "2ndContent": "Le site web est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
+      "3rdTitle": "OBJET DES CGU",
+      "3rd": "Les présentes CGU définissent les conditions d'accès et d'utilisation de MON5MAJEUR. \nEn accédant à l'Application, l'Utilisateur accepte les présentes CGU sans réserve.",
+      "4thTitle": "DESCRIPTION DE L'APPLICATION",
+      "4thContent": "MON5MAJEUR est une application de Fantasy Basketball qui permet aux Utilisateurs de : \nCréer des équipes virtuelles basées sur les performances réelles des joueurs NBA. \n- Participer à des ligues publiques. \n- Participer à des ligues privées. \n- Consulter les classements, les scores et les statistiques. \n- Gagner et utiliser de la monnaie virtuelle (Crédits). \n- Accéder à des contenus gratuits et payants via des achats intégrés, des bonus et des publicités récompensées. Indépendance : MON5MAJEUR n'est pas affilié à la NBA. Aucun logo ou visuel protégé par la NBA n'est utilisé.",
+      "5thTitle": "CONDITIONS D'ACCÈS",
+      "5th_1st_subtitle": "Disponibilité, téléchargement et compatibilité",
+      "5th_1st_content": "L'Application est (ou sera) disponible gratuitement sur l'App Store (iOS) et Google Play (Android) dès son lancement.\nL'Utilisateur doit disposer d'un appareil compatible et d'une connexion Internet (frais à sa charge).",
+      "5th_2nd_subtitle": "Âge minimum",
+      "5th_2nd_content": "L'Application est accessible dès 13 ans. Les mineurs utilisent le service avec l'autorisation et sous la responsabilité de leurs parents ou tuteurs. \nPour les Utilisateurs de moins de 15 ans, lorsque le traitement est fondé sur le consentement (ex: publicité personnalisée), le consentement parental peut être requis.",
+      "5th_3rd_subtitle": "Achats intégrés",
+      "5th_3rd_content": "Les achats sont facultatifs et traités exclusivement via l'App Store et Google Play. Le titulaire du moyen de paiement est responsable des transactions.",
+      "5th_4th_subtitle": "Contrôle parental",
+      "5th_4th_content": "Les parents sont encouragés à utiliser les outils de contrôle parental disponibles sur ces plateformes.",
+      "6thTitle": "CRÉATION ET GESTION DE COMPTE",
+      "6th_1st_subtitle": "Inscription :",
+      "6th_1st_content": "Création via e-mail ou compte Google/Apple.",
+      "6th_2nd_subtitle": "Exactitude :",
+      "6th_2nd_content": "L'Utilisateur fournit des informations exactes et à jour.",
+      "6th_3rd_subtitle": "Sécurité :",
+      "6th_3rd_content": "L'Utilisateur protège ses identifiants de connexion ; en cas de suspicion, il contacte le support.",
+      "6th_4th_subtitle": "Inactivité :",
+      "6th_4th_content": "Un compte inactif pendant 24 mois peut être supprimé après notification.",
+      "6th_5th_subtitle": "Suppression :",
+      "6th_5th_content": "Suppression du compte sur demande via l'Application ou à support@mon5majeur.com.",
+      "7thTitle": "CRÉDITS VIRTUELS ET ACHATS",
+      "7th_1st_subtitle": "Nature :",
+      "7th_1st_content": "Les Crédits sont une monnaie virtuelle spécifique au jeu, non transférable et non convertible en espèces.",
+      "7th_2nd_subtitle": "Paiements :",
+      "7th_2nd_content": "Traités via Apple/Google ; aucune donnée bancaire n'est stockée par MON5MAJEUR.",
+      "7th_3rd_subtitle": "Remboursements :",
+      "7th_3rd_content": "Soumis aux règles de l'App Store et de Google Play. Suppression de compte : les Crédits restants sont perdus sans compensation.",
+      "7th_4th_subtitle": "Modifications :",
+      "7th_4th_content": "L'Éditeur peut modifier le fonctionnement/prix des Crédits de manière claire et équitable.",
+      "8thTitle": "PUBLICITÉ ET CONTENU SPONSORISÉ",
+      "8thContent": "L'Application peut contenir des publicités, des vidéos sponsorisées et du contenu partenaire. \nCertaines récompenses peuvent nécessiter le visionnage d'une publicité (facultatif). \nLes publicités peuvent être personnalisées en fonction des choix de l'Utilisateur et des paramètres de son appareil.",
+      "9thTitle": "RÈGLES D'UTILISATION ET CODE DE CONDUITE",
+      "9th_1st_subtitle": "Interdictions :",
+      "9th_1st_content": "Bots, hacks, scripts, exploitation de bugs, contournement du système ou toute action visant à fausser le jeu.",
+      "9th_2nd_subtitle": "Pseudonymes/ligues :",
+      "9th_2nd_content": "Le contenu doit être respectueux et conforme aux lois. L'Éditeur peut supprimer/modifier tout contenu inapproprié.",
+      "9th_3rd_subtitle": "Signalement :",
+      "9th_3rd_content": "Abus/bugs à support@mon5majeur.com.",
+      "9th_4th_subtitle": "Sanctions :",
+      "9th_4th_content": "Avertissement, restriction, suspension ou suppression de compte.",
+      "10thTitle": "CONCOURS",
+      "10thContent": "MON5MAJEUR peut organiser des concours gratuits (sans obligation d'achat) permettant aux utilisateurs de gagner des récompenses (ex: maillots, produits dérivés, Crédits).",
+      "10th_1st_subtitle": "Indépendance d'Apple/Google :",
+      "10th_1st_content": "Apple App Store et Google Play ne participent pas à l'organisation/financement/validation des concours.",
+      "10th_2nd_subtitle": "Conditions :",
+      "10th_2nd_content": "Chaque concours précise dans l'Application : les dates, les conditions, le nombre de gagnants, le mode de sélection et les détails de livraison des prix.",
+      "10th_3rd_subtitle": "Prix :",
+      "10th_3rd_content": "Les prix sont non échangeables, non remboursables et non convertibles en espèces. En cas d'indisponibilité, un prix de remplacement de valeur équivalente ou supérieure peut être proposé.",
+      "10th_4th_subtitle": "Éligibilité géographique (prix physiques) :",
+      "10th_4th_content": "Les prix physiques sont réservés aux résidents de : France métropolitaine, Belgique, Luxembourg, Monaco. Dans le cas contraire, le prix sera attribué au participant éligible suivant.",
+      "10th_5th_subtitle": "Détails sur les prix (maillots) :",
+      "10th_5th_content": "Les prix « Maillot » peuvent provenir de collections actuelles ou passées (saisons précédentes, throwback, éditions antérieures). Un maillot peut correspondre à une saison passée.",
+      "10th_6th_subtitle": "Sélection des prix :",
+      "10th_6th_content": "Sauf mention expresse, le choix du modèle (joueur, équipe, saison, couleur, édition) est à la discrétion de l'Éditeur. Le gagnant ne peut pas demander un modèle spécifique. L'Éditeur peut proposer un choix parmi une sélection limitée.",
+      "10th_7th_subtitle": "Tailles :",
+      "10th_7th_content": "S, M, L, XL, XXL selon disponibilité ; prix alternatif/équivalent si indisponible.",
+      "10th_8th_subtitle": "Remplacement :",
+      "10th_8th_content": "Dans la limite des stocks disponibles ; remplacement par un prix équivalent ou supérieur possible.",
+      "10th_9th_subtitle": "Fraude :",
+      "10th_9th_content": "Triche/exploitation de bugs : disqualification et sanctions possibles.",
+      "11thTitle": "SUSPENSION OU SUPPRESSION DE COMPTE",
+      "11thContent": "L'Éditeur peut suspendre/supprimer un compte en cas de fraude, triche, piratage, non-respect des CGU ou contenu inapproprié.",
+      "11th_1st_subtitle": "Suppression permanente :",
+      "11th_1st_content": "Les données, Crédits et contenus associés peuvent être perdus. Recours possible via le support.",
+      "12thTitle": "MAINTENANCE ET DISPONIBILITÉ",
+      "12thContent": "L'Application peut être temporairement interrompue (maintenance, incidents). L'Éditeur peut modifier/supprimer des fonctionnalités pour des raisons techniques, juriditques ou de sécurité.",
+      "13thTitle": "PROPRIÉTÉ INTELLECTUELLE ET DONNÉES TIERCES",
+      "13thContent": "Tous les éléments (code, design, textes, sons) appartiennent à l'Éditeur. Licence d'utilisation personnelle et non transférable ; toute reproduction/exploitation commerciale est interdite. \nCertaines données peuvent provenir d'API tierces : l'Éditeur ne garantit pas l'exactitude/la disponibilité continue.",
+      "14thTitle": "LIMITATION DE RESPONSABILITÉ",
+      "14thContent": "L'application est fournie « en l'état ». \nL'Éditeur ne peut être tenu responsable des défaillances du réseau/des tiers, des pertes indirectes, des dommages liés à une mauvaise utilisation.",
+      "15thTitle": "FORCE MAJEURE",
+      "15thContent": "Aucune responsabilité en cas d'événements imprévisibles/irrésistibles.",
+      "16thTitle": "DONNÉES PERSONNELLES",
+      "16thContent": "Le traitement des données personnelles est détaillé dans la Politique de Confidentialité disponible dans l'Application et sur le site web.",
+      "17thTitle": "DROIT APPLICABLE ET LITIGES",
+      "17thContent": "CGU régies par le droit français. Litiges : tribunaux compétents du ressort du siège social.",
+      "17th_1st_subtitle": "Contact :",
+      "17th_1st_content": "support@mon5majeur.com"
     },
     "Footer": {
       "notifiedTitle": "Soyez notifié lors du",

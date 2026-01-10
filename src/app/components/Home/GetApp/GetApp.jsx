@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { useLanguage } from "@/Providers/ContextProvider";
+import Link from "next/link";
 
 const GetApp = () => {
   const [mounted, setMounted] = useState(false);
@@ -41,8 +42,8 @@ const GetApp = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false}}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
             className="flex items-center justify-center"
           >
             <Image
@@ -50,7 +51,7 @@ const GetApp = () => {
               height={800}
               width={1200}
               alt="Mon5Majeur App Preview"
-              className="md:max-w-90 lg:max-w-100"
+              className="max-w-60 md:max-w-80 lg:max-w-100"
             />
           </motion.div>
 
@@ -63,8 +64,8 @@ const GetApp = () => {
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
               className="text-lg md:text-xl lg:text-2xl font-galdeano text-Base"
             >
               {content.description}
@@ -72,32 +73,59 @@ const GetApp = () => {
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-row items-center gap-4 sm:gap-6 my-4"
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.4, ease: "easeOut" }}
+              className="flex flex-row items-center gap-4 sm:gap-6"
             >
-              <Image
-                src="/images/google-play.png"
-                height={200}
-                width={500}
-                alt="Google Play Store"
-                className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto cursor-pointer"
-              />
-              <Image
-                src="/images/app-store.png"
-                height={200}
-                width={500}
-                alt="Apple App Store"
-                className="h-10 sm:h-14 md:h-16 hover:opacity-90 transition-opacity bg-dark/50 rounded-lg w-auto cursor-pointer"
-              />
+              <Link href={"#"}>
+                <div className="rounded-xl flex flex-row items-center gap-2 border-gray-500/50 backdrop-blur-md py-3 px-4 justify-between border">
+                  <div>
+                    <Image
+                      src={"/logos/play.png"}
+                      height={50}
+                      width={50}
+                      alt="Play store"
+                      className="w-7 md:w-8 h-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-xs truncate text-gray-400">
+                      {t.banner.downloadLinks.googlePlay}
+                    </p>
+                    <p className="text-lg truncate md:text-xl font-semibold leading-none">
+                      Play Store
+                    </p>
+                  </div>
+                </div>
+              </Link>
+              <Link href={"#"}>
+                <div className="rounded-xl flex flex-row items-center gap-2 border-gray-500/50 backdrop-blur-md py-3 px-4 justify-between border">
+                  <div>
+                    <Image
+                      src={"/logos/apple-black-logo.png"}
+                      height={50}
+                      width={50}
+                      alt="Play store"
+                      className="w-7 md:w-8 h-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-xs truncate text-gray-400">
+                      {t.banner.downloadLinks.appStore}
+                    </p>
+                    <p className="text-lg truncate md:text-xl font-semibold leading-none">
+                      App Store
+                    </p>
+                  </div>
+                </div>
+              </Link>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.6 }}
               className="py-4 flex relative z-20 my-4"
             >
               <a
@@ -114,7 +142,7 @@ const GetApp = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false}}
+          viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute bottom-0 md:top-0 -right-40 md:-right-20 -z-110"
         >

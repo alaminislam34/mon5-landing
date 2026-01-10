@@ -28,8 +28,8 @@ function PlayersGuide() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false}}
-          transition={{ duration: 0.8 }}
+          viewport={{ once: true}}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             {content.title}{" "}
@@ -46,8 +46,8 @@ function PlayersGuide() {
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false}}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              viewport={{ once: true}}
+              transition={{ duration: 0.4, delay: index * 0.15 }}
               className="flex items-center gap-3 text-lg md:text-xl font-medium"
             >
               <div className="text-primary1 shrink-0">
@@ -64,8 +64,8 @@ function PlayersGuide() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false}}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true}}
+          transition={{ duration: 0.4, delay: 0.5 }}
           className="space-y-4"
         >
           <a

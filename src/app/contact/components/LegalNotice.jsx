@@ -27,11 +27,11 @@ function LegalNotice() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
         className="text-center mb-20"
       >
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
           {content.title}{" "}
           <span className="text-[#ea7032]">{content.titleHighlight}</span>
         </h1>
@@ -44,8 +44,8 @@ function LegalNotice() {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           className="space-y-10"
         >
           <div>
@@ -115,8 +115,8 @@ function LegalNotice() {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.4 }}
           className="flex flex-col justify-between"
         >
           <div className="space-y-10">

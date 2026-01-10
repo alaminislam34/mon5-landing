@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Instagram, Twitter, Music2 } from "lucide-react";
-import { FaInstagramSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,6 +10,8 @@ import { useLanguage } from "@/Providers/ContextProvider";
 
 function Footer() {
   const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("");
   const { t } = useLanguage();
   const content = t.Footer;
 
@@ -25,14 +26,39 @@ function Footer() {
       </footer>
     );
   }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success(data.message || "Successfully subscribed!");
+        setEmail("");
+      } else {
+        toast.error(data.error || "Something went wrong.");
+      }
+    } catch (error) {
+      toast.error("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <footer className="text-white md:pt-20 pb-10 max-w-380 mx-auto w-11/12 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16"
       >
         <div className="max-w-4xl w-full">
@@ -47,16 +73,24 @@ function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col sm:flex-row gap-4"
+        >
           <input
             type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder={content.placeholder}
             className="bg-[#0f0f0f] border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-primary1 transition-colors font-galdeano"
           />
-          <button className="bg-primary1 hover:bg-orange-600 transition-all text-white font-bold px-8 py-4 rounded-xl whitespace-nowrap active:scale-95">
-            {content.button}
+          <button
+            type="submit"
+            className="bg-primary1 hover:bg-orange-600 transition-all text-white font-bold px-8 py-4 rounded-xl whitespace-nowrap active:scale-95"
+          >
+            {loading ? "Sending....." : content.button}
           </button>
-        </div>
+        </form>
       </motion.div>
 
       <hr className="border-white/10 mb-16" />
@@ -65,8 +99,8 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
           className="col-span-1 md:col-span-1 space-y-6"
         >
           <div className="flex items-center gap-2">
@@ -91,8 +125,8 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="space-y-6"
         >
           <h4 className="text-primary1 font-bold text-xl">{content.home}</h4>
@@ -116,8 +150,8 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           className="space-y-6"
         >
           <h4 className="text-primary1 font-bold text-xl">
@@ -154,8 +188,8 @@ function Footer() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
           className="space-y-6"
         >
           <h4 className="text-primary1 font-bold text-xl uppercase tracking-widest">
@@ -163,22 +197,22 @@ function Footer() {
           </h4>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.instagram.com/mon5majeur/"
+              target="_blank"
               className="py-1 px-1.5 flex items-center justify-center transition-all group bg-linear-to-tr from-yellow-500 to-pink-600 rounded-md hover:shadow-lg shadow-white/50 duration-300"
             >
-              <Instagram
-                size={24}
-                className="text-4xl"
-              />
+              <Instagram size={24} className="text-4xl" />
             </a>
             <a
-              href="#"
+              href="https://x.com/mon5majeur"
+              target="_blank"
               className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
             >
               <FaXTwitter className="text-xl group-hover:text-white" />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@mon5majeur"
+              target="_blank"
               className="bg-black p-2 rounded-md hover:shadow-lg shadow-white/50 duration-300 group border border-white/10"
             >
               <Music2 size={20} className=" group-hover:text-white" />
@@ -190,8 +224,8 @@ function Footer() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
         className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm font-galdeano"
       >
         {content.copyright}

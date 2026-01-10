@@ -10,8 +10,19 @@ export default function LanguageProvider({ children }) {
 
   useEffect(() => {
     const savedLocale = localStorage.getItem("app_lang");
+
     if (savedLocale) {
       setLocale(savedLocale);
+    } else {
+      const host = window.location.hostname;
+
+      if (host.endsWith(".fr")) {
+        setLocale("fr");
+      } else if (host === "mon5majeur.fr") {
+        setLocale("fr");
+      } else {
+        setLocale("en");
+      }
     }
   }, []);
 
