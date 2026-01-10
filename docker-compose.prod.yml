@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: fahad1000mir/mon5majeur-landing:landing-latest
+    container_name: mon5majeur-landing
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: always
