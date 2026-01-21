@@ -13,6 +13,9 @@ RUN npm install --include=dev
 # Copy the rest of the app
 COPY . .
 
+# Copy the .env file into the container
+COPY .env .env
+
 # Build the Next.js app
 ARG NEXT_PUBLIC_API_URL
 ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
