@@ -1,0 +1,62 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+	# DOCKER_REPO: fahadosd/mon5majeur  
+  DOCKER_REPO: fahad1000mir/mon5majeur-landing
+  # LANDING_TAG_LATEST: landing-latest
+  LANDING_TAG_LATEST: landing-latest
+
+  
+jobs:
+  dockerhub:
+    name: Build, Tag and Push on Docker Hub
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Optional: run tests
+      - name: Run tests
+        run: |
+          echo "Skipping tests (add your test commands)"
+
+      - name: Log in to Docker Hub
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+
+      - name: Build Landing page image
+        run: |
+          docker build --no-cache -t $DOCKER_REPO:$LANDING_TAG_LATEST .
+
+      - name: Push Landing page image
+        run: docker push $DOCKER_REPO:$LANDING_TAG_LATEST
+        
+
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+    needs: dockerhub
+
+    steps:
+      - name: SSH to EC2 and deploy
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+            cd /home/ubuntu/backend
+            docker compose -f docker-compose.prod.yml down
+            docker compose -f docker-compose.prod.yml pull
+            docker compose -f docker-compose.prod.yml up -d --force-recreate --remove-orphans
+            sudo systemctl restart nginx
