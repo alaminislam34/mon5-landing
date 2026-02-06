@@ -6,9 +6,7 @@ on:
       - main
 
 env:
-	# DOCKER_REPO: fahadosd/mon5majeur  
   DOCKER_REPO: fahad1000mir/mon5majeur-landing
-  # LANDING_TAG_LATEST: landing-latest
   LANDING_TAG_LATEST: landing-latest
 
   
