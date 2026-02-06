@@ -19,10 +19,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Optional: run tests
       - name: Run tests
         run: |
-          echo "Skipping tests (add your test commands)"
+          echo "Skipping tests for landing page"
 
       - name: Log in to Docker Hub
         env:
@@ -30,6 +29,18 @@ jobs:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
           echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+
+      - name: Create .env from secret (if provided)
+        env:
+          LANDING_ENV: ${{ secrets.LANDING_ENV }}
+        run: |
+          if [ -n "$LANDING_ENV" ]; then
+            printf '%s\n' "$LANDING_ENV" > .env
+            echo ".env created from LANDING_ENV secret"
+          else
+            echo "LANDING_ENV secret not set — creating empty .env"
+            touch .env
+          fi
 
       - name: Build Landing page image
         run: |
